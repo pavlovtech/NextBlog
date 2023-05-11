@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { SignIn } from '@clerk/nextjs'
 
 const Page = async ({ searchParams }: { searchParams: { redirectUrl: string } }) => {
