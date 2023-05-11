@@ -1,4 +1,4 @@
-export const runtime = 'client';
+"use client";
 import { SignUp } from '@clerk/nextjs'
 
 const Page = async () => {

@@ -1,4 +1,4 @@
-export const runtime = 'client';
+"use client";
 
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/nextjs'
 import Header from '@/components/layout/header'

@@ -1,5 +1,4 @@
-export const runtime = 'client';
-
+"use client";
 import Posts from '@/app/components/posts'
 import Link from 'next/link';
 
