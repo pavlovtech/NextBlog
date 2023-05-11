@@ -1,4 +1,4 @@
-export const runtime = 'nodejs';
+export const runtime = 'client';
 import { SignUp } from '@clerk/nextjs'
 
 const Page = async () => {
