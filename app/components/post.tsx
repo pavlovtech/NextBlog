@@ -1,11 +1,12 @@
 import { redirect } from 'next/navigation'
 import { revalidatePath, revalidateTag } from 'next/cache'
 import dynamic from 'next/dynamic';
+
 // import { NewPost, Post } from '@/db/models'
 
 const Post = async({ slug }: { slug: string }) => {
 
-  const MarkdownFile = dynamic(() => import('../../data/blog/test.mdx'));
+  const MarkdownFile = dynamic(() => import(`../../data/blog/${slug}`));
 
   return (
     <MarkdownFile />

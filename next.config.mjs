@@ -6,7 +6,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
     serverActions: true,
-    mdxRs: true,
+    mdxRs: false,
   },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 }

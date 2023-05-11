@@ -30,8 +30,10 @@
     "react-particles": "^2.9.3",
     "react-rough-notation": "^1.0.3",
     "reactflow": "^11.7.0",
+    "rehype-stringify": "^9.0.3",
     "remark-gfm": "^3.0.1",
     "swr": "^2.1.0",
+    "to-vfile": "^7.2.4",
     "tsparticles": "^2.9.3"
   },
   "devDependencies": {

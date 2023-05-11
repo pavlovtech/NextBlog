@@ -21,15 +21,25 @@ const formatDate = (date: Date) => {
   return now
 }
 
-const Projects = async () => {
+const Posts = async () => {
   // const projects = await getUserProjects();
 
   const dir = path.join(process.cwd(), '/data/blog');
   const fileNames = await fs.readdir(dir);
-  const fullFileNames = fileNames.map(f => path.join(dir, f));
-  console.log(fullFileNames);
+  const files = fileNames.map(f => ({
+    full: path.join(dir, f),
+    file: f
+  }));
+  console.log(files);
 
-  let posts = fullFileNames.map(f => matter.read(f).data);
+  let posts = files.map(f => {
+    const data = matter.read(f.full).data;
+
+    return {
+      ...data,
+      file: f.file
+    }
+  });
 
   console.log(posts);
 
@@ -67,9 +77,9 @@ const Projects = async () => {
       <ul>
         {!posts.length && 'No posts found.'}
         {posts.map((frontMatter) => {
-          const { slug, date, title, summary, tags } = frontMatter
+          const { file, date, title, summary, tags } = frontMatter
           return (
-            <li key={slug} className="py-4">
+            <li key={file} className="py-4">
               <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                 <dl>
                   <dt className="sr-only">Published on</dt>
@@ -80,7 +90,7 @@ const Projects = async () => {
                 <div className="space-y-3 xl:col-span-3">
                   <div>
                     <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                      <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                      <Link href={`/posts/${file}`} className="text-gray-900 dark:text-gray-100">
                         {title}
                       </Link>
                     </h3>
@@ -107,4 +117,4 @@ const Projects = async () => {
   )
 }
 
-export default Projects
+export default Posts
