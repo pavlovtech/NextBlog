@@ -2,12 +2,11 @@
 import { siteMetadata } from '@/data/site-metadata';
 import Link from 'next/link';
 import Tag from './ui/tag';
-import path from 'path';
-import { promises as fs } from 'fs'
 
 // const matter = require('gray-matter');
 
 import matter from 'gray-matter'
+import { blogPostsMetatata } from '../server/blog-posts';
 
 const formatDate = (date: Date) => {
   const options = {
@@ -24,22 +23,7 @@ const formatDate = (date: Date) => {
 const Posts = async () => {
   // const projects = await getUserProjects();
 
-  const dir = path.join(process.cwd(), '/data/blog');
-  const fileNames = await fs.readdir(dir);
-  const files = fileNames.map(f => ({
-    full: path.join(dir, f),
-    file: f
-  }));
-  console.log(files);
-
-  let posts = files.map(f => {
-    const data = matter.read(f.full).data;
-
-    return {
-      ...data,
-      file: f.file
-    }
-  });
+  let posts = await blogPostsMetatata;
 
   console.log(posts);
 
@@ -77,9 +61,9 @@ const Posts = async () => {
       <ul>
         {!posts.length && 'No posts found.'}
         {posts.map((frontMatter) => {
-          const { file, date, title, summary, tags } = frontMatter
+          const { slug, date, title, summary, tags } = frontMatter
           return (
-            <li key={file} className="py-4">
+            <li key={slug} className="py-4">
               <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                 <dl>
                   <dt className="sr-only">Published on</dt>
@@ -90,7 +74,7 @@ const Posts = async () => {
                 <div className="space-y-3 xl:col-span-3">
                   <div>
                     <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                      <Link href={`/blog/${file}`} className="text-gray-900 dark:text-gray-100">
+                      <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
                         {title}
                       </Link>
                     </h3>
@@ -117,4 +101,4 @@ const Posts = async () => {
   )
 }
 
-export default Posts
+export default Posts;
