@@ -1,9 +1,9 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
-import { siteMetadata } from '@/data/site-metadata';
+import { siteMetadata } from '@/configuration/site-metadata';
 import Link from 'next/link';
-import headerNavLinks from '@/data/header-nav-links';
+import headerNavLinks from '@/configuration/header-nav-links';
 import Footer from './components/layout/footer';
 import Image from 'next/image';
 

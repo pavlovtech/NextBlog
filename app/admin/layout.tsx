@@ -10,11 +10,6 @@ const inter = Inter({
   subsets: ['latin']
 })
 
-export const metadata = {
-  title: 'Alex Pavlov',
-  description: 'Created by Alex Pavlov'
-}
-
 const AdminLayout = ({ children }: {
   children: React.ReactNode;
 }) => {

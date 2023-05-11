@@ -1,5 +1,5 @@
 import { authMiddleware } from "@clerk/nextjs";
-import headerNavLinks from "./data/header-nav-links";
+import headerNavLinks from "./configuration/header-nav-links";
 
 const routes = headerNavLinks.map(l => [`${l.href}`,`${l.href}/:bar`]).flat();
 

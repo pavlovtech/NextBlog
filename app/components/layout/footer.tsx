@@ -1,4 +1,4 @@
-import { siteMetadata } from "@/data/site-metadata"
+import { siteMetadata } from "@/configuration/site-metadata"
 //TODO
 //import SocialIcon from "../ui/social-icons"
 import Link from "next/link"
@@ -19,13 +19,6 @@ const Footer = () => {
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
-        </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            Tailwind Nextjs Theme
-          </Link>
         </div>
       </div>
     </footer>

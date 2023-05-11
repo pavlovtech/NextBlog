@@ -1,8 +1,6 @@
-import { redirect } from 'next/navigation';
-import { RoughNotation } from 'react-rough-notation';
 import Link from 'next/link';
 import Tag from './components/ui/tag';
-import { siteMetadata } from '@/data/site-metadata';
+import { siteMetadata } from '@/configuration/site-metadata';
 
 
 const MAX_DISPLAY = 3
