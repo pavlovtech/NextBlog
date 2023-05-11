@@ -5,6 +5,6 @@ export const siteMetadata = {
     locale: 'en-US',
     language: 'en-us',
     image: '/static/images/avatar.png',
-    siteUrl: 'alexpavlov.dev',
+    siteUrl: 'https://alexpavlov.dev',
     headerTitle: 'Alex Pavlov',
 }
