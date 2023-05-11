@@ -1,3 +1,4 @@
+"use client";
 import { SignIn } from '@clerk/nextjs'
 
 const Page = async ({ searchParams }: { searchParams: { redirectUrl: string } }) => {
