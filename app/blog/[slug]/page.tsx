@@ -1,6 +1,10 @@
 import { blogPostsMetatata } from '@/app/server/blog-posts';
 import dynamic from 'next/dynamic';
 import { redirect } from 'next/navigation';
+import { MDXRemote, CompileMDXResult, compileMDX } from 'next-mdx-remote/rsc';
+import matter from 'gray-matter';
+import { serialize } from 'next-mdx-remote/serialize'
+import path from 'path';
 
 export default async function Page({ params }: { params: { slug: string } }) {
 
@@ -12,7 +16,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
         redirect('/blog')
     }
 
-    const MarkdownComponent = dynamic(() => import(`../../../data/blog/${params.slug}.mdx`));
+    const fullPath = path.join(process.cwd(), `data/blog/${params.slug}.mdx`);
 
-    return <MarkdownComponent />;
+    var result = matter.read(fullPath);
+
+   //console.log('frontmatter', result.content);
+
+    //var file = await import(`../../../data/blog/${params.slug}.mdx`)
+
+    //const markdown = await res.text();
+
+    {/* @ts-expect-error Server Component */}
+    return <MDXRemote source={result.content} />;
 }
