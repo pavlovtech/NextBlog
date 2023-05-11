@@ -10,7 +10,6 @@
     "migrations": "drizzle-kit generate:mysql"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.17.3",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.4.1",
