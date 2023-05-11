@@ -1,7 +1,7 @@
 import Posts from '@/app/components/posts'
 import Link from 'next/link';
 
-const PostsPage = async () => {
+const BlogPage = async () => {
   return <>
     <div className='container'>
       {/* @ts-expect-error Server Component */}
@@ -10,5 +10,5 @@ const PostsPage = async () => {
   </>
 }
 
-export default PostsPage;
+export default BlogPage;
 
