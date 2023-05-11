@@ -1,6 +1,5 @@
 export const siteMetadata = {
     email: 'alexppavlov93@gmail.com',
-    title: 'Personal blog',
     author: 'Alex Pavlov',
     description: 'Created by Alex Pavlov',
     locale: 'en-US',
@@ -9,4 +8,3 @@ export const siteMetadata = {
     siteUrl: 'alexpavlov.dev',
     headerTitle: 'Alex Pavlov',
 }
-  

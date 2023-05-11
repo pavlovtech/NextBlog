@@ -1,6 +1,6 @@
 import { siteMetadata } from "@/configuration/site-metadata"
 
-export const formatDate = (date: Date) => {
+export const formatDate = (date: string) => {
   const options = {
     year: 'numeric',
     month: 'long',
