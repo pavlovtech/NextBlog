@@ -1,7 +1,8 @@
+export const runtime = 'edge';
+
 import Link from 'next/link';
 import Tag from './components/ui/tag';
 import { siteMetadata } from '@/configuration/site-metadata';
-
 
 const MAX_DISPLAY = 3
 

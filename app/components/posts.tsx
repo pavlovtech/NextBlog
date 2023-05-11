@@ -1,13 +1,15 @@
+export const runtime = 'edge';
+
 import Link from 'next/link';
 import Tag from './ui/tag';
 
-import { blogPostsMetatata } from '../server/blog-posts';
 import { formatDate } from '../../utils/date-utils';
+import { Post } from '@/models/post';
 
 const Posts = async () => {
   // const projects = await getUserProjects();
 
-  let posts = await blogPostsMetatata;
+  let posts: Post[] = [];
 
   console.log(posts);
 

@@ -1,6 +1,6 @@
+export const runtime = 'nodejs';
+
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/nextjs'
-import Image from 'next/image'
-import Footer from '@/components/layout/footer'
 import Header from '@/components/layout/header'
 import { Inter } from 'next/font/google'
 import '../globals.css'

@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
