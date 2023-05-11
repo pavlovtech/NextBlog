@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 import { Inter } from 'next/font/google'
 import './globals.css'
