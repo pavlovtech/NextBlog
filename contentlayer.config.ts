@@ -20,6 +20,11 @@ const Post = defineDocumentType(() => ({
       description: 'The summary of the post',
       required: true,
     },
+    draft: {
+      type: 'boolean',
+      description: 'draft',
+      required: false,
+    }
   },
   computedFields: {
     url: {
