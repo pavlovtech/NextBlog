@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
