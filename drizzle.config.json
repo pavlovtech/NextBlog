@@ -1,5 +1,0 @@
-{
-  "out": "./db/migrations",
-  "schema": "./db",
-  "breakpoints": true
-}

@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { siteMetadata } from '@/configuration/site-metadata';
 import Link from 'next/link';
 import headerNavLinks from '@/configuration/header-nav-links';
-import Footer from './components/layout/footer';
+import Footer from '../components/layout/footer';
 import Image from 'next/image';
 
 const inter = Inter({
