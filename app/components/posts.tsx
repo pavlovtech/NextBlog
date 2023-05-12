@@ -9,8 +9,6 @@ const Posts = async () => {
 
   let posts = await blogPostsMetatata;
 
-  console.log(posts);
-
   return (
     <>
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
