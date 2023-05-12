@@ -21,7 +21,7 @@ function Logo() {
       <span className="mr-2">
         <Icon />
       </span>
-      <span className="font-bold">Contentlayer</span>
+      <span className="font-bold">Alex Pavlov</span>
     </Link>
   )
 }

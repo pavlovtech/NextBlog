@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import '../styles/globals.css'
 
 import { Header } from '../components/header'
