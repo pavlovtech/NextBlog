@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@jsdevtools/rehype-toc": "^3.0.2",
+    "@vercel/analytics": "^1.0.1",
     "contentlayer": "^0.3.2",
     "date-fns": "2.29.3",
     "next": "^13.3.4",
