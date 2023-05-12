@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { Header } from './components/header';
 import '../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
