@@ -8,9 +8,8 @@ console.log(routes);
 export default authMiddleware({
   publicRoutes: [
     '/',
-    '/blog',
-    '/blog/posts/:foo',
-    '/blog/posts',
+    '/posts',
+    '/posts/:foo',
     ...routes
   ]
 });
