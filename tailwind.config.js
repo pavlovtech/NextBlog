@@ -37,5 +37,8 @@ module.exports = {
         blink: 'blink 1.4s infinite both'
       }
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
