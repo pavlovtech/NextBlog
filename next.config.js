@@ -1,9 +1,10 @@
-// next.config.js
-const { withContentlayer } = require('next-contentlayer')
+const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
-const nextConfig = { reactStrictMode: true, swcMinify: true }
-const { withAxiom } = require('next-axiom');
+const nextConfig = {
+  experimental: {
+    appDir: true, 
+  },
+};
 
-module.exports = withAxiom(withContentlayer(nextConfig));
-
+module.exports = withContentlayer(nextConfig);
