@@ -22,7 +22,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         </time>
         <h1>{post.title}</h1>
       </div>
-      <Content />
+      <div className='prose lg:prose-xl'>
+        <Content />
+      </div>
     </article>
   )
 }
