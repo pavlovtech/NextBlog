@@ -29,7 +29,7 @@ function Logo() {
 export function Header() {
   return (
     <header className="p-8 flex justify-center">
-      <Logo />
+      <Logo /> 
     </header>
   )
 }
