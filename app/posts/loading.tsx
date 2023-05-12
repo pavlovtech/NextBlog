@@ -1,4 +1,4 @@
-import { Blinker } from "../components/ui/loading";
+import { Blinker } from "../../components/loading";
 
 export default function Loading() {
     return <Blinker />;
