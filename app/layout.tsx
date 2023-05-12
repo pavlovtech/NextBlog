@@ -1,4 +1,4 @@
-import { Header } from '../components/header';
+import { Header } from './components/header';
 import '../styles/globals.css';
 
 import { Inter } from 'next/font/google'
@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Alex Pavlov - blog',
-  description: 'Alex Pavlov - blog'
+  description: 'Alex Pavlov - blog about programming'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
