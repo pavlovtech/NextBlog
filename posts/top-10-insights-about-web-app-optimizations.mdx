@@ -53,6 +53,11 @@ You just define what routes to prerender and what data should be used for preren
 
 Additionally, you can use Server Side rendering to create a page on the server per every request. It can be useful if you need to get the latest data from the server. But even in this case, you can use Static Site Generation instead with the use of Revalidate property. This property determines the amount in seconds after which a page re-generation can occur (defaults to `false` or no revalidation). So if you have a high load web application and you need to have the most recent data every second you could just regenerate the page every second and serve it as a static file:
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 ```javascript
 // This function gets called at build time on server-side.
 // It may be called again, on a serverless function, if
