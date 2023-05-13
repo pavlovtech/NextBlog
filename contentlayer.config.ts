@@ -3,7 +3,7 @@ import rehypePrism from 'rehype-prism-plus'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import toc from '@jsdevtools/rehype-toc';
+import remarkToc from 'remark-toc';
 
 
 const Post = defineDocumentType(() => ({
@@ -44,12 +44,11 @@ export default makeSource({
   contentDirPath: 'posts',
   documentTypes: [Post],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkToc],
     rehypePlugins: [
       rehypeAutolinkHeadings,
       rehypeSlug,
-      rehypePrism,
-      toc
+      rehypePrism
     ]
   }
 })
