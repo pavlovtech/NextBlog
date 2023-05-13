@@ -4,7 +4,7 @@ import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
 import { RoughNotation } from 'react-rough-notation';
 
-export const siteMetadata = {
+const siteMetadata = {
   title: 'Alex Pavlov - blog',
   description: 'my personal blog where I share my notes, ideas and inspirations'
 }
