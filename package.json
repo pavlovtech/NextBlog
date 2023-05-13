@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@jsdevtools/rehype-toc": "^3.0.2",
+    "@tailwindcss/forms": "^0.5.3",
     "@vercel/analytics": "^1.0.1",
     "contentlayer": "^0.3.2",
     "date-fns": "2.29.3",
@@ -24,6 +25,7 @@
     "rehype-stringify": "^9.0.3",
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1",
+    "typewriter-effect": "^2.19.0",
     "unified": "^10.1.2"
   },
   "devDependencies": {
