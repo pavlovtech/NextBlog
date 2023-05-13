@@ -27,24 +27,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
       </head>
       <body className={`${inter.className} bg-white text-black antialiased dark:bg-background-color dark:text-white`}>
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-          <header className="flex items-center justify-between py-10">
-            <Header />
-            <div className="flex items-center text-base leading-5">
-              <div className="hidden sm:block">
-                {headerNavLinks.map((link) => (
-                  <Link
-                    key={link.title}
-                    href={link.href}
-                    className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
-                  >
-                    {link.title}
-                  </Link>
-                ))}
+        <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
+          <div className="flex h-screen flex-col justify-between">
+            <header className="flex items-center justify-between py-10">
+              <Header />
+              <div className="flex items-center text-base leading-5">
+                <div className="hidden sm:block">
+                  {headerNavLinks.map((link) => (
+                    <Link
+                      key={link.title}
+                      href={link.href}
+                      className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                    >
+                      {link.title}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
-          </header>
-          <main className="px-6">{children}</main>
+            </header>
+            <main className="px-6">{children}</main>
+          </div>
         </div>
 
         <Analytics />

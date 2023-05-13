@@ -17,6 +17,7 @@
     "next-contentlayer": "^0.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-rough-notation": "^1.0.3",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-parse": "^8.0.4",
     "rehype-prism": "^2.2.2",
@@ -25,6 +26,7 @@
     "rehype-stringify": "^9.0.3",
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1",
+    "rough-notation": "^0.5.1",
     "typewriter-effect": "^2.19.0",
     "unified": "^10.1.2"
   },
