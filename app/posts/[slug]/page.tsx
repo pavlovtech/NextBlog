@@ -1,22 +1,21 @@
 import { format, parseISO } from 'date-fns'
-import { allPosts } from 'contentlayer/generated'
+import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../styles/prism-atom-dark.css';
 import { headers } from 'next/headers';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
-export const generateMetadata = ({ params }) => {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
+export const generateMetadata = ({ params }: any) => {
+  const post: Post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!
   return { title: post.title }
 }
 
 const PostPage = ({ params }: { params: { slug: string } }) => {
   
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
+  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!;
 
-  const Content = getMDXComponent(post.body.code)
-  
+  const Content = getMDXComponent(post.body.code);
 
   //console.log(post.body.code);
 
