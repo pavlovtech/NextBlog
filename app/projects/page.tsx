@@ -38,7 +38,6 @@ export default function Projects() {
                                 title={d.title}
                                 description={d.description}
                                 imgSrc={d.imgSrc}
-                                href={d.href}
                                 github={d.github}
                                 tech1={d.tech1}
                                 tech2={d.tech2}
