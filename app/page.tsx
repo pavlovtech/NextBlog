@@ -23,13 +23,13 @@ function AboutMe() {
       <p className="pt-10 text-lg leading-7 text-slate-600 dark:text-slate-300">
         This is my place for{' '}
         <RoughNotation
-                animate={true}
-                type="box"
-                show={true}
-                color="#DE1D8D"
-                animationDelay={1000}
-                animationDuration={2500}
-              >
+          animate={true}
+          type="box"
+          show={true}
+          color="#DE1D8D"
+          animationDelay={1000}
+          animationDuration={2500}
+        >
           thoughts, reflections & everything&nbsp;
         </RoughNotation>
         in between. Have a good read!{' '}

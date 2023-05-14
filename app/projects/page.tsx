@@ -1,4 +1,3 @@
-'use client';
 import Card from "app/components/project-card";
 import Link from "next/link";
 const siteMetadata = {
