@@ -11,10 +11,13 @@ const projectsData = [
         description: `WebReaper is a declarative high performance web scraper, crawler and parser in C#. Designed as simple, extensible and scalable web scraping solution.`,
         imgSrc: '/public/images/reaper.png',
         github: 'https://github.com/pavlovtech/WebReaper',
-        tech1: '.NET',
-        tech2: 'Puppeteer',
-        tech3: 'MongoDB',
-        tech4: 'Redis'
+        tech: ['.NET', 'Puppeteer', 'MongoDB', 'Redis']
+    },
+    {
+        title: 'pipelined.io',
+        description: `Azure DevOps release automation tool.`,
+        href: 'https://pipelined.io',
+        tech: ['NextJS', 'PlanetScale']
     }
 ];
 
@@ -38,10 +41,9 @@ export default function Projects() {
                                 title={d.title}
                                 description={d.description}
                                 imgSrc={d.imgSrc}
+                                href={d.href}
                                 github={d.github}
-                                tech1={d.tech1}
-                                tech2={d.tech2}
-                                tech3={d.tech3}
+                                tech={d.tech}
                             />
                         ))}
                     </div>
