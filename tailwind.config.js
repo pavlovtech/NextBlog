@@ -297,7 +297,7 @@ module.exports = {
         'gradient-background-3': 'gradient-background-3 8s infinite',
         'gradient-foreground-3': 'gradient-foreground-3 8s infinite',
       },
-    },
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
-  }
+    }
+  }, 
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 };
