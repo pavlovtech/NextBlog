@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  #__next {
+    @apply contents;
+  }
+}
+
 p {
   @apply mb-4;
 }
