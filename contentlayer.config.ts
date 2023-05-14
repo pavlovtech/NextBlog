@@ -30,6 +30,16 @@ const Post = defineDocumentType(() => ({
       type: 'boolean',
       description: 'draft',
       required: false,
+    },
+    featured: {
+      type: 'boolean',
+      description: 'featured',
+      required: false,
+    },
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+      required: false
     }
   },
   computedFields: {

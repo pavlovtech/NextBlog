@@ -20,7 +20,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
   //console.log(post.body.code);
 
   return (
-    <article className="py-4 mx-auto max-w-xl">
+    <article className="">
       <div className="mb-8 text-center">
         <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
