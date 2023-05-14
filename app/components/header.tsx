@@ -18,15 +18,19 @@ export function Header() {
     <header className="flex items-center justify-between py-10">
       <div>
         <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
-          <Typewriter
-            options={{
-              strings: [`user@alex.pavlov.dev: ~${pathname} `],
-              autoStart: true,
-              loop: false,
-              deleteSpeed: 100000,
-              delay: 0
-            }}
-          />
+          <Link href='/'  passHref legacyBehavior>
+            <a>
+            <Typewriter
+              options={{
+                strings: [`user@alex.pavlov.dev: ~${pathname} `],
+                autoStart: true,
+                loop: false,
+                deleteSpeed: 100000,
+                delay: 0
+              }}
+            />
+            </a>
+          </Link>
         </div>
       </div>
       <div className="flex items-center text-base leading-5">
