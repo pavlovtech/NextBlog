@@ -1,4 +1,3 @@
-'use client';
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
@@ -10,6 +9,7 @@ const siteMetadata = {
 }
 
 function AboutMe() {
+  "use client";
   return (
     <div className="pt-6">
       <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
