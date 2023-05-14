@@ -23,7 +23,8 @@ export function Header() {
               strings: [`user@alex.pavlov.dev: ~${pathname} `],
               autoStart: true,
               loop: false,
-              deleteSpeed: 100000
+              deleteSpeed: 100000,
+              delay: 0
             }}
           />
         </div>
