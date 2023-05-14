@@ -7,8 +7,7 @@ import Typewriter from 'typewriter-effect';
 const headerNavLinks = [
   { href: '/', title: 'Blog' },
   { href: '/tags', title: 'Tags' },
-  { href: '/projects', title: 'Projects' },
-  { href: '/about', title: 'About' },
+  { href: '/projects', title: 'Projects' }
 ]
 
 export function Header() {

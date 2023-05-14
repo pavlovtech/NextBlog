@@ -15,9 +15,8 @@ export function PostCard(post: Post) {
               <h2 className="text-2xl font-bold leading-8 tracking-tight">
                 <Link
                   href={post.url}
-                  className="text-gray-900 transition duration-500 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500"
                   legacyBehavior>
-                  {post.title}
+                  <a className="text-gray-900 transition duration-500 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500">{post.title}</a>
                 </Link>
               </h2>
             </div>
