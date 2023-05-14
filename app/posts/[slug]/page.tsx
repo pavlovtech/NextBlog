@@ -20,7 +20,8 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
   //console.log(post.body.code);
 
   return (
-    <article className="">
+    <div className='flex justify-center'>
+      <article className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
       <div className="mb-8 text-center">
         <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
@@ -31,6 +32,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         <Content />
       </div>
     </article>
+    </div>
   )
 }
 

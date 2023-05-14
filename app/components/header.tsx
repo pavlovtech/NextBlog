@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import Typewriter from 'typewriter-effect';
 
-
 const headerNavLinks = [
   { href: '/', title: 'Blog' },
   { href: '/tags', title: 'Tags' },
@@ -17,11 +16,11 @@ export function Header() {
     <header className="flex items-center justify-between py-10">
       <div>
         <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
-          <Link href='/'  passHref legacyBehavior>
+          <Link href='/' passHref legacyBehavior>
             <a>
             <Typewriter
               options={{
-                strings: [`user@alex.pavlov.dev: ~${pathname} `],
+                strings: [`~${pathname} `],
                 autoStart: true,
                 loop: false,
                 deleteSpeed: 100000,

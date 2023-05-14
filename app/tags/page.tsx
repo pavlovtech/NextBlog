@@ -19,7 +19,7 @@ export default function TagsPage() {
         {Object.keys(tags).length === 0 && 'No tags found.'}
         {tags.map((t) => {
           return (
-            <div key={t} className="mt-2 mb-2 mr-5">
+            <div key={t} className="mt-2 mb-2">
               <Tag text={t} />
             </div>
           )
