@@ -1,7 +1,7 @@
 import { format, parseISO } from 'date-fns'
 import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
-import '../../../styles/prism-atom-dark.css';
+import '../../../../styles/prism-atom-dark.css';
 import { headers } from 'next/headers';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
