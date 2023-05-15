@@ -1,12 +1,12 @@
 "use server";
 
-import { createNewPost } from "../_actions";
+// import { createNewPost } from "../_actions";
 
 const Post = async({ slug } : {slug?: string}) => {
     return (
      <div className='container'>
       {/* @ts-expect-error Server Component */}
-        <form action={createNewPost} className='w-full max-w-sm'>
+        <form className='w-full max-w-sm'>
             <div className='mb-6 md:flex md:items-center'>
             <div className='md:w-1/3'>
             <label
