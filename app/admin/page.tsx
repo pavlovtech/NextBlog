@@ -6,7 +6,7 @@ import Post from "./components/post";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "configs/auth-options";
 import { LoginButton, LogoutButton, ProfileButton, RegisterButton } from "./components/buttons";
-import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, Key } from "react";
+import { Key } from "react";
 
 const Admin = async () => {
   const session = await getServerSession(authOptions);
@@ -20,6 +20,9 @@ const Admin = async () => {
 
   return (
     <>
+      <div>
+        <LogoutButton />
+      </div>
       {posts.map((post: { name: string }, idx: Key) => (
           <p key={idx}>{post.name}</p>
         ))}
