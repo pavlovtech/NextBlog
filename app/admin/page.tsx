@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { createNewPost, getAllPosts } from "./backend";
+import { getAllPosts } from "./backend";
 import Post from "./components/post";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "configs/auth-options";
