@@ -1,6 +1,6 @@
 "use server";
 
-import { createNewPost } from "../_actions";
+import { createNewPost } from "../backend";
 
 const Post = async({ slug } : {slug?: string}) => {
     return (
