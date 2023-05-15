@@ -3,24 +3,18 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import Typewriter from 'typewriter-effect';
 
-const headerNavLinks = [
-  { href: '/', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/projects', title: 'Projects' }
-]
-
-export function Header() {
+export function Header({navLinks} : {navLinks: {href: string, title: string}[]}) {
   const pathname = usePathname();
 
   return (
     <header className="flex items-center justify-between py-10">
       <div>
         <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
-          <Link href='/' passHref legacyBehavior>
+          <Link href='/'  passHref legacyBehavior>
             <a>
             <Typewriter
               options={{
-                strings: [`~${pathname} `],
+                strings: [`user@alex.pavlov.dev: ~${pathname} `],
                 autoStart: true,
                 loop: false,
                 deleteSpeed: 100000,
@@ -33,7 +27,7 @@ export function Header() {
       </div>
       <div className="flex items-center text-base leading-5">
         <div className="hidden sm:block">
-          {headerNavLinks.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.title}
               href={link.href}

@@ -1,6 +1,6 @@
 
+import Tag from "app/components/tag";
 import { allPosts } from "contentlayer/generated";
-import Tag from "../components/tag";
 
 
 export default function TagsPage() {
