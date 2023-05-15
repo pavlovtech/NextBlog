@@ -1,5 +1,4 @@
 import { redirect } from "next/navigation";
-import { createNewPost, getAllPosts } from "./backend";
 import Post from "./components/post";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "configs/auth-options";
@@ -10,7 +9,9 @@ const Admin = async () => {
   const session = await getServerSession(authOptions);
   console.log(session);
 
-  const posts = await getAllPosts();
+  //const posts = await getAllPosts();
+  const posts : any[] = [];
+
 
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/admin");
