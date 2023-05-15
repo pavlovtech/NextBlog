@@ -1,9 +1,10 @@
 import { Header } from '../components/header';
-import '../styles/globals.css';
+import '../../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 
 import { Inter } from 'next/font/google'
 import Link from 'next/link';
+import Provider from './components/provider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,13 +26,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
       </head>
       <body className={`${inter.className} bg-white text-black antialiased dark:bg-background-color dark:text-white`}>
-        <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
-          <div className="flex h-screen flex-col justify-between">
-            <Header navLinks={headerNavLinks} />
-            <main className="mb-auto">{children}</main>
+        <Provider>
+          <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
+            <div className="flex h-screen flex-col justify-between">
+              <Header navLinks={headerNavLinks} />
+              <main className="mb-auto">{children}</main>
+            </div>
           </div>
-        </div>
-        <Analytics />
+        </Provider>
       </body>
     </html>
   )
