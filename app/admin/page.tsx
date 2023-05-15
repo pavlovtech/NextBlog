@@ -1,5 +1,3 @@
-"use server";
-
 import { redirect } from "next/navigation";
 import Post from "./components/post";
 import { getServerSession } from "next-auth/next";
