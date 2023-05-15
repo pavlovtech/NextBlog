@@ -1,9 +1,11 @@
+"use server";
+
 import { redirect } from "next/navigation";
-import { getAllPosts } from "./_actions";
+import { createNewPost, getAllPosts } from "./_actions";
 import Post from "./components/post";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "configs/auth-options";
-import { LoginButton, LogoutButton } from "./components/buttons";
+import { LoginButton, LogoutButton, ProfileButton, RegisterButton } from "./components/buttons";
 import { Key } from "react";
 
 const Admin = async () => {
