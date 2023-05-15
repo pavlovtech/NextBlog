@@ -1,4 +1,4 @@
-import { Header } from './components/header';
+import { Header } from '../components/header';
 import '../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -14,8 +14,7 @@ export const metadata = {
 
 const headerNavLinks = [
   { href: '/', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/projects', title: 'Projects' }
+  { href: '/posts', title: 'Tags' },
 ]
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
