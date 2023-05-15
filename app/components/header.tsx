@@ -14,7 +14,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
             <a>
             <Typewriter
               options={{
-                strings: [`user@alex.pavlov.dev: ~${pathname} `],
+                strings: [`~${pathname} `],
                 autoStart: true,
                 loop: false,
                 deleteSpeed: 100000,
@@ -26,7 +26,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
         </div>
       </div>
       <div className="flex items-center text-base leading-5">
-        <div className="hidden sm:block">
+        <div className="sm:block">
           {navLinks.map((link) => (
             <Link
               key={link.title}
