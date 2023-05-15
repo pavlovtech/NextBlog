@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
-import { Suspense } from "react";
 import { PostCard } from "app/components/post-card";
 import { AboutMe } from "app/components/about-me";
 
