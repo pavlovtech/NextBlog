@@ -4,6 +4,7 @@ const Post = async({ slug } : {slug?: string}) => {
   
     return (
      <div className='container'>
+      {/* @ts-expect-error Server Component */}
         <form className='w-full max-w-sm'>
             <div className='mb-6 md:flex md:items-center'>
             <div className='md:w-1/3'>
