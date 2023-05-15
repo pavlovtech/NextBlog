@@ -1,5 +1,3 @@
-"use server";
-
 import { createNewPost } from "../backend";
 
 const Post = async({ slug } : {slug?: string}) => {
