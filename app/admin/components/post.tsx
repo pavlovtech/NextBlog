@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useForm } from "react-hook-form";
 
 async function postData(url: string, data: any) {
@@ -20,72 +21,120 @@ async function postData(url: string, data: any) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-const Post = async({ slug } : {slug?: string}) => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+// const Post = async ({ slug }: { slug?: string }) => {
+// const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
-  const onSubmit = async (data: any) => {
+// const onSubmit = async (data: any) => {
 
-    console.log("input", data);
+//   console.log("input", data);
 
-    let resp = await postData("/api/posts", data);
+//   // let resp = await postData("/api/posts", data);
 
-    console.log("resp", resp);
+//   // console.log("resp", resp);
+// };
+
+//   const { register, handleSubmit, formState: { errors } } = useForm();
+//   const onSubmit = data => console.log(data);
+
+//   return (
+//     <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-sm'>
+//       <div className='mb-6 md:flex md:items-center'>
+//         <div className='md:w-1/3'>
+//           <label
+//             className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right'
+//             htmlFor='slug'
+//           >
+//             Slug
+//           </label>
+//         </div>
+//         <div className='md:w-2/3'>
+//           <input id="slug"
+//             className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
+//             {...register("slug", { required: true })}
+//           />
+//         </div>
+//       </div>
+
+//       <div className='mb-6 md:flex md:items-center'>
+//         <div className='md:w-1/3'>
+//           <label
+//             className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right'
+//             htmlFor='post'
+//           >
+//             Post
+//           </label>
+//         </div>
+//         <div className='md:w-2/3'>
+//           <textarea id="post"
+//             className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
+//             {...register("post", { required: true })}
+//             rows={4} cols={40}
+//           />
+//         </div>
+//       </div>
+
+//       <div className='md:flex md:items-center'>
+//         <div className='md:w-1/3'></div>
+//         <div className='md:w-2/3'>
+//           <input type="submit" />
+//         </div>
+//       </div>
+//     </form>
+//   )
+// }
+
+// export default Post
+
+export default function Post() {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = data => {
+    postData("/api/posts", data);
   };
 
-    return (
-     <div className='container'>
-      
-        <form  onSubmit={handleSubmit(onSubmit)} className='w-full max-w-sm'>
-            <div className='mb-6 md:flex md:items-center'>
-            <div className='md:w-1/3'>
-            <label
-                className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right'
-                htmlFor='slug'
-            >
-                Slug
-            </label>
-            </div>
-            <div className='md:w-2/3'>
-            <input
-                className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
-                {...register("slug", { required: true })}
-                required
-            />
-            </div>
-            </div>
-            
-            <div className='mb-6 md:flex md:items-center'>
-            <div className='md:w-1/3'>
-            <label
-                className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right'
-                htmlFor='post'
-            >
-                Post
-            </label>
-            </div>
-            <div className='md:w-2/3'>
-            <textarea
-                className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
-                {...register("post", { required: true })}
-                rows={4} cols={40}
-            />
-            </div>
-            </div>
-          
-            <div className='md:flex md:items-center'>
-          <div className='md:w-1/3'></div>
-          <div className='md:w-2/3'>
-            <button
-              type='submit'
-              className=''
-            >
-              Submit
-            </button>
-          </div>
+  return (
+    <div className="container">
+      <form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-sm'>
+      <div className='mb-6 md:flex md:items-center'>
+        <div className='md:w-1/3'>
+          <label className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right' htmlFor="slug">Slug</label>
         </div>
-        </form>
-     </div>
-    )
-  }
-  
-  export default Post
+        <div className='md:w-2/3'>
+          <input
+          className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
+            id="slug"
+            aria-invalid={errors.slug ? "true" : "false"}
+            {...register('slug', { required: true })}
+          />
+          {errors.slug && (
+            <span role="alert">
+              This field is required
+            </span>
+          )}
+        </div>
+      </div>
+
+      <div className='mb-6 md:flex md:items-center'>
+        <div className='md:w-1/3'>
+          <label className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right' htmlFor="post">Post</label>
+        </div>
+        <div className='md:w-2/3'>
+          <input
+          className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
+            id="slug"
+            aria-invalid={errors.post ? "true" : "false"}
+            {...register('post', { required: true })}
+          />
+          {errors.post && (
+            <span role="alert">
+              This field is required
+            </span>
+          )}
+        </div>
+       
+      </div>
+
+      <input type="submit" />
+    </form>
+    </div>
+  );
+}
