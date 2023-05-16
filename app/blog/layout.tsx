@@ -13,9 +13,9 @@ export const metadata = {
 }
 
 const headerNavLinks = [
-  { href: '/', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/projects', title: 'Projects' }
+  { href: '/blog', title: 'Blog' },
+  { href: '/blog/tags', title: 'Tags' },
+  { href: '/blog/projects', title: 'Projects' }
 ]
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
