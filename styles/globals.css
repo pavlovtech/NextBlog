@@ -309,3 +309,16 @@ input:-webkit-autofill:focus {
   transform: translateY(-2px);
   transition: transform 34ms;
 }
+
+.editor-toolbar .fa {
+  color: theme('colors.primary.500')
+}
+
+.EasyMDEContainer .editor-toolbar i.separator {
+  border-left: 1px solid theme('colors.primary.500');
+    border-right: 1px solid theme('colors.primary.500');
+}
+
+.EasyMDEContainer .editor-toolbar {
+  border-color: theme('colors.primary.500')
+}
