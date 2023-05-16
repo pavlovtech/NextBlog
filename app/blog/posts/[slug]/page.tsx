@@ -1,6 +1,6 @@
 import { format, parseISO } from 'date-fns'
 import { Post, allPosts } from 'contentlayer/generated'
-import { useMDXComponent } from 'next-contentlayer/hooks'
+import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../../styles/prism-atom-dark.css';
 import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
@@ -18,7 +18,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
 
   if (!post) notFound();
 
-  const Content = useMDXComponent(post.body.code);
+  const Content = getMDXComponent(post.body.code);
 
   //console.log(post.body.code);
 
