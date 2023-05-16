@@ -40,3 +40,18 @@ export async function getAllPosts() {
 
     return resp.data;
 }
+
+export async function getPost(fileName: string) {
+  const octokit = new Octokit({ auth: `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` });
+
+  var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
+      owner: 'pavlovtech',
+      repo: 'NextBlog',
+      path: 'posts',
+      headers: {
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+  });
+
+  return resp.data;
+}

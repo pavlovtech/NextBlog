@@ -5,6 +5,7 @@ import React, { useCallback, useState } from "react";
 import { useForm } from "react-hook-form";
 import SimpleMDE, { SimpleMdeReact } from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
+import { getAllPosts, getPost } from "app/admin-backend";
 
 async function postData(url: string, data: any) {
   // Default options are marked with *
@@ -24,24 +25,46 @@ async function postData(url: string, data: any) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-export default function Post() {
+async function getData(url: string) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: "GET", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit 
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+export default async function Post({ name }: { name?: string }) {
   const router = useRouter();
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = () => {
     postData("/api/posts", {
-      post: value,
+      post: postMD,
       slug: slug
     });
     router.push('/admin/posts');
   };
 
-  const [value, setValue] = useState("Initial value");
+  
 
-  const [slug, setSlug] = useState('');
+  const [postMD, setPostMD] = useState("");
+
+  const [slug, setSlug] = useState(name);
+
+  // if(name) {
+  //   const post = await getPost(name);
+
+  //   console.log(post)
+
+  //   setSlug(name);
+  //   setSlug(post);
+  // }
 
   const onChange = useCallback((value: string) => {
-    setValue(value);
+    setPostMD(value);
   }, []);
 
   return (
@@ -58,7 +81,7 @@ export default function Post() {
           />
         </div>
       </div>
-      <SimpleMdeReact value={value} onChange={onChange} />
+      <SimpleMdeReact value={postMD} onChange={onChange} />
       <button className="mr-10 bg-blue-600 color p-3 text-white" onClick={() => onSubmit()}>
         Post
       </button>

@@ -22,9 +22,9 @@ const Admin = async () => {
         <Link href='/admin/posts/create' className='bg-green-600 color p-4 mr-10 w-100 text-white'>Create a new post</Link>
         <LogoutButton />
       </div>
-      <ul>
+      <ul className="">
       {posts.map((post: { name: string }, idx: Key) => (
-        <li key={idx}><Link href='{`/admin/posts/${post.name}`}' className='text-white'>{post.name}</Link></li>
+        <li key={idx}><Link href={`/admin/posts/${post.name}`} className='text-white'>{post.name}</Link></li>
       ))}
       </ul>
     </>
