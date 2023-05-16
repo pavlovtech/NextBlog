@@ -38,7 +38,5 @@ export async function getAllPosts() {
         }
     });
 
-    console.log('git resp', resp);
-
     return resp.data;
 }

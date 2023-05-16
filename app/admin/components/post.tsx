@@ -24,9 +24,12 @@ const Post = async({ slug } : {slug?: string}) => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
   const onSubmit = async (data: any) => {
+
+    console.log("input", data);
+
     let resp = await postData("/api/posts", data);
 
-    console.log(resp);
+    console.log("resp", resp);
   };
 
     return (

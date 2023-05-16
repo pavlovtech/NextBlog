@@ -8,7 +8,7 @@ import { Key } from "react";
 
 const Admin = async () => {
   const session = await getServerSession(authOptions);
-  console.log(session);
+  //console.log(session);
 
   const posts = await getAllPosts();
 
