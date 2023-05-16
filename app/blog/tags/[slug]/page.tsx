@@ -2,6 +2,7 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import { PostCard } from 'app/components/post-card';
+import { notFound } from 'next/navigation';
 
 const TagPage = ({ params }: { params: { slug: string } }) => {
 
@@ -10,6 +11,8 @@ const TagPage = ({ params }: { params: { slug: string } }) => {
     const posts = allPosts.filter(post => post.tags?.includes(tag)).sort((a, b) =>
         compareDesc(new Date(a.date), new Date(b.date))
     );
+
+    if (!posts) notFound();
 
     return (
         <div>

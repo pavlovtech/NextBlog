@@ -3,6 +3,7 @@ import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../../styles/prism-atom-dark.css';
 import { headers } from 'next/headers';
+import { notFound } from 'next/navigation';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -14,6 +15,8 @@ export const generateMetadata = ({ params }: any) => {
 const PostPage = ({ params }: { params: { slug: string } }) => {
 
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!;
+
+  if (!post) notFound();
 
   const Content = getMDXComponent(post.body.code);
 
