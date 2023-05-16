@@ -1,5 +1,6 @@
 "use client";
 
+import { redirect, useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -22,9 +23,12 @@ async function postData(url: string, data: any) {
 }
 
 export default function Post() {
+  const router = useRouter();
+  
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data: any) => {
     postData("/api/posts", data);
+    router.push('/admin/posts');
   };
 
   return (

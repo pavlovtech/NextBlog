@@ -21,7 +21,7 @@ export const RegisterButton = () => {
 
 export const LogoutButton = () => {
   return (
-    <button style={{ marginRight: 10 }} onClick={() => signOut()}>
+    <button className="mr-10 bg-blue-600 color p-3 text-white" onClick={() => signOut()}>
       Sign Out
     </button>
   );
