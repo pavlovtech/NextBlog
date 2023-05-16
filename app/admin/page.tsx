@@ -24,7 +24,6 @@ const Admin = async () => {
       {posts.map((post: { name: string }, idx: Key) => (
           <p key={idx}>{post.name}</p>
         ))}
-      {/* @ts-expect-error Server Component */}
       <Post />
     </>
 
