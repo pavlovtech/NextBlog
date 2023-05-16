@@ -1,4 +1,5 @@
-import { createNewPost } from 'app/admin/backend';
+
+import { createNewPost } from 'app/admin-backend';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
