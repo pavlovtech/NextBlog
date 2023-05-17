@@ -2,6 +2,7 @@
 import router from "next/router";
 import { Textarea } from "./textarea";
 import { getPost } from "app/admin-backend";
+import { useForm } from "react-hook-form";
 
 async function postData(url: string, data: any) {
   // Default options are marked with *
@@ -22,6 +23,12 @@ async function postData(url: string, data: any) {
 }
 
 export default async function Post({ name }: { name?: string }) {
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+
+  const onSubmit = (formData: any) => {
+    postData("/api/posts", formData);
+    router.push('/admin/posts');
+  };
 
   let data = {
     content: '',
@@ -34,22 +41,22 @@ export default async function Post({ name }: { name?: string }) {
     data = await getPost(name);
   }
 
-  const handleSubmit = async (event: any) => {
-    // Stop the form from submitting and refreshing the page.
-    event.preventDefault();
+  // const handleSubmit = async (event: any) => {
+  //   // Stop the form from submitting and refreshing the page.
+  //   event.preventDefault();
 
-    console.log(event.target);
+  //   console.log(event.target);
  
-    // Get data from the form.
-    const data = {
-      fileName: event.target.first.value,
-      content: event.target.last.value,
-    };
+  //   // Get data from the form.
+  //   const data = {
+  //     fileName: event.target.first.value,
+  //     content: event.target.last.value,
+  //   };
  
-    const response = await postData("/api/posts", data);
+  //   const response = await postData("/api/posts", data);
  
-    router.push('/admin/posts');
-  };
+  //   router.push('/admin/posts');
+  // };
 
   // if(name) {
   //   const post = await getPost(name);
@@ -67,7 +74,7 @@ export default async function Post({ name }: { name?: string }) {
   return (
     <div className="container">
       
-     <form onSubmit={handleSubmit}>
+     <form onSubmit={handleSubmit(onSubmit)}>
      <div className='mb-6 md:flex md:items-center'>
         <div className=''>
           <label className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right' htmlFor="slug">File name</label>
@@ -75,14 +82,13 @@ export default async function Post({ name }: { name?: string }) {
         <div className='w-full'>
           <input
             className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
-            id="fileName"
-            name='fileName'
             defaultValue={data.fileName}
+            {...register("fileName")}
           />
         </div>
       </div>
-      <Textarea id='post' name='post' rows={100} cols={300} defaultValue={data.content} />
-      <input type="hidden" id="sha" name="sha" value={data.sha}></input>
+      <Textarea {...register("content")} rows={100} cols={300} defaultValue={data.content} />
+      <input type="hidden" {...register("sha")} value={data.sha}></input>
       <button type="submit" className="mr-10 bg-blue-600 color p-3 text-white">
         Post
       </button>
