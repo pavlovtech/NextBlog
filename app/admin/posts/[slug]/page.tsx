@@ -16,7 +16,7 @@ const PostPage = async({ params }: { params: { slug: string } }) => {
 
   return (
     <div className='flex justify-center'>
-      <Post />
+       <Post name={params?.slug} />
     </div>
   )
 }
