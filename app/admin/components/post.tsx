@@ -24,7 +24,9 @@ export default async function Post({ name }: { name?: string }) {
     getData(`/api/posts?slug=${name!}`)
       .then(data => {
         setPostMD(data.content);
-        setSlug(data.slug!);
+        setSlug(name);
+
+        console.log('slug', slug);
       });
   }, []);
 
