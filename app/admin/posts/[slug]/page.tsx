@@ -16,6 +16,7 @@ const PostPage = async({ params }: { params: { slug: string } }) => {
 
   return (
     <div className='flex justify-center'>
+      {/* @ts-expect-error Server Component */}
        <Post name={params?.slug} />
     </div>
   )

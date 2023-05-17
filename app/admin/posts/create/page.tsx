@@ -16,6 +16,7 @@ const PostPage = async() => {
 
   return (
     <div className='flex justify-center'>
+      {/* @ts-expect-error Server Component */}
       <Post />
     </div>
   )
