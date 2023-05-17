@@ -1,5 +1,4 @@
 'use client';
-import 'client-only';
 import { RoughNotation } from 'react-rough-notation';
 
 const siteMetadata = {

@@ -1,6 +1,3 @@
-'use server';
-import 'server-only';
-
 import { Octokit, App } from "octokit";
 
 export async function createNewPost(slug: string, post: string) {

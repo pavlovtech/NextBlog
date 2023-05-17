@@ -1,5 +1,5 @@
-import 'server-only';
-import Tag from "components/tag";
+
+import Tag from "app/components/tag";
 import { allPosts } from "contentlayer/generated";
 
 

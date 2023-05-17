@@ -1,7 +1,6 @@
-import 'server-only';
 import { getServerSession } from 'next-auth';
 import { authOptions } from 'configs/auth-options';
-import Post from '../../../../components/admin-components/components/post';
+import Post from '../../components/post';
 import { redirect } from 'next/navigation';
 
 const PostPage = async({ params }: { params: { slug: string } }) => {

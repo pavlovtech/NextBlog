@@ -1,6 +1,5 @@
-import 'server-only';
+import Card from "app/components/project-card";
 import Link from "next/link";
-import Card from 'components/project-card';
 const siteMetadata = {
     title: 'Alex Pavlov - blog',
     description: 'my personal blog where I share my notes, ideas and inspirations'

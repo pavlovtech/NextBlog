@@ -1,9 +1,9 @@
-import 'server-only';
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
-import { AboutMe } from 'components/about-me';
-import { PostCard } from 'components/post-card';
+import { Suspense } from "react";
+import { PostCard } from "app/components/post-card";
+import { AboutMe } from "app/components/about-me";
 
 function IntroLinks() {
   return (

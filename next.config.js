@@ -3,7 +3,8 @@ const { withContentlayer } = require("next-contentlayer");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    serverActions: true,
+    appDir: true,
+    serverActions: false,
   },
   reactStrictMode: true
 };

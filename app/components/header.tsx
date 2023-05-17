@@ -1,6 +1,4 @@
 'use client';
-import 'client-only';
-
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import Typewriter from 'typewriter-effect';

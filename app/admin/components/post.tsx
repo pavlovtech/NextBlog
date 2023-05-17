@@ -1,4 +1,3 @@
-import 'server-only';
 import { Textarea } from "./textarea";
 import { getPost } from "app/admin-backend";
 
