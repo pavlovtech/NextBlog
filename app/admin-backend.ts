@@ -53,5 +53,13 @@ export async function getPost(fileName: string) {
       }
   });
 
-  return resp.data;
+  let buff = Buffer.from(resp.data.content, 'base64');
+  let text = buff.toString('utf-8');
+
+  return {
+    content: text,
+    fileName: fileName,
+    path: resp.data.path,
+    sha: resp.data.sha
+  };
 }
