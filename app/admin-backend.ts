@@ -1,6 +1,6 @@
 import { Octokit, App } from "octokit";
 
-export async function createNewPost(slug: string, post: string) {
+export async function createNewPost(slug: string, post: string, sha?: string) {
     const octokit = new Octokit({ auth: `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` });
  
    
@@ -8,7 +8,7 @@ export async function createNewPost(slug: string, post: string) {
     let base64data = buff.toString('base64')
 
 
-    var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/posts/${slug}.mdx`, {
+    var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/posts/${slug}`, {
         owner: 'pavlovtech',
         repo: 'NextBlog',
         path: './posts',
@@ -20,7 +20,8 @@ export async function createNewPost(slug: string, post: string) {
         content: base64data,
         headers: {
           'X-GitHub-Api-Version': '2022-11-28'
-        }
+        },
+        sha
     });
 
     return resp;
@@ -62,4 +63,25 @@ export async function getPost(fileName: string) {
     path: resp.data.path,
     sha: resp.data.sha
   };
+}
+
+export async function deletePost(fileName: string, sha: string) {
+  const octokit = new Octokit({ auth: `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` });
+
+  var resp = await octokit.request(`DELETE /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
+    owner: 'pavlovtech',
+    repo: 'NextBlog',
+    path: './posts',
+    message: 'my commit message',
+    committer: {
+      name: 'Alex Pavlov',
+      email: 'alexpppavlov93@gmail.com'
+    },
+    headers: {
+      'X-GitHub-Api-Version': '2022-11-28'
+    },
+    sha
+  });
+
+  return resp.data;
 }

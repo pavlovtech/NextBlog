@@ -1,10 +1,13 @@
 
-import { createNewPost, getPost } from 'app/admin-backend';
+import { createNewPost, deletePost, getPost } from 'app/admin-backend';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
     const req = await request.json();
-    const resp = await createNewPost(req.slug, req.post);
+
+    console.log('req', req);
+
+    const resp = await createNewPost(req.fileName, req.content);
     return NextResponse.json(resp.data);
 }
 
@@ -19,4 +22,13 @@ export async function GET(request: Request) {
         path: resp.path,
         sha: resp.sha
     });
+}
+
+export async function DELETE(request: Request) {
+    const req = await request.json();
+
+    console.log('req', req);
+
+    const resp = await deletePost(req.fileName, req.sha);
+    return NextResponse.json(resp.data);
 }
