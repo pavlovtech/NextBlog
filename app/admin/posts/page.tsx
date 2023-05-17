@@ -1,9 +1,10 @@
+import 'server-only';
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "configs/auth-options";
 import { Key } from "react";
 import { getAllPosts } from "app/admin-backend";
-import { LogoutButton } from "../components/buttons";
+import { LogoutButton } from "../../../components/admin-components/components/buttons";
 import Link from "next/link";
 
 const Admin = async () => {

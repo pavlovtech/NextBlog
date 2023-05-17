@@ -1,11 +1,7 @@
-import { Header } from '../components/header';
+import 'server-only';
+import { Header } from 'components/header';
 import '../../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
-
-import { Inter } from 'next/font/google'
-import Link from 'next/link';
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Alex Pavlov - blog',

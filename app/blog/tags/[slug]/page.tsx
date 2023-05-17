@@ -1,7 +1,8 @@
+import 'server-only';
+
 import { compareDesc, format, parseISO } from 'date-fns'
-import { Post, allPosts } from 'contentlayer/generated'
-import { getMDXComponent } from 'next-contentlayer/hooks'
-import { PostCard } from 'app/components/post-card';
+import { allPosts } from 'contentlayer/generated'
+import { PostCard } from 'components/post-card';
 import { notFound } from 'next/navigation';
 
 const TagPage = ({ params }: { params: { slug: string } }) => {

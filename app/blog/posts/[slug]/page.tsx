@@ -1,3 +1,4 @@
+import 'server-only';
 import { format, parseISO } from 'date-fns'
 import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
@@ -13,6 +14,8 @@ export const generateMetadata = ({ params }: any) => {
 }
 
 const PostPage = ({ params }: { params: { slug: string } }) => {
+
+  if (!params?.slug) notFound();
 
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!;
 
