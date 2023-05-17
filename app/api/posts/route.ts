@@ -1,10 +1,10 @@
 
-import { createNewPost, getPost } from 'app/admin-backend';
+import { upsertPost, getPost } from 'app/admin-backend';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
     const req = await request.json();
-    const resp = await createNewPost(req.slug, req.post);
+    const resp = await upsertPost(req.slug, req.post, req?.sha);
     return NextResponse.json(resp.data);
 }
 

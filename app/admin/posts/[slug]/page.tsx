@@ -2,6 +2,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from 'configs/auth-options';
 import Post from '../../components/post';
 import { redirect } from 'next/navigation';
+import { getPost } from 'app/admin-backend';
 
 const PostPage = async({ params }: { params: { slug: string } }) => {
   
@@ -14,9 +15,11 @@ const PostPage = async({ params }: { params: { slug: string } }) => {
 
   //console.log(post.body.code);
 
+  const post = await getPost(params.slug);
+
   return (
     <div className='flex justify-center'>
-       <Post name={params?.slug} />
+       <Post {...post} />
     </div>
   )
 }
