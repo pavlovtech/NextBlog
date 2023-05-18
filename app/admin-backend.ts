@@ -4,9 +4,8 @@ const githubToken = process.env.GITHUB_TOKEN;
 
 console.log(githubToken);
 
-const octokit = new Octokit({ auth: githubToken });
-
 export async function upsertPost(slug: string, post: string, sha?: string) {
+    const octokit = new Octokit({ auth: githubToken });
     let buff = Buffer.from(post);
     let base64data = buff.toString('base64')
 
@@ -30,6 +29,7 @@ export async function upsertPost(slug: string, post: string, sha?: string) {
 }
 
 export async function getAllPosts() {
+    const octokit = new Octokit({ auth: githubToken });
     var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/`, {
         owner: 'pavlovtech',
         repo: 'NextBlog',
@@ -43,6 +43,7 @@ export async function getAllPosts() {
 }
 
 export async function getPost(fileName: string) {
+  const octokit = new Octokit({ auth: githubToken });
   var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
       owner: 'pavlovtech',
       repo: 'NextBlog',
@@ -64,6 +65,7 @@ export async function getPost(fileName: string) {
 }
 
 export async function deletePost(fileName: string, sha: string) {
+  const octokit = new Octokit({ auth: githubToken });
   var resp = await octokit.request(`DELETE /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
     owner: 'pavlovtech',
     repo: 'NextBlog',
