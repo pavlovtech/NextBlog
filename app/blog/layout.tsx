@@ -1,19 +1,12 @@
 import { Header } from '../components/header';
 import '../../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
-
-import { Inter } from 'next/font/google'
+import { headerNavLinks } from 'configs/header-nav-links';
 
 export const metadata = {
   title: 'Alex Pavlov - blog',
   description: 'Alex Pavlov - blog about programming'
 }
-
-const headerNavLinks = [
-  { href: '/blog', title: 'Blog' },
-  { href: '/blog/tags', title: 'Tags' },
-  { href: '/blog/projects', title: 'Projects' }
-]
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
