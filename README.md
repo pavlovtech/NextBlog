@@ -3,6 +3,24 @@
 
 Blog built with NextJs 13, Contentlayer, Giscus and NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
 
+Designe is based on https://github.com/pycoder2000/blog
+
+## Demo
+
+Demo: [alexpavlov.dev](https://alexpavlov.dev)
+
+### Home page
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/6207daa6-4c75-4180-8365-71b75360afe4)
+
+### Admin panel
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/64acb476-bd83-4b8f-ace9-22ffcad32fa4)
+
+## Admin panel - edit page
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/499957db-5564-46c4-b5b8-7a03ce5d3b98)
+
 
 ## Used libraries
 
