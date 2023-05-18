@@ -10,6 +10,7 @@ import { EditorView } from "@codemirror/view";
 import { Button } from "./button";
 import { Input } from "./input"
 import { Label } from "./label";
+import { format } from "date-fns";
 
 const setupOptions: BasicSetupOptions = {
   lineNumbers: false,
@@ -18,7 +19,20 @@ const setupOptions: BasicSetupOptions = {
 
 export default function Post(props: { content: string, fileName: string, sha: string, path: string }) {
 
-  const [postMD, setPostMD] = useState(props.content);
+  const defaultTemplate = 
+`---
+date: ${format(Date.now(), 'LLLL d, yyyy')}
+title: 
+featured: true
+draft: false
+tags:
+  - anki
+  - zettelkasten
+summary: You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.
+---
+`;
+
+  const [postMD, setPostMD] = useState(props.content || defaultTemplate);
 
   const [slug, setSlug] = useState(props.fileName);
 
@@ -63,6 +77,7 @@ export default function Post(props: { content: string, fileName: string, sha: st
       <CodeMirror
         value={postMD}
         theme={githubDark}
+        minHeight="400px"
         extensions={[markdown({ base: markdownLanguage, codeLanguages: languages }), EditorView.lineWrapping]}
         basicSetup={setupOptions}
         onChange={e => setPostMD(e)}
