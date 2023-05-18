@@ -2,6 +2,7 @@
 
 import { signIn, signOut } from "next-auth/react";
 import Link from "next/link";
+import { Button } from "./button";
 
 export const LoginButton = () => {
   return (
@@ -21,9 +22,7 @@ export const RegisterButton = () => {
 
 export const LogoutButton = () => {
   return (
-    <button className="mr-10 bg-blue-600 color p-3 text-white" onClick={() => signOut()}>
-      Sign Out
-    </button>
+    <Button variant="outline" onClick={() => signOut()}>Sign Out</Button>
   );
 };
 

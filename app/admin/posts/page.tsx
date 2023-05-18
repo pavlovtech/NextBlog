@@ -8,6 +8,7 @@ import Link from "next/link";
 
 import { PostItem, columns } from "../components/posts-list/columns"
 import { DataTable } from "../components/posts-list/data-table"
+import { buttonVariants } from "../components/button";
 
 const Admin = async () => {
   const session = await getServerSession(authOptions);
@@ -22,7 +23,7 @@ const Admin = async () => {
   return (
     <>
       <div className="pb-5">
-        <Link href='/admin/posts/create' className='bg-green-600 color p-4 mr-10 w-100 text-white'>Create a new post</Link>
+        <Link href='/admin/posts/create' className={buttonVariants({ variant: "outline" })}>Create a new post</Link>
         <LogoutButton />
       </div>
       {/* <ul className="">

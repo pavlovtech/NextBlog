@@ -12,8 +12,9 @@ export const metadata = {
 }
 
 const headerNavLinks = [
-  { href: '/admin/posts', title: 'Manage posts' },
-  { href: '/blog', title: 'Back to Blog' },
+  { href: '/admin', title: 'Dashboard' },
+  { href: '/admin/posts', title: 'Posts' },
+  { href: '/blog', title: 'Home' },
 ]
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

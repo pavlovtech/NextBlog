@@ -7,6 +7,9 @@ import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
 import { languages } from '@codemirror/language-data';
 import { githubDark } from '@uiw/codemirror-theme-github';
 import { EditorView } from "@codemirror/view";
+import { Button } from "./button";
+import { Input } from "./input"
+import { Label } from "./label";
 
 const setupOptions: BasicSetupOptions = {
   lineNumbers: false,
@@ -53,21 +56,10 @@ export default function Post(props: { content: string, fileName: string, sha: st
 
   return (
     <div className="container">
-      <div className='mb-6 md:flex md:items-center'>
-        <div className=''>
-          <label className='mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right' htmlFor="slug">Slug</label>
-        </div>
-        <div className='w-full'>
-          <input
-            className='w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 px-4 py-2 leading-tight text-gray-700 focus:border-purple-500 focus:bg-white focus:outline-none'
-            id="slug"
-            name="slug"
-            value={slug}
-            onChange={e => setSlug(e.target.value)}
-          />
-        </div>
-      </div>
-      {/* <SimpleMdeReact value={postMD} onChange={e => setPostMD(e)} /> */}
+      <div className="grid w-full items-center gap-1.5 mb-5">
+        <Label htmlFor="slug">Slug</Label>
+        <Input type="slug" id="slug" placeholder="slug" value={slug} onChange={e => setSlug(e.target.value)}  />
+       </div>
       <CodeMirror
         value={postMD}
         theme={githubDark}
@@ -75,9 +67,7 @@ export default function Post(props: { content: string, fileName: string, sha: st
         basicSetup={setupOptions}
         onChange={e => setPostMD(e)}
       />
-      <button className="mr-10 bg-blue-600 color p-3 text-white" onClick={() => onSubmit()}>
-        Post
-      </button>
+      <Button className="mt-2" variant="outline" onClick={() => onSubmit()}>Post</Button>
     </div>
   );
 }
