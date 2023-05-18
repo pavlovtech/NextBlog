@@ -14,18 +14,15 @@ export const metadata = {
   description: 'Alex Pavlov - blog about programming'
 }
 
-const headerNavLinks = [
-  { href: '/blog', title: 'Blog' },
-  { href: '/blog/tags', title: 'Tags' },
-  { href: '/blog/projects', title: 'Projects' }
-]
-
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions)
 
-  if (session && !headerNavLinks.some(l => l.title === 'admin')) {
-    headerNavLinks.push({ href: '/admin', title: 'Admin' })
-  }
+  const headerNavLinks = [
+    { href: '/blog', title: 'Blog' },
+    { href: '/blog/tags', title: 'Tags' },
+    { href: '/blog/projects', title: 'Projects' },
+    ...session ? [{ href: '/admin', title: 'Admin' }] : [],
+  ]
 
   return (
     <>
