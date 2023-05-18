@@ -11,9 +11,6 @@ const PostPage = async({ params }: { params: { slug: string } }) => {
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/admin");
   }
-  //console.log(session);
-
-  //console.log(post.body.code);
 
   const post = await getPost(params.slug);
 

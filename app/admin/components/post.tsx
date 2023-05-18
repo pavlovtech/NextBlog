@@ -40,6 +40,7 @@ export default function Post(props: { content: string, fileName: string, sha: st
 
   return (
     <div className="container">
+      <Button className="mt-2 mb-4 w-40 float-right" onClick={() => onSubmit()}>Post</Button>
       <div className="grid w-full items-center gap-1.5 mb-5">
         <Label htmlFor="slug">Slug</Label>
         <Input type="slug" id="slug" placeholder="slug" value={slug} onChange={e => setSlug(e.target.value)}  />
@@ -52,7 +53,6 @@ export default function Post(props: { content: string, fileName: string, sha: st
         basicSetup={setupOptions}
         onChange={e => setPostMD(e)}
       />
-      <Button className="mt-2" variant="outline" onClick={() => onSubmit()}>Post</Button>
     </div>
   );
 }
