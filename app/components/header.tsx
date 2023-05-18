@@ -7,7 +7,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="md:flex items-center justify-between py-10">
       <div>
         <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
           <Link href='/'  passHref legacyBehavior>
@@ -25,7 +25,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
           </Link>
         </div>
       </div>
-      <div className="flex items-center text-base leading-5">
+      <div className="flex items-center text-base leading-5 mt-5 md:mt-0">
         <div className="sm:block">
           {navLinks.map((link) => (
             <Link
