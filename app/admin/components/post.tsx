@@ -8,25 +8,18 @@ import { languages } from '@codemirror/language-data';
 import { githubDark } from '@uiw/codemirror-theme-github';
 import { EditorView } from "@codemirror/view";
 
-// const SimpleMdeReact = dynamic(() => import("react-simplemde-editor"), {
-//   loading: () => <p>Loading...</p>,
-//   ssr: false
-// });
-
 const setupOptions: BasicSetupOptions = {
   lineNumbers: false,
   foldGutter: false
 }
 
-export default function Post(data: { content: string, fileName: string, sha: string, path: string }) {
+export default function Post(props: { content: string, fileName: string, sha: string, path: string }) {
 
-  console.log('fileName', data.fileName);
+  const [postMD, setPostMD] = useState(props.content);
 
-  const [postMD, setPostMD] = useState(data.content);
+  const [slug, setSlug] = useState(props.fileName);
 
-  const [slug, setSlug] = useState(data.fileName);
-
-  const [sha, setSha] = useState(data.sha);
+  const [sha, setSha] = useState(props.sha);
 
   const router = useRouter();
 
