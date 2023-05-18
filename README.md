@@ -45,6 +45,10 @@ Demo: [alexpavlov.dev](https://alexpavlov.dev)
 └── 📝 next.config.js          # configuration related to Next.js
 ```
 
+## Google Lighthouse performance statistics
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/9681f814-3b35-4ceb-9085-71e9fc46bbdb)
+
 
 ## Environment Variables
 
