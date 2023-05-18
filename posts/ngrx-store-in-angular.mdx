@@ -22,7 +22,9 @@ NGRX Store in Angular is a global state management solution inspired by Redux. I
 
 Let’s take a step back and think about what problem an NGRX Store solves.
 
-When components from different hierarchical levels need data from each other just in order to pass that data to child components, so-called “extraneous props”. In terms of Angular, it’s @Input properties of the components that are not used directly by the component and just passed to children components. Another problem is emitting events several levels up in the hierarchy just to handle the event in top-level components.
+State management libraries are usedul when components from different hierarchical levels need data from each other to pass that data to child components, so-called “extraneous props”.
+
+In terms of Angular, we have @Input properties of the components that are not used directly by the parent component and just passed to children components. Another problem is emitting events several levels up in the hierarchy just to handle the event in top-level components.
 
 In a nutshell, the NGRX store solves the problem of component communication at multiple disconnected places of the component hierarchy.
 
@@ -31,7 +33,7 @@ In a nutshell, the NGRX store solves the problem of component communication at m
 You have to pay the piper. The price for using the NGRX for state management is high:
 
 1. A lot of boilerplate code when you need to create a bunch of files for every change, such as state model changes, reducers, actions, and selectors. That’s very cumbersome. The codebase becomes bloated with all of this “infrastructure code”.
-2. Using RxJs with NGRX Store overcomplicates the code and you end up with lots of obscure (for unprepared developers) “reactive magic”.
+2. Using RxJs with NGRX Store overcomplicates the code and you end up with lots of “reactive magic”.
 3. A steep learning curve means that it’s harder to introduce new developers, and without understanding functional reactive programming and the RxJS library they tend to make lots of mistakes.
 4. There are no clear guidelines regarding using NgRx Store. Some developers keep everything in the state and do everything through the store for consistency. Other developers argue that only global data used by multiple components should be stored in the state.
 5. It’s hard to have both a regular angular way to do things (more on that later) and an NGRX way in the same app. You can’t mix it and easily add NGRX to the already existing project. Otherwise, you will end up with code where there are multiple ways to add new functionality and developers will be confused every time they need to deliver new features.
