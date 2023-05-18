@@ -32,7 +32,14 @@ module.exports = {
         'gradient-3-end': '#2D00F7',
       },
       colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
           100: '#FDD1D9',
           200: '#FBA4BC',
           300: '#F575A5',
@@ -42,6 +49,30 @@ module.exports = {
           700: '#9F0E7F',
           800: '#800972',
           900: '#6A0568',
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
         'primary-color': {
           100: '#FDD1D9',
@@ -68,6 +99,11 @@ module.exports = {
         'background-color': '#000',
         green: colors.emerald,
         gray: colors.neutral,
+      },
+      borderRadius: {
+        lg: `var(--radius)`,
+        md: `calc(var(--radius) - 2px)`,
+        sm: "calc(var(--radius) - 4px)",
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -201,6 +237,14 @@ module.exports = {
         },
       }),
       keyframes: {
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
         shrink: {
           '0% , 100%': {
             height: '0.75rem',
@@ -286,6 +330,8 @@ module.exports = {
         },
       },
       animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
         'fade-text': '10s ease-in-out 3s 1 normal forwards running fade-away',
         shrink: 'shrink ease-in-out 1.5s infinite',
         expand: 'expand ease-in-out 1.5s infinite',
@@ -299,5 +345,5 @@ module.exports = {
       },
     }
   }, 
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require("tailwindcss-animate")]
 };

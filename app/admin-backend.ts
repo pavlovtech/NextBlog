@@ -83,5 +83,7 @@ export async function deletePost(fileName: string, sha: string) {
     sha
   });
 
-  return resp.data;
+  console.log(resp);
+
+  return resp;
 }

@@ -1,10 +1,20 @@
 
-import { upsertPost, getPost } from 'app/admin-backend';
+import { upsertPost, getPost, deletePost } from 'app/admin-backend';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
     const req = await request.json();
     const resp = await upsertPost(req.slug, req.post, req?.sha);
+    return NextResponse.json(resp.data);
+}
+
+export async function DELETE(request: Request) {
+    const url = new URL(request.url);
+    console.log(url);
+    const slug = url.pathname;
+    const req = await request.json();
+    console.log('---------> del route', req, slug);
+    const resp = await deletePost(slug!, req.sha);
     return NextResponse.json(resp.data);
 }
 

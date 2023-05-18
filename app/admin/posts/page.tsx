@@ -6,6 +6,9 @@ import { getAllPosts } from "app/admin-backend";
 import { LogoutButton } from "../components/buttons";
 import Link from "next/link";
 
+import { PostItem, columns } from "../components/posts-list/columns"
+import { DataTable } from "../components/posts-list/data-table"
+
 const Admin = async () => {
   const session = await getServerSession(authOptions);
   //console.log(session);
@@ -22,11 +25,13 @@ const Admin = async () => {
         <Link href='/admin/posts/create' className='bg-green-600 color p-4 mr-10 w-100 text-white'>Create a new post</Link>
         <LogoutButton />
       </div>
-      <ul className="">
+      {/* <ul className="">
       {posts.map((post: { name: string }, idx: Key) => (
         <li key={idx}><Link href={`/admin/posts/${post.name}`} className='text-white'>{post.name}</Link></li>
       ))}
-      </ul>
+      </ul> */}
+
+      <DataTable columns={columns} data={posts} />
     </>
 
   )
