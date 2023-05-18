@@ -49,6 +49,14 @@ Demo: [alexpavlov.dev](https://alexpavlov.dev)
 
 ![image](https://github.com/pavlovtech/NextBlog/assets/6662454/9681f814-3b35-4ceb-9085-71e9fc46bbdb)
 
+## Admin page
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/d55dff86-f097-488b-8611-ee2c659cd3f5)
+
+## Admin page - editing
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/5452382f-7605-44b8-b80b-a55090f5c16b)
+
 
 ## Environment Variables
 
