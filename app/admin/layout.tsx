@@ -12,7 +12,6 @@ export const metadata = {
 }
 
 const headerNavLinks = [
-  { href: '/admin/posts', title: 'Posts' },
   { href: '/blog', title: 'Home' },
 ]
 
