@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "configs/auth-options";
-import { Key } from "react";
 import { getAllPosts } from "app/admin-backend";
 import { LogoutButton } from "../components/buttons";
 import Link from "next/link";
