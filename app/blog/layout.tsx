@@ -23,7 +23,7 @@ const headerNavLinks = [
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions)
 
-  if (session) {
+  if (session && !headerNavLinks.some(l => l.title === 'admin')) {
     headerNavLinks.push({ href: '/admin', title: 'Admin' })
   }
 
