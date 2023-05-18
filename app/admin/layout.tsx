@@ -19,14 +19,12 @@ const headerNavLinks = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <NextAuthProvider>
-        <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
+      <div className='mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
           <div className="flex h-screen flex-col justify-between">
             <Header navLinks={headerNavLinks} />
             <main className="mb-auto">{children}</main>
           </div>
         </div>
-      </NextAuthProvider>
     </>
   )
 }

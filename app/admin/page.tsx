@@ -10,7 +10,7 @@ const Admin = async () => {
     redirect("/api/auth/signin?callbackUrl=/admin");
   }
 
-  redirect('/blog/admin/posts');
+  redirect('/admin/posts');
 }
 
 export default Admin
