@@ -1,23 +1,43 @@
-# Next.js Contentlayer Example
 
-## Demo
+# NextBlog
 
-View the deployed project: [Demo](https://next-contentlayer-example.vercel.app/)
+Blog built with NextJs 13, Contentlayer, Giscus and NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
 
-## Try it Now
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](http://gitpod.io/#https://github.com/contentlayerdev/next-contentlayer-example)
+## Used libraries
 
-## Local Installation
+- [NextJS](https://nextjs.org/docs)
+- [Contentlayer](https://www.contentlayer.dev/)
+- [NextAuth](https://next-auth.js.org/getting-started/introduction)
+- [Giscus](https://github.com/giscus/giscus)
+- [GitHub API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+- [Codemirror](https://codemirror.net/)
 
-Clone the project:
+## Environment Variables
 
-    git clone git@github.com:contentlayerdev/next-contentlayer-example.git
+To run this project, you will need to add the following environment variables to your .env file. They are needed for admin panel for editing your markdown files.
 
-Install dependencies:
+```yaml
+GITHUB_TOKEN = token with access to the content of your blog's repository
+NEXTAUTH_SECRET = any secret 
+NEXTAUTH_URL= your site's url
+ADMIN_EMAIL = your email
+ADMIN_PASSWORD= your password
+```
+## Features
 
-    yarn
+- Static content generation based on markdown files (./posts folder)
+- Comments with Giscus
+- Code hightlighting
+- Automatic table of content generation
+- Admin panel that works via Github API
+- Mobile-friendly view
+- Projects page
+- Frontmatter support
 
-Run dev server:
 
-    yarn dev
+## Quick Start Guide
+
+`npm i`
+
+`npm run dev`
