@@ -1,8 +1,12 @@
 import { Octokit, App } from "octokit";
 
+const githubToken = process.env.GITHUB_TOKEN;
+
+console.log(githubToken);
+
+const octokit = new Octokit({ auth: githubToken });
+
 export async function upsertPost(slug: string, post: string, sha?: string) {
-    const octokit = new Octokit({ auth: `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` });
- 
     let buff = Buffer.from(post);
     let base64data = buff.toString('base64')
 
@@ -26,8 +30,6 @@ export async function upsertPost(slug: string, post: string, sha?: string) {
 }
 
 export async function getAllPosts() {
-    const octokit = new Octokit({ auth: `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` });
-
     var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/`, {
         owner: 'pavlovtech',
         repo: 'NextBlog',
@@ -41,8 +43,6 @@ export async function getAllPosts() {
 }
 
 export async function getPost(fileName: string) {
-  const octokit = new Octokit({ auth: `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` });
-
   var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
       owner: 'pavlovtech',
       repo: 'NextBlog',
@@ -64,8 +64,6 @@ export async function getPost(fileName: string) {
 }
 
 export async function deletePost(fileName: string, sha: string) {
-  const octokit = new Octokit({ auth: `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` });
-
   var resp = await octokit.request(`DELETE /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
     owner: 'pavlovtech',
     repo: 'NextBlog',
