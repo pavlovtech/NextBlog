@@ -3,7 +3,7 @@
 
 Blog built with NextJs 13, Contentlayer, Giscus and NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
 
-Designed is based on https://github.com/pycoder2000/blog
+Designe is based on https://github.com/pycoder2000/blog
 
 ## Demo
 
