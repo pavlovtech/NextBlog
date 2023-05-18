@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table"
 import { MoreHorizontal } from "lucide-react"
 import { useRouter } from 'next/router';
  
-import { Button } from "../../components/button"
+import { Button, buttonVariants } from "../../components/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,8 +14,6 @@ import {
   DropdownMenuTrigger,
 } from "../../components/dropdown-menu"
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { useEffect } from "react";
 
 async function deleteData(url: string, sha: string) {
     // Default options are marked with *
@@ -31,7 +29,6 @@ async function deleteData(url: string, sha: string) {
   }
 
   const onDelete = async(post: PostItem) => {
-    console.log('-->onDelete', post.name, post.sha);
     await deleteData(`/api/posts/${post.name}`, post.sha);
 
     window.location.href = "/admin/posts"

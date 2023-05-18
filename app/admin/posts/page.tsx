@@ -22,7 +22,7 @@ const Admin = async () => {
 
   return (
     <>
-      <div className="pb-5">
+      <div className="pb-5 fload-right">
         <Link href='/admin/posts/create' className={buttonVariants({ variant: "outline" })}>Create a new post</Link>
         <LogoutButton />
       </div>

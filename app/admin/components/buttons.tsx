@@ -22,7 +22,7 @@ export const RegisterButton = () => {
 
 export const LogoutButton = () => {
   return (
-    <Button variant="outline" onClick={() => signOut()}>Sign Out</Button>
+    <Button className="ml-4" variant="destructive" onClick={() => signOut()}>Sign Out</Button>
   );
 };
 
