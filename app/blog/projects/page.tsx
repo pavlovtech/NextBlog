@@ -18,6 +18,12 @@ const projectsData = [
         description: `Azure DevOps release automation tool.`,
         href: 'https://pipelined.io',
         tech: ['NextJS', 'PlanetScale']
+    },
+    {
+        title: 'NextBlog',
+        description: `Blog with SSG built with NextJs 13, Contentlayer, Giscus, NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.`,
+        href: 'https://github.com/pavlovtech/NextBlog',
+        tech: ['NextJS', 'Contentlayer', 'NextAuth', 'Giscus', 'GitHub API', 'Codemirror']
     }
 ];
 
