@@ -40,7 +40,6 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
       </div>
       <div className='max-w-max prose prose-dark prose-invert prose-lg'>
         <Content />
-        <Disqus slug={post._id} />
       </div>
     </div>
     </div>
