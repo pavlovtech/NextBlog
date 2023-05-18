@@ -29,6 +29,7 @@ export default function Post(props: { content: string, fileName: string, sha: st
       slug: slug,
       sha: sha
     });
+    router.refresh();
     router.push('/admin/posts');
   };
 

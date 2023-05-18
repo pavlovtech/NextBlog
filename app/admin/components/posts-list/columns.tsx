@@ -2,6 +2,7 @@
 
 import { ColumnDef } from "@tanstack/react-table"
 import { MoreHorizontal } from "lucide-react"
+import { useRouter } from 'next/router';
  
 import { Button } from "../../components/button"
 import {
@@ -12,6 +13,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../../components/dropdown-menu"
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import { useEffect } from "react";
 
 async function deleteData(url: string, sha: string) {
     // Default options are marked with *
@@ -26,9 +30,11 @@ async function deleteData(url: string, sha: string) {
     });
   }
 
-  const onDelete = (post: PostItem) => {
+  const onDelete = async(post: PostItem) => {
     console.log('-->onDelete', post.name, post.sha);
-    deleteData(`/api/posts/${post.name}`, post.sha);
+    await deleteData(`/api/posts/${post.name}`, post.sha);
+
+    window.location.href = "/admin/posts"
   };
 
 // This type is used to define the shape of our data.
@@ -42,10 +48,15 @@ export const columns: ColumnDef<PostItem>[] = [
   {
     accessorKey: "name",
     header: "Name",
+    cell: ({ row } : any) => {
+      const fileName: string = row.getValue("name");
+
+      return  <Link href={`/admin/posts/${fileName}`}>{fileName}</Link>
+    }
   },
   {
     id: "actions",
-    cell: ({ row }) => {
+    cell: ({ row, router }: any) => {
       const post = {...row.original};
  
       return (
