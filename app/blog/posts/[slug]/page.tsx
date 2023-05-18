@@ -3,7 +3,7 @@ import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../../styles/prism-atom-dark.css';
 import { notFound } from 'next/navigation';
-import  { Disqus } from '../../../components/disqus';
+import { Giscus } from 'app/components/comments/giscus';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -41,6 +41,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
       <div className='max-w-max prose prose-dark prose-invert prose-lg'>
         <Content />
       </div>
+      <Giscus />
     </div>
     </div>
   )
