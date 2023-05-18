@@ -26,6 +26,26 @@ Demo: [alexpavlov.dev](https://alexpavlov.dev)
 | Data access     | GitHub API                                                |
 | Markdown editor | [Codemirror](https://codemirror.net/)                  |
 
+
+## 🪜 Project structure
+
+```bash
+📦 root
+├── 🗂️ app                     # NextJs 13 app router directory
+│ ├── 🗂️ admin                 # Admin functionality for creating and editing blog posts
+│ ├── 🗂️ api                   # CRUD api blog posts (Github API is used)
+│ └── 🗂️ blog                  # Blog functionality
+│ └── 🗂️ components            # Blog UI components
+├── 🗂️ configs                 # Configs
+├── 🗂️ lib                     # Utilities
+├── 🗂️ posts                   # Blog posts in markdown
+├── 🗂️ public                  # Static files for images
+├── 🗂️ styles                  # CSS
+├── 📝 contentlayer.config.ts  # Contentlayer config
+└── 📝 next.config.js          # configuration related to Next.js
+```
+
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file. They are needed for admin panel for editing your markdown files.
