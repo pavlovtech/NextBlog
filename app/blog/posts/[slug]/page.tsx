@@ -2,8 +2,8 @@ import { format, parseISO } from 'date-fns'
 import { Post, allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../../styles/prism-atom-dark.css';
-import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
+import  { Disqus } from '../../../components/disqus';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -22,6 +22,13 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
 
   //console.log(post.body.code);
 
+  // (function() { // DON'T EDIT BELOW THIS LINE
+  //   var d = document, s = d.createElement('script');
+  //   s.src = 'https://alex-pavlov.disqus.com/embed.js';
+  //   s.setAttribute('data-timestamp', (+new Date()).toString());
+  //   (d.head || d.body).appendChild(s);
+  //   })();
+
   return (
     <div className='flex flex-col justify-center'>
       <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
@@ -33,6 +40,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
       </div>
       <div className='max-w-max prose prose-dark prose-invert prose-lg'>
         <Content />
+        <Disqus slug={post._id} />
       </div>
     </div>
     </div>
