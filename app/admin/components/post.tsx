@@ -2,13 +2,21 @@
 
 import { useRouter } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
-import "easymde/dist/easymde.min.css";
-import dynamic from 'next/dynamic';
+import CodeMirror, { BasicSetupOptions } from '@uiw/react-codemirror';
+import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
+import { languages } from '@codemirror/language-data';
+import { githubDark } from '@uiw/codemirror-theme-github';
+import { EditorView } from "@codemirror/view";
 
-const SimpleMdeReact = dynamic(() => import("react-simplemde-editor"), {
-  loading: () => <p>Loading...</p>,
-  ssr: false
-});
+// const SimpleMdeReact = dynamic(() => import("react-simplemde-editor"), {
+//   loading: () => <p>Loading...</p>,
+//   ssr: false
+// });
+
+const setupOptions: BasicSetupOptions = {
+  lineNumbers: false,
+  foldGutter: false
+}
 
 export default function Post(data: { content: string, fileName: string, sha: string, path: string }) {
 
@@ -65,7 +73,14 @@ export default function Post(data: { content: string, fileName: string, sha: str
           />
         </div>
       </div>
-      <SimpleMdeReact value={postMD} onChange={e => setPostMD(e)} />
+      {/* <SimpleMdeReact value={postMD} onChange={e => setPostMD(e)} /> */}
+      <CodeMirror
+        value={postMD}
+        theme={githubDark}
+        extensions={[markdown({ base: markdownLanguage, codeLanguages: languages }), EditorView.lineWrapping]}
+        basicSetup={setupOptions}
+        onChange={e => setPostMD(e)}
+      />
       <button className="mr-10 bg-blue-600 color p-3 text-white" onClick={() => onSubmit()}>
         Post
       </button>
