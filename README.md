@@ -21,15 +21,18 @@ Demo: [alexpavlov.dev](https://alexpavlov.dev)
 
 ![image](https://github.com/pavlovtech/NextBlog/assets/6662454/499957db-5564-46c4-b5b8-7a03ce5d3b98)
 
+## 📚 Tech Stack
 
-## Used libraries
-
-- [NextJS](https://nextjs.org/docs)
-- [Contentlayer](https://www.contentlayer.dev/)
-- [NextAuth](https://next-auth.js.org/getting-started/introduction)
-- [Giscus](https://github.com/giscus/giscus)
-- [GitHub API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
-- [Codemirror](https://codemirror.net/)
+| Name            | Link                                                      |
+| --------------- | --------------------------------------------------------- |
+| Framework       | [NextJS](https://nextjs.org/docs)                         |
+| Markdown        | [Contentlayer](https://www.contentlayer.dev/)             |
+| Authentication  | [NextAuth](https://next-auth.js.org/)                     |
+| Deployment      | [Vercel](https://vercel.com)                              |
+| Styling         | [Tailwindcss](https://tailwindcss.com/)                   |
+| Comments        | [Giscus](https://github.com/giscus/giscus)                |
+| Data access     | GitHub API                                                |
+| Markdown editor | [Codemirror](https://codemirror.net/)                  |
 
 ## Environment Variables
 
