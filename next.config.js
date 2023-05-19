@@ -1,5 +1,4 @@
 const { withContentlayer } = require("next-contentlayer");
-const { withAxiom } = require('next-axiom');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -10,4 +9,4 @@ const nextConfig = {
   reactStrictMode: true
 };
 
-module.exports = withAxiom(withContentlayer(nextConfig));
+module.exports = withContentlayer(nextConfig);

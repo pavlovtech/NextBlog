@@ -40,11 +40,6 @@ const Post = defineDocumentType(() => ({
       type: 'list',
       of: { type: 'string' },
       required: false
-    },
-    ogImage: {
-      type: 'string',
-      description: 'ogImage',
-      required: false,
     }
   },
   computedFields: {

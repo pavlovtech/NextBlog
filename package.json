@@ -29,7 +29,6 @@
     "lucide-react": "^0.219.0",
     "next": "^13.3.4",
     "next-auth": "^4.22.1",
-    "next-axiom": "^0.17.0",
     "next-contentlayer": "^0.3.2",
     "next-themes": "^0.2.1",
     "octokit": "^2.0.14",
