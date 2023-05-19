@@ -1,9 +1,30 @@
 
 # NextBlog
 
-Blog built with NextJs 13, Contentlayer, Giscus and NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
+My personal blog built with NextJs 13, Contentlayer, Giscus and NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
 
 Design is based on https://github.com/pycoder2000/blog
+
+# Motivation
+
+I wanted to build a blog based on markdown files with latest NextJS 13 with server components and host it on Vercel. Additionally, I needed a CMS functionality (CRUD for markdown files), but how do you create a CMS for statically generated web site?
+
+The idea is simple:
+
+1. Add an admin page with auth using NextAuth
+2. Use Vercel hosting with github integration for CI/CD
+3. Create an API using Github API for managing blog posts
+4. When the change to blog post files is made, it is pushed to github.
+5. Then Vercel automatically starts a new deployment
+6. Web site displayes updated statically generated content
+
+Regarding working with markdown files, the best library I found is Contentlayer.
+
+For the lack of existing blog starters that with the mentioned functionality I desided to create on myself.
+
+## Architecture
+
+![image](https://github.com/pavlovtech/NextBlog/assets/6662454/9041cf18-535e-40e9-bc64-ee1430e411b0)
 
 ## Demo
 
