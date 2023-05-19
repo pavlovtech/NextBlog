@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { authOptions } from "configs/auth-options";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
