@@ -9,4 +9,4 @@ const nextConfig = {
   reactStrictMode: true
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = withAxiom(withContentlayer(nextConfig));
