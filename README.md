@@ -18,9 +18,9 @@ The idea is simple:
 5. Then Vercel automatically starts a new deployment
 6. Web site displayes updated statically generated content
 
-Regarding working with markdown files, the best library I found is Contentlayer.
+Currently, the best solution for managing markdown files is [Contentlayer](https://www.contentlayer.dev/), so I wanted to use it as well.
 
-For the lack of existing blog starters that with the mentioned functionality I desided to create on myself.
+For the lack of existing blog starters that with the mentioned functionality I desided to create it myself.
 
 ## Architecture
 
@@ -45,7 +45,7 @@ Demo: [alexpavlov.dev](https://alexpavlov.dev)
 | Styling         | [Tailwindcss](https://tailwindcss.com/)                   |
 | Comments        | [Giscus](https://github.com/giscus/giscus)                |
 | Data access     | GitHub API                                                |
-| Markdown editor | [Codemirror](https://codemirror.net/)                  |
+| Markdown editor | [Codemirror](https://codemirror.net/)                     |
 
 
 ## 🪜 Project structure
