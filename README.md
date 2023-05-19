@@ -20,7 +20,7 @@ The idea is simple:
 
 Regarding working with markdown files, the best library I found is Contentlayer.
 
-For the lack of existing blog starters that with the mentioned functionality I disided to create on myself.
+For the lack of existing blog starters that with the mentioned functionality I desided to create on myself.
 
 ## Architecture
 
