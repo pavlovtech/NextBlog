@@ -16,7 +16,7 @@ export default function TagsPage() {
         </h1>
       </div>
       <div className="flex max-w-lg flex-wrap">
-        {Object.keys(tags).length === 0 && 'No tags found.'}
+        {tags.length === 0 && 'No tags found.'}
         {tags.map((t) => {
           return (
             <div key={t} className="mt-2 mb-2">
