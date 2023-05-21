@@ -386,7 +386,7 @@ input:-webkit-autofill:focus {
   transition: transform 34ms;
 }
 
-.CodeMirror {
-  font-family: Arial, monospace;
-  font-size: 16px;
+.CodeMirror * {
+    font-family: Arial, monospace;
+    font-size: 16px;
 }
