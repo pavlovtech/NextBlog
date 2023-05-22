@@ -5,6 +5,10 @@ My personal blog built with NextJs 13, Contentlayer, Giscus and NextAuth. It use
 
 Design is based on https://github.com/pycoder2000/blog
 
+## Demo
+
+Demo: [alexpavlov.dev](https://alexpavlov.dev)
+
 # Motivation
 
 I wanted to build a blog based on markdown files with latest NextJS 13 with server components and host it on Vercel. Additionally, I needed a CMS functionality (CRUD for markdown files), but how do you create a CMS for statically generated web site?
@@ -25,10 +29,6 @@ For the lack of existing blog starters that with the mentioned functionality I d
 ## Architecture
 
 ![image](https://github.com/pavlovtech/NextBlog/assets/6662454/9041cf18-535e-40e9-bc64-ee1430e411b0)
-
-## Demo
-
-Demo: [alexpavlov.dev](https://alexpavlov.dev)
 
 ### Home page
 
