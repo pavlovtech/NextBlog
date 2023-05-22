@@ -11,7 +11,7 @@ Demo: [alexpavlov.dev](https://alexpavlov.dev)
 
 # Motivation
 
-I wanted to build a blog based on markdown files with latest NextJS 13 with server components and host it on Vercel. Additionally, I needed a CMS functionality (CRUD for markdown files), but how do you create a CMS for statically generated web site?
+I wanted to build a blog based on markdown files with latest NextJS 13 with server components and host it on Vercel. Additionally, I needed a CMS functionality (CRUD for markdown files), but how do you create a CMS for statically generated web site when content stored only as static files inside the Github repository?
 
 The idea is simple:
 
