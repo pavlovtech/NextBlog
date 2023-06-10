@@ -5,7 +5,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkToc from 'remark-toc';
 import rehypeMermaid from 'rehype-mermaidjs'
-const rehypeCodeTitles = require('rehype-code-titles')
+import rehypeCodeTitles from 'rehype-code-titles';
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
