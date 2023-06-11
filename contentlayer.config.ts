@@ -4,7 +4,6 @@ import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkToc from 'remark-toc';
-import rehypeMermaid from 'rehype-mermaidjs'
 import rehypeCodeTitles from 'rehype-code-titles';
 
 const Post = defineDocumentType(() => ({
@@ -62,7 +61,6 @@ export default makeSource({
   mdx: {
     remarkPlugins: [remarkGfm, remarkToc ],
     rehypePlugins: [
-      rehypeMermaid,
       rehypeAutolinkHeadings,
       rehypeSlug,
       rehypePrism,

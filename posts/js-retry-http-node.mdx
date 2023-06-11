@@ -17,19 +17,6 @@ A naive approach to HTTP request retry would be to simply resend the request whe
 
 A more refined approach involves adding a delay between retry attempts and using an exponential backoff strategy. These two aspects allow for a more gentle, respectful interaction with the server. They give the server some breathing room, reducing the likelihood of exacerbating the problem.
 
-```mermaid
-sequenceDiagram
-    participant C as Client
-    participant S as Server
-    C->>S: HTTP Request
-    Note over S: Process Request
-    S-->>C: Failure
-    Note over C: Check retry limit
-    C->>S: HTTP Request Retry
-    S-->>C: Success
-    Note over C,S: End with Success
-```
-
 ## Retry in JavaScript and NodeJS with Axios-Retry
 
 Axios is a promise-based HTTP client that works in both browser and Node.js environments. The axios-retry library augments Axios with a robust, configurable retry mechanism.
@@ -75,20 +62,5 @@ client.get('https://example.com/api/data')
 ```
 
 With this configuration, if the initial request fails, the first retry will wait for a delay of 100ms, the second retry will wait for around 200ms, and the third for approximately 400ms.
-
-```mermaid
-sequenceDiagram
-    participant C as Client
-    participant S as Server
-    C->>S: HTTP Request
-    Note over S: Process Request
-    S-->>C: Failure
-    Note over C: Check retry limit
-    Note over C: Apply Exponential Delay
-    C->>S: HTTP Request Retry with Delay
-    S-->>C: Success
-    Note over C,S: End with Success
-
-```
 
 In conclusion, when performing HTTP requests in JavaScript or NodeJS, applying a retry mechanism using the axios-retry library can enhance your application's resilience against intermittent network or server issues. By incorporating delay and exponential backoff strategies, you can mitigate the risk of overloading your servers and offer a better, more reliable experience to your users.

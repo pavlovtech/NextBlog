@@ -389,37 +389,3 @@ input:-webkit-autofill:focus {
 .cm-theme * {
     font-size: 16px;
 }
-
-.prose svg text.messageText {
-  fill: white !important;
-}
-
-.prose svg line {
-  stroke: white !important;
-}
-
-.marker {
-  fill: white !important;
-  stroke: white !important;
-}
-
-.marker.cross {
-  fill: white !important;
-  stroke: white !important;
-}
-
-.arrowheadPath {
-  fill: white !important;
-  stroke: white !important;
-}
-
-.edgePath .path {
-  fill: white !important;
-  stroke: white !important;
-}
-
-.messageLine0 {
-  color: white !important;
-  stroke: white !important;
-  fill: white !important;
-}
