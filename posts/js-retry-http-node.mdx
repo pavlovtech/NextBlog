@@ -1,12 +1,12 @@
 ---
 date: June 10, 2023
-title: "HTTP Request Retries in JavaScript and Node.js with axios-retry"
+title: "HTTP Request Retries in JavaScript with axios-retry"
 featured: true
 draft: false
 tags:
   - javascript
   - nodejs
-summary: You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.
+summary: This article will introduce you to the practice of retrying HTTP requests using axios-retry with the key aspects of delay and exponential backoff.
 ---
 
 In a world where networks can be fickle, and servers can unexpectedly take naps, we find the need to become adept at dealing with intermittent failures in our HTTP requests. One effective technique for handling these types of failures is the retry mechanism. In the realm of JavaScript and NodeJS, a popular library to manage retries is axios-retry. This article will introduce you to the practice of retrying HTTP requests using axios-retry with the key aspects of delay and exponential backoff.
@@ -17,7 +17,7 @@ A naive approach to HTTP request retry would be to simply resend the request whe
 
 A more refined approach involves adding a delay between retry attempts and using an exponential backoff strategy. These two aspects allow for a more gentle, respectful interaction with the server. They give the server some breathing room, reducing the likelihood of exacerbating the problem.
 
-## Retry in JavaScript and NodeJS with Axios-Retry
+## Retry in JavaScript with Axios-Retry
 
 Axios is a promise-based HTTP client that works in both browser and Node.js environments. The axios-retry library augments Axios with a robust, configurable retry mechanism.
 
