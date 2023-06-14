@@ -6,11 +6,6 @@ import { Header } from 'app/components/header';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Alex Pavlov - blog',
-  description: 'Alex Pavlov - blog about programming'
-}
-
 const headerNavLinks = [
   { href: '/blog', title: 'Home' },
 ]

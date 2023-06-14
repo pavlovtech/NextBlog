@@ -3,11 +3,6 @@ import '../../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { headerNavLinks } from 'configs/header-nav-links';
 
-export const metadata = {
-  title: 'Alex Pavlov - blog',
-  description: 'Alex Pavlov - blog about programming'
-}
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <>

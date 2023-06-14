@@ -1,10 +1,10 @@
 'use client';
 import { RoughNotation } from 'react-rough-notation';
 
-const siteMetadata = {
+export const metadata = {
     title: 'Alex Pavlov - blog',
     description: 'my personal blog where I share my notes, ideas and inspirations'
-  }
+}
 
 export function AboutMe() {
     "use client";

@@ -1,6 +1,7 @@
 import Card from "app/components/project-card";
 import Link from "next/link";
-const siteMetadata = {
+
+export const metadata = {
     title: 'Alex Pavlov - blog',
     description: 'my personal blog where I share my notes, ideas and inspirations'
 }
