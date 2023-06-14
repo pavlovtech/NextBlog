@@ -4,14 +4,13 @@ import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../../styles/prism-atom-dark.css';
 import { notFound } from 'next/navigation';
 import { Giscus } from 'app/components/comments/giscus';
-import { Metadata, ResolvingMetadata } from 'next'
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
 export async function generateMetadata(
   { params, searchParams }: any,
-  parent?: ResolvingMetadata
-): Promise<Metadata> {
+  parent?: any
+) {
   const post: Post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!
   return {
     title: post.title,
