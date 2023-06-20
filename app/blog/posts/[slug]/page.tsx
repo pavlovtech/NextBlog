@@ -38,7 +38,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         </time>
         <h1 className='text-3xl font-bold'>{post.title}</h1>
       </div>
-      <div className='max-w-max prose prose-dark prose-invert prose-lg'>
+      <div className='max-w-max prose prose-dark prose-invert prose-lg mb-5'>
         <Content />
       </div>
       <Giscus />
