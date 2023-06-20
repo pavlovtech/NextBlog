@@ -15,8 +15,7 @@ export function AboutMe() {
           <span className="text-primary-color-500 dark:text-primary-color-dark-500">Alex</span>
         </h1>
         <h2 className="pt-5 text-lg text-gray-600 dark:text-gray-300">
-        {`I am a highly experienced team lead with over 10 years of expertise in software engineering. My skills and knowledge span a wide range of areas, including .NET, RESTful services, software architecture, microservices, Azure, React.JS, Next.JS, Angular, JavaScript, SQL and NoSQl databases. In my free time, I like developing `}
-          side projects and learning new technologies.
+        I have over 10 years of expertise in software engineering. My skills and knowledge span a wide range of areas, including .NET, RESTful services, software architecture, microservices, Azure, React.JS, Next.JS, Angular, JavaScript, SQL and NoSQl databases. In my free time, I like developing side projects and learning new technologies.
         </h2>
         <p className="pt-10 text-lg leading-7 text-slate-600 dark:text-slate-300">
           This is my place for{' '}
