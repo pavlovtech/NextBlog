@@ -1,24 +1,54 @@
 ---
 date: August 7, 2023
-title: Most common mistake when using CQRS/Mediatr
+title: Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code
 featured: true
 draft: false
 tags:
   - dotnet
   - csharp
+  - cqrs
+  - mediatr
 summary: Most common mistake when using CQRS/Mediatr
 ---
 
-I noticed that there is one common mistake in projects that use CQRS or the MediatR library: sending requests inside handlers or using nested handlers. It is done to reuse code and avoid duplication. The problem is that it introduces additional indirection and makes code more confusing once you are reading or debugging handlers. Worst of all, it leads to additional coupling meaning that when you change one handler it affects dependent handlers.
+# Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code
 
-You should have MediatR on the edge of your system as an entry point to your domain business logic. Basically, MediatR should just convert HTTP requests to your domain specific requests and send them into the application layer.
+## Introduction
+
+Command Query Responsibility Segregation (CQRS) and the MediatR library help to separate reading from writing operations and enforce DDD. This post addresses a common mistake in projects using these tools: the issue of sending requests inside handlers or using nested handlers.
+
+## The Problem: Nested Handlers and Code Confusion
+
+I've noticed that a common mistake in projects that use CQRS or the MediatR library is sending requests inside handlers or using nested handlers to reuse code and avoid duplication. This practice introduces additional indirection and makes the code more confusing to read or debug. Worst of all, it leads to additional coupling, meaning that when you change one handler, it affects dependent handlers.
+
+Here's an illustrative code snippet that demonstrates the problem:
+
+```csharp
+public class MyHandler : IRequestHandler<MyRequest, MyResponse>
+{
+    private readonly IMediator _mediator;
+
+    public async Task<MyResponse> Handle(MyRequest request, CancellationToken cancellationToken)
+    {
+        var anotherResponse = await _mediator.Send(new AnotherRequest(), cancellationToken);
+        // More logic here...
+    }
+}
+```
+
+## MediatR as the Entry Point to Your System
+
+You should have MediatR on the edge of your system, serving as an entry point to your domain business logic. Basically, MediatR should just convert HTTP requests to your domain-specific requests and send them into the application layer.
+
+## Solutions: Where Should Your Logic Go?
 
 So where should your logic go? You have multiple options:
 
-1. Domain service or dedicated class
-2. Base handler class
-3. Extension method
-4. Other solutions tailored to your specific requirements
+1. Domain Service or Dedicated Class: You can create specific classes that encapsulate the shared logic.
+2. Base Handler Class: Inheritance can be used to share common logic across handlers.
+3. Extension Method: Create extension methods that can be reused across different handlers.
+4. Other Custom Solutions: Tailored to your specific requirements and architecture.
 
-To sum up, you should just write all necessary logic inside your handler and then applay regular refactoring such as extracting class, method, interface, etc. and move common logic to the place where it can be reused.
+## Conclusion
+To sum up, you should write all necessary logic inside your handler and then apply regular refactoring techniques such as extracting classes, methods, interfaces, etc., and move common logic to a place where it can be reused. By avoiding nested handlers, you can achieve cleaner, more maintainable code, free from unnecessary complexity and coupling. Keeping these principles in mind can enhance your code quality and development experience.
 
