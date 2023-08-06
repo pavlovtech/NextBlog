@@ -17,11 +17,11 @@ Command Query Responsibility Segregation (CQRS) is a software architectural patt
 
 ## The Problem: Nested Handlers and Code Coupling
 
-## What Are Handlers?
+### What Are Handlers?
 
 Handlers are classes responsible for executing business logic in response to specific requests or commands. When using CQRS or the MediatR library, handlers play a crucial role.
 
-## The Common Mistake
+### The Common Mistake
 
 I've noticed that a frequent mistake in projects is sending requests inside handlers or using nested handlers to reuse code and avoid duplication. Here's a code snippet:
 
@@ -43,7 +43,6 @@ This practice introduces additional indirection and makes the code more confusin
 ### Real-world Impact
 
 Consider a large-scale project with multiple handlers, each depending on others. A minor change to one handler might have unforeseen consequences on others, leading to hidden bugs and increasing the time required to debug and maintain the code.
-
 
 ## MediatR as the Entry Point to Your System
 
