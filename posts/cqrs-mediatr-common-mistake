@@ -1,0 +1,24 @@
+---
+date: August 7, 2023
+title: Most common mistake when using CQRS/Mediatr
+featured: true
+draft: false
+tags:
+  - dotnet
+  - csharp
+summary: Most common mistake when using CQRS/Mediatr
+---
+
+I noticed that there is one common mistake in projects that use CQRS or the MediatR library: sending requests inside handlers or using nested handlers. It is done to reuse code and avoid duplication. The problem is that it introduces additional indirection and makes code more confusing once you are reading or debugging handlers. Worst of all, it leads to additional coupling meaning that when you change one handler it affects dependent handlers.
+
+You should have MediatR on the edge of your system as an entry point to your domain business logic. Basically, MediatR should just convert HTTP requests to your domain specific requests and send them into the application layer.
+
+So where should your logic go? You have multiple options:
+
+1. Domain service or dedicated class
+2. Base handler class
+3. Extension method
+4. Other solutions tailored to your specific requirements
+
+To sum up, you should just write all necessary logic inside your handler and then applay regular refactoring such as extracting class, method, interface, etc. and move common logic to the place where it can be reused.
+
