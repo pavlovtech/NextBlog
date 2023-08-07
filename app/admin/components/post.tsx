@@ -29,9 +29,12 @@ export default function Post(props: { content: string, fileName: string, sha: st
   const router = useRouter();
 
   const onSubmit = () => {
+
+    const finalSlug = slug.endsWith(".mdx") ? slug : slug + '.mdx'
+
     postData("/api/posts", {
       post: postMD,
-      slug: slug,
+      slug: finalSlug,
       sha: sha
     });
     router.refresh();
