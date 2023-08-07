@@ -13,7 +13,7 @@ summary: "This post will explore a common mistake in projects using these tools:
 
 ## Introduction
 
-Command Query Responsibility Segregation (CQRS) is a software architectural pattern that separates reading from writing operations, allowing for more scalable and maintainable code. MediatR is a popular library that enforces Domain-Driven Design (DDD), facilitating this separation. This post will explore a common mistake in projects using these tools: sending requests inside handlers or using nested handler.
+Command Query Responsibility Segregation (CQRS) is a software architectural pattern that separates reading from writing operations, allowing for more scalable and maintainable code. MediatR is a popular library that enforces Domain-Driven Design (DDD), facilitating this separation. This post will explore a common mistake in projects using these tools: sending requests inside handlers or using nested handlers.
 
 ## The Problem: Nested Handlers and Code Coupling
 
@@ -39,8 +39,6 @@ public class MyHandler : IRequestHandler<MyRequest, MyResponse>
 ```
 
 This practice introduces additional indirection and makes the code more confusing to read or debug. Worst of all, it leads to additional coupling, meaning that when you change one handler, it affects dependent handlers.
-
-### Real-world Impact
 
 Consider a large-scale project with multiple handlers, each depending on others. A minor change to one handler might have unforeseen consequences on others, leading to hidden bugs and increasing the time required to debug and maintain the code.
 
@@ -69,4 +67,4 @@ By avoiding nested handlers, testing becomes more straightforward, allowing you 
 
 ## Conclusion
 
-Avoiding nested handlers in CQRS with MediatR leads to cleaner, more maintainable code, free from unnecessary complexity and coupling. By applying regular refactoring techniques and moving common logic to dedicated places, you can enhance your code quality.
+Avoiding nested handlers in CQRS with MediatR leads to cleaner, more maintainable code, free from unnecessary complexity and coupling. By applying regular refactoring techniques and moving common logic to dedicated places, you can enhance your code quality and avoid confusion down the road.
