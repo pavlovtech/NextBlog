@@ -13,13 +13,13 @@ summary: "This post will explore a common mistake in projects using these tools:
 
 ## Introduction
 
-Command Query Responsibility Segregation (CQRS) is a software architectural pattern that separates reading from writing operations, allowing for more scalable and maintainable code. MediatR is a popular library that enforces Domain-Driven Design (DDD), facilitating this separation. This post will explore a common mistake in projects using these tools: sending requests inside handlers or using nested handlers, which leads to code confusion and other problems. By the end of this guide, you will understand why this practice is problematic and discover effective solutions.
+Command Query Responsibility Segregation (CQRS) is a software architectural pattern that separates reading from writing operations, allowing for more scalable and maintainable code. MediatR is a popular library that enforces Domain-Driven Design (DDD), facilitating this separation. This post will explore a common mistake in projects using these tools: sending requests inside handlers or using nested handler.
 
 ## The Problem: Nested Handlers and Code Coupling
 
 ### What Are Handlers?
 
-Handlers are classes responsible for executing business logic in response to specific requests or commands. When using CQRS or the MediatR library, handlers play a crucial role.
+Handlers are classes responsible for executing business logic in response to specific requests or commands.
 
 ### The Common Mistake
 
