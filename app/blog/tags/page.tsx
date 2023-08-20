@@ -2,7 +2,6 @@
 import Tag from "app/components/tag";
 import { allPosts } from "contentlayer/generated";
 
-
 export default function TagsPage() {
   const allTags = allPosts.map(post => post.tags!).flat()!;
 

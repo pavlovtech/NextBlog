@@ -7,7 +7,16 @@ const nextConfig = {
     appDir: true,
     serverActions: false,
   },
-  reactStrictMode: true
+  reactStrictMode: true,
+  redirects: async () => {
+    return [
+        {
+            source: '/',
+            destination: '/blog',
+            permanent: true,
+        }
+    ];
+ },
 };
 
 module.exports = withAxiom(withContentlayer(nextConfig));
