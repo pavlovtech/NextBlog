@@ -42,7 +42,7 @@ export default function Post(props: { content: string, fileName: string, sha: st
     router.push('/admin/posts');
   };
 
-  const uploadImage = async (file: File) => {
+  const uploadImage = async (file: File | undefined) => {
     setFile(file);
     //e.preventDefault()
     if (!file) return
