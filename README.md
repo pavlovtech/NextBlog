@@ -107,3 +107,8 @@ ADMIN_PASSWORD= your password
 `npm i`
 
 `npm run dev`
+
+## TODO
+
+1. Image upload
+2. Draft support

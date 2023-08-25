@@ -28,6 +28,31 @@ export async function upsertPost(slug: string, post: string, sha?: string) {
     return resp;
 }
 
+export async function uploadFile(file: File) {
+  const bytes = await file.arrayBuffer()
+  const buffer = Buffer.from(bytes);
+  let base64data = buffer.toString('base64')
+
+  const octokit = new Octokit({ auth: githubToken });
+
+  var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/public/assets/${file.name}`, {
+      owner: 'pavlovtech',
+      repo: 'NextBlog',
+      path: './public/assets',
+      message: 'added image',
+      committer: {
+        name: 'Alex Pavlov',
+        email: 'alexpppavlov93@gmail.com'
+      },
+      content: base64data,
+      headers: {
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+  });
+
+  return resp;
+}
+
 export async function getAllPosts() {
     const octokit = new Octokit({ auth: githubToken });
     var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/`, {
