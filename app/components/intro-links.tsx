@@ -53,10 +53,10 @@ export function IntroLinks() {
                         d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                       />
                     </svg>
-                    <span className="pr-6 text-gray-900 dark:text-gray-100">Check out my</span>
+                    <span className="pr-6 text-gray-900 dark:text-gray-100">Code&nbsp;&nbsp;&nbsp;</span>
                   </span>
                   <span className="pl-6 text-indigo-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
-                    Github profile&nbsp;&rarr;
+                    Github&nbsp;&rarr;
                   </span>
                 </span>
               </Link>
@@ -85,11 +85,11 @@ export function IntroLinks() {
                       />
                     </svg>
                     <span className="pr-6 text-gray-900 dark:text-gray-100">
-                      Watch my&nbsp;&nbsp;&nbsp;
+                      Videos
                     </span>
                   </span>
                   <span className="pl-6 text-primary-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
-                    Youtube channel&nbsp;&rarr;
+                    Youtube&nbsp;&rarr;
                   </span>
                 </span>
               </Link>
