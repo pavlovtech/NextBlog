@@ -38,7 +38,8 @@ async function deleteData(url: string, sha: string) {
 // You can use a Zod schema here if you want.
 export type PostItem = {
   name: string,
-  sha: string
+  sha: string,
+  status: string
 }
 
 export const columns: ColumnDef<PostItem>[] = [
