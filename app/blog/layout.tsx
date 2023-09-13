@@ -2,6 +2,7 @@ import { Header } from '../components/header';
 import '../../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { headerNavLinks } from 'configs/header-nav-links';
+import Footer from 'app/components/footer';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -10,6 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex h-screen flex-col justify-between">
           <Header navLinks={headerNavLinks} />
           <main className="mb-auto">{children}</main>
+          <Footer />
         </div>
       </div>
       <Analytics />
