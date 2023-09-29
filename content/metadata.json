@@ -1,6 +1,6 @@
 {
   "commit": "fcf616d7591d69a56cc7f084be9df908e308a130",
-  "generated": "2023-09-29T20:33:41.890Z",
+  "generated": "2023-09-29T20:35:15.468Z",
   "metadata": [
     {
       "__outstatic": {
@@ -344,7 +344,7 @@
     {
       "__outstatic": {
         "commit": "fcf616d7591d69a56cc7f084be9df908e308a130",
-        "hash": "99356683",
+        "hash": "723761419",
         "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
       },
       "author": {
@@ -359,7 +359,7 @@
       "slug": "append-and-prepend-methods-in-dotnet",
       "status": "published",
       "tags": "csharp, dotnet",
-      "title": "Two useful methods of IEnumerable in .NET"
+      "title": "Two methods of IEnumerable you didn't know about"
     }
   ]
 }

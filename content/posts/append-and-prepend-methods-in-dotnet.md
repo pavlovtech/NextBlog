@@ -1,5 +1,5 @@
 ---
-title: 'Two useful methods of IEnumerable in .NET'
+title: 'Two methods of IEnumerable you didn''t know about'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
