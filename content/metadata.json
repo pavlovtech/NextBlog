@@ -1,6 +1,6 @@
 {
   "commit": "843ecefce148e1cb8ecd37fc4efdaf58b909d264",
-  "generated": "2023-09-29T23:17:47.387Z",
+  "generated": "2023-09-29T23:17:59.184Z",
   "metadata": [
     {
       "__outstatic": {
@@ -330,7 +330,7 @@
     {
       "__outstatic": {
         "commit": "843ecefce148e1cb8ecd37fc4efdaf58b909d264",
-        "hash": "3574228673",
+        "hash": "2218613977",
         "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
       },
       "author": {
@@ -345,7 +345,7 @@
       "slug": "asnync-obj-conscruction-in-scharp",
       "status": "published",
       "tags": "csharp, dotnet",
-      "title": "Common Dilemma With Asynchronous Initialization In C#"
+      "title": "Asynchronous Initialization In C#"
     }
   ]
 }
