@@ -5,7 +5,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'append-and-prepend-methods-in-dotnet'
 status: 'published'
-featured: ''
+featured: 'no'
 tags: 'csharp, dotnet'
 description: 'A nice and functional way to add a single element to the IEnumerable collection'
 coverImage: ''
