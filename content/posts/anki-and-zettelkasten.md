@@ -6,8 +6,9 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'anki-and-zettelkasten'
 description: ' Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.'
+tags: 'anki, zettelkasten'
+featured: ''
 publishedAt: '2023-01-23T15:42:12.174Z'
-tags: "anki, zettelkasten"
 ---
 
 Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving. It enables speed in associative thinking to see patterns, in ways not possible if you need to keep routinely looking up information.
@@ -35,3 +36,4 @@ Memorizing basics is the most important because you build all your further knowl
 ## Keep cards short and simple
 
 Make most Anki questions and answers as atomic as possible. Simple cards are easier to review and remember. if you create complex cards with long texts, you will struggle every time you review them and spend more time. Creating several short simple cards is better than one big complex card.
+

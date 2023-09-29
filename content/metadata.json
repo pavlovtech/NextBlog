@@ -1,29 +1,7 @@
 {
-  "commit": "ff973264a97ce22cbf992cd55055e98b447e4ca4",
-  "generated": "2023-09-29T20:46:13.782Z",
+  "commit": "0e67a246c9627dd2f4b734f66de01ad4e407af95",
+  "generated": "2023-09-29T20:54:01.406Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "59439b16074561dce15fa95fbd586df5a20a581e",
-        "hash": "1124795421",
-        "path": "content/posts/anki-and-zettelkasten.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": " Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.",
-      "publishedAt": "2023-01-23T15:42:12.174Z",
-      "slug": "anki-and-zettelkasten",
-      "status": "published",
-      "tags": [
-        "anki",
-        "zettelkasten"
-      ],
-      "title": "How to integrate Anki with Zettelkasten?"
-    },
     {
       "__outstatic": {
         "commit": "f8eb744b0b16be876974362460d9a4d4dd721d4e",
@@ -357,6 +335,25 @@
       "status": "published",
       "tags": "csharp, dotnet",
       "title": "Common Dilemma With Asynchronous Object Construction In C#"
+    },
+    {
+      "__outstatic": {
+        "commit": "0e67a246c9627dd2f4b734f66de01ad4e407af95",
+        "hash": "296153641",
+        "path": "content/posts/anki-and-zettelkasten.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "description": " Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.",
+      "featured": "",
+      "publishedAt": "2023-01-23T15:42:12.174Z",
+      "slug": "anki-and-zettelkasten",
+      "status": "published",
+      "tags": "anki, zettelkasten",
+      "title": "How to integrate Anki with Zettelkasten?"
     }
   ]
 }
