@@ -8,27 +8,34 @@ import rehypeCodeTitles from 'rehype-code-titles';
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
-  filePathPattern: `**/*.mdx`,
-  contentType: 'mdx',
+  filePathPattern: `posts/**/*.md`,
+  contentType: 'markdown',
   fields: {
     title: {
       type: 'string',
       description: 'The title of the post',
       required: true,
     },
-    date: {
+    description: {
+      type: 'string',
+      required: true,
+    },
+    publishedAt: {
       type: 'date',
       description: 'The date of the post',
       required: true,
     },
-    summary: {
+    status: {
       type: 'string',
-      description: 'The summary of the post',
       required: true,
     },
-    draft: {
-      type: 'boolean',
-      description: 'draft',
+    slug: {
+      type: 'string',
+      required: true,
+    },
+    author: {
+      type: 'list',
+      of: { type: 'string' },
       required: false,
     },
     featured: {
@@ -41,7 +48,7 @@ const Post = defineDocumentType(() => ({
       of: { type: 'string' },
       required: false
     },
-    ogImage: {
+    coverImage: {
       type: 'string',
       description: 'ogImage',
       required: false,
@@ -50,13 +57,13 @@ const Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: 'string',
-      resolve: (doc) => `blog/posts/${doc._raw.flattenedPath}`,
+      resolve: (doc) => `blog/${doc._raw.flattenedPath}`,
     },
   },
 }))
 
 export default makeSource({
-  contentDirPath: 'posts',
+  contentDirPath: 'content',
   documentTypes: [Post],
   mdx: {
     remarkPlugins: [remarkGfm, remarkToc ],

@@ -1,13 +1,13 @@
 ---
-date: 2023-01-23
-title: How to integrate Anki with Zettelkasten?
-featured: false
-draft: false
-tags:
-  - anki
-  - zettelkasten
-ogImage: "/assets/anki-zettelkasten.jpg"
-summary: Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.
+title: 'How to integrate Anki with Zettelkasten?'
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'anki-and-zettelkasten'
+description: ' Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.'
+coverImage: ''
+publishedAt: '2023-01-23T15:42:12.174Z'
 ---
 
 Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving. It enables speed in associative thinking to see patterns, in ways not possible if you need to keep routinely looking up information.
