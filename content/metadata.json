@@ -1,6 +1,6 @@
 {
-  "commit": "0e67a246c9627dd2f4b734f66de01ad4e407af95",
-  "generated": "2023-09-29T20:54:01.406Z",
+  "commit": "937545a31cf201bb38632e7d7d0fe33f2e26fb79",
+  "generated": "2023-09-29T20:56:04.822Z",
   "metadata": [
     {
       "__outstatic": {
@@ -338,8 +338,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0e67a246c9627dd2f4b734f66de01ad4e407af95",
-        "hash": "296153641",
+        "commit": "937545a31cf201bb38632e7d7d0fe33f2e26fb79",
+        "hash": "3207039232",
         "path": "content/posts/anki-and-zettelkasten.md"
       },
       "author": {
@@ -347,6 +347,7 @@
         "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
+      "coverImage": "https://media.discordapp.net/attachments/1111967706879643819/1157419689648083044/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d.png?ex=65188a95&is=65173915&hm=eed335b0de21f27e48e4f2291354d597e7ea6ada8ebed57132796ad5e65f2915&=&width=1056&height=1056",
       "description": " Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.",
       "featured": "",
       "publishedAt": "2023-01-23T15:42:12.174Z",
