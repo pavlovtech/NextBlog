@@ -1,6 +1,6 @@
 {
-  "commit": "07b850a11693d2a3abf568b4b426f926bc2f3e2f",
-  "generated": "2023-09-29T21:01:17.347Z",
+  "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
+  "generated": "2023-09-29T21:45:22.107Z",
   "metadata": [
     {
       "__outstatic": {
@@ -46,29 +46,6 @@
         "dotnet"
       ],
       "title": "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
-    },
-    {
-      "__outstatic": {
-        "commit": "fc4b9695154fbe0e56446ebba55bab956d36dcca",
-        "hash": "353173025",
-        "path": "content/posts/badass-dotnet-dev.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/badass-dev-logo.webp",
-      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
-      "featured": false,
-      "publishedAt": "2023-03-20T15:42:12.174Z",
-      "slug": "badass-dotnet-dev",
-      "status": "published",
-      "tags": [
-        "dotnet",
-        "career"
-      ],
-      "title": "How to become a badass .NET developer"
     },
     {
       "__outstatic": {
@@ -355,6 +332,26 @@
       "status": "published",
       "tags": "anki, zettelkasten",
       "title": "How to integrate Anki with Zettelkasten?"
+    },
+    {
+      "__outstatic": {
+        "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
+        "hash": "1837970338",
+        "path": "content/posts/badass-dotnet-dev.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/badass-dev-logo.webp",
+      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "featured": "yes",
+      "publishedAt": "2023-03-20T15:42:12.174Z",
+      "slug": "badass-dotnet-dev",
+      "status": "published",
+      "tags": "csharp, career",
+      "title": "How to become a badass .NET developer"
     }
   ]
 }
