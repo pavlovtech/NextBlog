@@ -1,6 +1,6 @@
 {
-  "commit": "576b3ca095c60ea3cad8afb076dd24a63a3fa1cd",
-  "generated": "2023-09-29T18:28:19.092Z",
+  "commit": "9e65e6d68044efae1d8058bc37eac74f7888d598",
+  "generated": "2023-09-29T18:41:17.744Z",
   "metadata": [
     {
       "__outstatic": {
@@ -334,6 +334,35 @@
       "status": "published",
       "technologies": ".NET, Puppeteer, MongoDB, Redis",
       "title": "WebReaper"
+    },
+    {
+      "__outstatic": {
+        "commit": "9e65e6d68044efae1d8058bc37eac74f7888d598",
+        "hash": "3093192352",
+        "path": "content/posts/test.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "featured": "",
+      "publishedAt": "2023-09-29T18:58:58.795Z",
+      "slug": "test",
+      "status": "draft",
+      "tags": [
+        {
+          "label": "bb",
+          "value": "bb"
+        },
+        {
+          "label": "uu",
+          "value": "uu"
+        }
+      ],
+      "title": "test"
     }
   ]
 }

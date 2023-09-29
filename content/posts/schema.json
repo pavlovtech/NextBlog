@@ -15,7 +15,16 @@
       "fieldType": "Tags",
       "dataType": "array",
       "title": "Tags",
-      "values": []
+      "values": [
+        {
+          "value": "bb",
+          "label": "bb"
+        },
+        {
+          "value": "uu",
+          "label": "uu"
+        }
+      ]
     }
   }
 }
