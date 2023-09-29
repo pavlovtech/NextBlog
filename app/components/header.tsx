@@ -2,15 +2,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import Typewriter from 'typewriter-effect';
-import { useSession, signIn, signOut } from "next-auth/react"
 
 export function Header({navLinks} : {navLinks: {href: string, title: string}[]}) {
-
-  const { data: session } = useSession()
-
-  if(session) {
-    navLinks = [...navLinks, { href: '/admin', title: 'Admin' }];
-  }
 
   const pathname = usePathname();
 
