@@ -55,7 +55,6 @@
     "rehype-prism-plus": "^1.5.1",
     "rehype-slug": "^5.1.0",
     "rehype-stringify": "^9.0.3",
-    "remark-capitalize": "^1.1.0",
     "remark-code-screenshot": "^1.0.0",
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1",
