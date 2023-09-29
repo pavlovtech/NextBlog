@@ -1,6 +1,6 @@
 {
   "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
-  "generated": "2023-09-29T23:14:39.538Z",
+  "generated": "2023-09-29T23:14:52.908Z",
   "metadata": [
     {
       "__outstatic": {
@@ -331,7 +331,7 @@
     {
       "__outstatic": {
         "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
-        "hash": "1418057190",
+        "hash": "432092368",
         "path": "content/posts/cqrs-mediatr-common-mistake.md"
       },
       "author": {
@@ -345,7 +345,7 @@
       "slug": "cqrs-mediatr-common-mistake",
       "status": "published",
       "tags": "cqrs, dotnet",
-      "title": "A Guide to Cleaner Code with CQRS with MediatR"
+      "title": "A Guide to Cleaner Code with CQRS and MediatR"
     }
   ]
 }

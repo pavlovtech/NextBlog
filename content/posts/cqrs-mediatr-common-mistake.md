@@ -1,5 +1,5 @@
 ---
-title: 'A Guide to Cleaner Code with CQRS with MediatR'
+title: 'A Guide to Cleaner Code with CQRS and MediatR'
 featured: 'yes'
 tags: 'cqrs, dotnet'
 description: 'This post will explore a common mistake in projects MetiatR and CQRS.'
