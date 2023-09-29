@@ -1,10 +1,10 @@
 ---
-title: 'Home'
+title: 'About Me'
 status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'hi-i-am-alex'
+slug: 'about-me'
 description: ''
 coverImage: ''
 publishedAt: '2023-09-29T18:34:23.775Z'
