@@ -15,5 +15,3 @@ publishedAt: '2023-09-29T18:38:08.174Z'
 
 Azure DevOps release automation tool.
 
-NextJS PlanetScale
-

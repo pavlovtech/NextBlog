@@ -1,6 +1,6 @@
 {
   "commit": "d1a353c17fcc08735f71a031557b4dc299d27bcf",
-  "generated": "2023-09-29T18:27:33.833Z",
+  "generated": "2023-09-29T18:27:38.142Z",
   "metadata": [
     {
       "__outstatic": {
@@ -314,7 +314,7 @@
     {
       "__outstatic": {
         "commit": "d1a353c17fcc08735f71a031557b4dc299d27bcf",
-        "hash": "2396213659",
+        "hash": "2064992212",
         "path": "content/projects/pipelined-io.md"
       },
       "author": {
