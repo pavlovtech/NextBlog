@@ -1,15 +1,15 @@
 ---
-publishedAt: '2022-07-30T15:42:12.174Z'
-title: "NGRX Store In Angular"
-featured: no
+title: 'NGRX Store In Angular'
+featured: 'yes'
 tags: 'ngrx, angular'
-coverImage: "/assets/ngrx2.png"
-description: Is it worth using NGRX in an Angular app?
+coverImage: '/assets/ngrx2.png'
+description: 'Is it worth using NGRX in an Angular app?'
 status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'ngrx-store-in-angular'
+publishedAt: '2022-07-30T15:42:12.174Z'
 ---
 
 ## Table of contents
@@ -38,12 +38,16 @@ You have to pay the piper. The price for using the NGRX for state management is 
 4. There are no clear guidelines regarding using NgRx Store. Some developers keep everything in the state and do everything through the store for consistency. Other developers argue that only global data used by multiple components should be stored in the state.
 5. It’s hard to have both a regular angular way to do things (more on that later) and an NGRX way in the same app. You can’t mix it and easily add NGRX to the already existing project. Otherwise, you will end up with code where there are multiple ways to add new functionality and developers will be confused every time they need to deliver new features.
 
+<!-- -->
+
 So using NGRX Store on our project led to the following problems:
 
 1. Lots of boilerplate and bloated code;
 2. Lack of FRP understanding among developers resulted in error-prone code;
 3. Slower delivery of new features;
 4. Lots of controversial architectural debates.
+
+<!-- -->
 
 I don’t claim that these problems are going to be in every project with NGRX, but it just creates more problems than it solves.
 
@@ -58,10 +62,13 @@ And for component interaction and sharing state between components, we have a nu
 3. Emitting events from child components with [EventEmitter](https://angular.io/api/core/EventEmitter) and listening to these events in the parent component.
 4. Injecting the child component into the parent as a *ViewChild*.
 
-And that’s not even all possible ways, you can read more in the [official docs](https://angular.io/guide/component-interaction#component-interaction "undefined").
+<!-- -->
+
+And that’s not even all possible ways, you can read more in the [official docs](https://angular.io/guide/component-interaction#component-interaction> "undefined").
 
 NGRX Store can be a good approach in some rare cases, but chances are you don’t really need it and it’s better to follow the Angular way.
 
 ![Angular way is better then NGRX way](/assets/way.jpeg)
 
 Angular way
+

@@ -1,6 +1,6 @@
 {
-  "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
-  "generated": "2023-09-29T21:45:22.107Z",
+  "commit": "5526e1f97fe866a0355f216d40d5ffb62e818daa",
+  "generated": "2023-09-29T21:47:51.183Z",
   "metadata": [
     {
       "__outstatic": {
@@ -139,29 +139,6 @@
         "macos"
       ],
       "title": "Open Folder In VSCode Using A Context Menu in MacOS"
-    },
-    {
-      "__outstatic": {
-        "commit": "1e1fca37f89f010205c8308a48dd3afe1f6ec205",
-        "hash": "3545612090",
-        "path": "content/posts/ngrx-store-in-angular.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "https://alexpavlov.dev/assets/ngrx2.png",
-      "description": "Is it worth using NGRX in an Angular app?",
-      "featured": false,
-      "publishedAt": "2022-07-30T15:42:12.174Z",
-      "slug": "ngrx-store-in-angular",
-      "status": "published",
-      "tags": [
-        "ngrx",
-        "angular"
-      ],
-      "title": "NGRX Store In Angular"
     },
     {
       "__outstatic": {
@@ -352,6 +329,26 @@
       "status": "published",
       "tags": "csharp, career",
       "title": "How to become a badass .NET developer"
+    },
+    {
+      "__outstatic": {
+        "commit": "5526e1f97fe866a0355f216d40d5ffb62e818daa",
+        "hash": "1122240494",
+        "path": "content/posts/ngrx-store-in-angular.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/ngrx2.png",
+      "description": "Is it worth using NGRX in an Angular app?",
+      "featured": "yes",
+      "publishedAt": "2022-07-30T15:42:12.174Z",
+      "slug": "ngrx-store-in-angular",
+      "status": "published",
+      "tags": "ngrx, angular",
+      "title": "NGRX Store In Angular"
     }
   ]
 }
