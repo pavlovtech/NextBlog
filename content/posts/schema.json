@@ -15,13 +15,6 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Tags"
-    },
-    "test": {
-      "required": false,
-      "description": "",
-      "fieldType": "Text",
-      "dataType": "string",
-      "title": "Test"
     }
   }
 }
