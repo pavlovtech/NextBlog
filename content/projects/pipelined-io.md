@@ -10,7 +10,7 @@ coverImage: ''
 publishedAt: '2023-09-29T18:38:08.174Z'
 ---
 
-WebReaper is a declarative high performance web scraper, crawler and parser in C#. Designed as simple, extensible and scalable web scraping solution.
+Azure DevOps release automation tool.
 
-.NET Puppeteer MongoDB Redis
+NextJS PlanetScale
 
