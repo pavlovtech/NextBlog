@@ -117,18 +117,51 @@ const Project = defineDocumentType(() => ({
       type: 'string',
       required: false,
     },
-  },
-  computedFields: {
-    url: {
+  }
+}));
+
+const Page = defineDocumentType(() => ({
+  name: 'Page',
+  filePathPattern: `pages/**/*.md`,
+  contentType: 'markdown',
+  fields: {
+    title: {
       type: 'string',
-      resolve: (doc) => `blog/${doc._raw.flattenedPath}`,
+      description: 'The title of the post',
+      required: true,
     },
-  },
-}))
+    description: {
+      type: 'string',
+      required: true,
+    },
+    publishedAt: {
+      type: 'date',
+      description: 'The date of the post',
+      required: true,
+    },
+    status: {
+      type: 'string',
+      required: true,
+    },
+    slug: {
+      type: 'string',
+      required: true,
+    },
+    author: {
+      type: 'nested',
+      of: Author,
+      required: false,
+    },
+    coverImage: {
+      type: 'string',
+      required: false,
+    }
+  }
+}));
 
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Post, Project],
+  documentTypes: [Post, Project, Page],
   markdown: {
     remarkPlugins: [remarkGfm, remarkToc ],
     rehypePlugins: [

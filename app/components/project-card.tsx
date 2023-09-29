@@ -23,7 +23,13 @@ const Card = ({ title, description, imgSrc, href, github, tech }: any) => (
                 <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
                 <div className="flex flex-row justify-between">
                     <div className="text-sm text-gray-400">
-                        {tech.map((t: string) => `${t} `)} 
+                        {tech.map((t: string, i: number, arr:[]) => {
+                            if(i + 1 === arr.length){ 
+                                return `${t}`;
+                            }
+
+                            return `${t}  •`;
+                        })} 
                     </div>
                 </div>
             </div>
