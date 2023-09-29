@@ -2,7 +2,6 @@
 publishedAt: '2023-08-07T15:42:12.174Z'
 title: "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
 featured: true
-draft: false
 tags:
   - cqrs
   - dotnet

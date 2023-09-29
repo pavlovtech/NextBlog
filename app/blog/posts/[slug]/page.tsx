@@ -1,44 +1,40 @@
 import { format, parseISO } from 'date-fns'
 import { Post, allPosts } from 'contentlayer/generated'
-import { getMDXComponent } from 'next-contentlayer/hooks'
 import '../../../../styles/prism-atom-dark.css';
 import { notFound } from 'next/navigation';
 import { Giscus } from 'app/components/comments/giscus';
 
-export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
+export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post.slug }))
 
 export async function generateMetadata(
   { params, searchParams }: any,
   parent?: any
 ) {
-  const post: Post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!
+  const post: Post = allPosts.find((post) => post.slug === params.slug)!
   return {
     title: post.title,
-    description: post.summary,
+    description: post.description,
     openGraph: {
-      images: post?.ogImage ? [post.ogImage!] : [],
+      images: post?.coverImage ? [post.coverImage!] : [],
     }
   }
 }
 
 const PostPage = ({ params }: { params: { slug: string } }) => {
 
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)!;
+  const post = allPosts.find((post) => post.slug === params.slug)!;
 
   if (!post) notFound();
-
-  const Content = getMDXComponent(post.body.code);
   
   return (
     <article className='flex flex-col justify-center'>
       <div className="mb-8 text-center">
-        <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
-          {format(parseISO(post.date), 'LLLL d, yyyy')}
+        <time dateTime={post.publishedAt} className="mb-1 text-xs text-gray-600">
+          {format(parseISO(post.publishedAt), 'LLLL d, yyyy')}
         </time>
         <h1 className='text-3xl font-bold'>{post.title}</h1>
       </div>
-      <div className='max-w-max prose prose-dark prose-invert prose-lg mb-5'>
-        <Content />
+      <div dangerouslySetInnerHTML={{ __html: post.body.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5'>
       </div>
       <Giscus />
     </article>

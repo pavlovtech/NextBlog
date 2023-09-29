@@ -7,8 +7,8 @@ export function PostCard(post: Post) {
     return (
       <div className="py-6">
         <div className="space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-200 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-          <time dateTime={post.date} className="text-sm font-normal leading-6 text-gray-500 dark:text-gray-400">
-            {format(parseISO(post.date), "LLLL d, yyyy")}
+          <time dateTime={post.publishedAt} className="text-sm font-normal leading-6 text-gray-500 dark:text-gray-400">
+            {format(parseISO(post.publishedAt), "LLLL d, yyyy")}
           </time>
           <div className="space-y-5 xl:col-span-4">
             <div className="space-y-1">
@@ -28,7 +28,7 @@ export function PostCard(post: Post) {
           </div>
           <div className="space-y-5 xl:col-span-4">
             <div className="max-w-none pt-5 text-gray-500 dark:text-gray-400">
-              {post.summary}
+              {post.description}
             </div>
           </div>
         </div>

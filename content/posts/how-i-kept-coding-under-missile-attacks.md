@@ -2,7 +2,6 @@
 publishedAt: '2022-08-22T15:42:12.174Z'
 title: "War In Ukraine: How I Kept Coding Under Missile Attacks"
 featured: true
-draft: false
 tags:
   - war
   - ukraine

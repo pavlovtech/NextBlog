@@ -6,7 +6,6 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'badass-dotnet-dev'
 featured: false
-draft: false
 tags:
   - dotnet
   - career

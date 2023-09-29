@@ -2,7 +2,6 @@
 publishedAt: '2022-03-21T15:42:12.174Z'
 title: 'Top 10 Insights About Web Application Optimization'
 featured: false
-draft: false
 tags:
   - javascript
   - web

@@ -2,7 +2,6 @@
 publishedAt: '2022-07-30T15:42:12.174Z'
 title: "NGRX Store In Angular"
 featured: false
-draft: false
 tags:
   - ngrx
   - angular

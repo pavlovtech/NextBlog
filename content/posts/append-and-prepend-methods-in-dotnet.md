@@ -6,7 +6,6 @@ author:
 slug: 'append-and-prepend-methods-in-dotnet'
 status: 'published'
 featured: false
-draft: false
 tags:
   - csharp
   - dotnet

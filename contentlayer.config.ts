@@ -1,10 +1,18 @@
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+import { defineDocumentType, defineNestedType, makeSource } from 'contentlayer/source-files'
 import rehypePrism from 'rehype-prism-plus'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkToc from 'remark-toc';
 import rehypeCodeTitles from 'rehype-code-titles';
+
+const Author = defineNestedType(() => ({
+  name: 'Author',
+  fields: {
+    name: { type: 'string', required: true },
+    picture: { type: 'string', required: true },
+  },
+}))
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -34,8 +42,8 @@ const Post = defineDocumentType(() => ({
       required: true,
     },
     author: {
-      type: 'list',
-      of: { type: 'string' },
+      type: 'nested',
+      of: Author,
       required: false,
     },
     featured: {

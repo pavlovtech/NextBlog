@@ -2,7 +2,6 @@
 publishedAt: '2020-06-10T15:42:12.174Z'
 title: "Open Folder In VSCode Using A Context Menu in MacOS"
 featured: false
-draft: false
 tags:
   - vscode
   - macos

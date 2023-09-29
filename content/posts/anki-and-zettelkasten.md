@@ -8,6 +8,9 @@ slug: 'anki-and-zettelkasten'
 description: ' Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.'
 coverImage: ''
 publishedAt: '2023-01-23T15:42:12.174Z'
+tags:
+  - anki
+  - zettelkasten
 ---
 
 Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving. It enables speed in associative thinking to see patterns, in ways not possible if you need to keep routinely looking up information.

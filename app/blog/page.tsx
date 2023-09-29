@@ -14,12 +14,12 @@ export const metadata = {
 export default function Home() {
 
   const featuredPosts = allPosts
-    .filter(p => p.draft !== true && p.featured)
-    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+    .filter(p => p.status == 'published' && p.featured)
+    .sort((a, b) => compareDesc(new Date(a.publishedAt), new Date(b.publishedAt)));
 
   const posts = allPosts
-    .filter(p => p.draft !== true && !p.featured)
-    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+    .filter(p => p.status == 'published' && !p.featured)
+    .sort((a, b) => compareDesc(new Date(a.publishedAt), new Date(b.publishedAt)));
 
   return (
     <>

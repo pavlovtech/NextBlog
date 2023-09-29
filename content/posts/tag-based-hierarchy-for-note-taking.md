@@ -2,7 +2,6 @@
 publishedAt: '2023-01-22T15:42:12.174Z'
 title: "Using Tags Instead Of Folders For In Obsidian"
 featured: false
-draft: false
 tags:
   - note-taking
   - obsidian

@@ -2,7 +2,6 @@
 publishedAt: '2020-06-15T15:42:12.174Z'
 title: "Top 8 Tips On Crypto Investment"
 featured: false
-draft: false
 tags:
   - crypto
   - investment
