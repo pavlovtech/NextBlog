@@ -12,19 +12,9 @@
     "tags": {
       "required": false,
       "description": "",
-      "fieldType": "Tags",
-      "dataType": "array",
-      "title": "Tags",
-      "values": [
-        {
-          "value": "bb",
-          "label": "bb"
-        },
-        {
-          "value": "uu",
-          "label": "uu"
-        }
-      ]
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Tags"
     }
   }
 }
