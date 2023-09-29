@@ -1,0 +1,24 @@
+{
+  "commit": "c7b7107d33884f2cae377f3532ff855f6a771dd5",
+  "generated": "Fri, 29 Sep 2023 15:31:02 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "5da27fc7280b0f3fc3983717bb0e4b0716d07f65",
+        "hash": "3686928168",
+        "path": "content/posts/test.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Test",
+      "publishedAt": "2023-09-29T15:42:12.174Z",
+      "slug": "test",
+      "status": "published",
+      "title": "Test"
+    }
+  ]
+}
