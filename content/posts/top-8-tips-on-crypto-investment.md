@@ -14,8 +14,6 @@ author:
 slug: 'top-8-tips-on-crypto-investment'
 ---
 
-![Logo](/assets/crypto.webp)
-
 ## Table of contents
 
 Crypto is hyped now. Everyone talks about it, celebrities own it, buy it, talk about it.

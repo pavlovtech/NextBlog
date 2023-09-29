@@ -11,9 +11,8 @@ author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'how-i-kept-coding-under-missile-attacks'
+coverImage: '/assets/war-logo.webp'
 ---
-
-![Logo](/assets/war-logo.webp)
 
 This is my story about the first days of the war in Ukraine.
 

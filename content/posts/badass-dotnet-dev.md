@@ -14,8 +14,6 @@ coverImage:  '/assets/badass-dev-logo.webp'
 publishedAt: '2023-03-20T15:42:12.174Z'
 ---
 
-![Logo](/assets/badass-dev-logo.webp)
-
 > Raise your quality standards as high as you can live with, avoid wasting your time on routine problems, and always try to work as closely as possible at the boundary of your abilities. Do this, because it is the only way of discovering how that boundary should be moved forward. © Edsger Dijkstra
 
 This article will describe a roadmap to becoming a badass .NET developer. I will start with the C# language and walk you through the popular frameworks and technologies used in production.

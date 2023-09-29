@@ -34,6 +34,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         </time>
         <h1 className='text-3xl font-bold'>{post.title}</h1>
       </div>
+      <img className='mb-4' src={post.coverImage} />
       <div dangerouslySetInnerHTML={{ __html: post.body.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5'>
       </div>
       <Giscus />

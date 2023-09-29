@@ -15,8 +15,6 @@ author:
 slug: 'top-10-insights-about-web-app-optimizations'
 ---
 
-![Logo](/assets/gear.jpg)
-
 ## Table of contents
 
 Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS, and Preact.

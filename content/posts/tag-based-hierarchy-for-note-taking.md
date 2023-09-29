@@ -14,8 +14,6 @@ author:
 slug: 'tag-based-hierarchy-for-note-taking'
 ---
 
-![example](/assets/note-taking.jpg)
-
 ## Table of contents
 
 ## Introduction

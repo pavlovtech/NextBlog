@@ -14,8 +14,6 @@ author:
 slug: 'ngrx-store-in-angular'
 ---
 
-![Logo](/assets/ngrx2.png)
-
 ## Table of contents
 
 NGRX Store in Angular is a global state management solution inspired by Redux. It claims to help write performant, scalable, and consistent applications.
