@@ -1,14 +1,14 @@
 ---
-title: 'Asynchronous Object Construction In C#'
+title: 'Common Dilemma With Asynchronous Object Construction In C#'
 status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'asnync-obj-conscruction-in-scharp'
-featured: no
+featured: 'no'
 tags: 'csharp, dotnet'
 description: 'You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.'
-coverImage: '/assets/spikes.jpeg'
+coverImage: ''
 publishedAt: '2023-09-06T15:42:12.174Z'
 ---
 
@@ -33,7 +33,7 @@ public class ClassWithAsyncInit
     var instance = new ClassWithAsyncInit();
     instance.data = await GetDataAsync();
 
-	return instance;
+    return instance;
   }
 }
 ```
@@ -56,7 +56,7 @@ public class ClassWithAsyncInit
 
     private async Task InitializeAsync()
     {
-		// your async init code
+        // your async init code
     }
 }
 ```
@@ -86,7 +86,7 @@ public class ClassWithAsyncInit
 
     private async Task InitializeAsync()
     {
-	// your async init code
+    // your async init code
     }
 
     public async Task FirstMethod()
@@ -106,3 +106,4 @@ public class ClassWithAsyncInit
 ```
 
 The advantage is that client will not care about awaiting the Initialization task, but the downside is that it’s not very convenient if you have a lot of methods in your class and have to await the init task in each one.
+

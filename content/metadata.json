@@ -1,6 +1,6 @@
 {
-  "commit": "fcf616d7591d69a56cc7f084be9df908e308a130",
-  "generated": "2023-09-29T20:35:15.468Z",
+  "commit": "ff973264a97ce22cbf992cd55055e98b447e4ca4",
+  "generated": "2023-09-29T20:46:13.782Z",
   "metadata": [
     {
       "__outstatic": {
@@ -91,29 +91,6 @@
         "career"
       ],
       "title": "How to become a badass .NET developer"
-    },
-    {
-      "__outstatic": {
-        "commit": "17a540502dfa4440e8fe37727b222d9f121b48cd",
-        "hash": "2128292050",
-        "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "https://alexpavlov.dev/assets/spikes.jpeg",
-      "description": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
-      "featured": false,
-      "publishedAt": "2023-09-06T15:42:12.174Z",
-      "slug": "asnync-obj-conscruction-in-scharp",
-      "status": "published",
-      "tags": [
-        "csharp",
-        "dotnet"
-      ],
-      "title": "Asynchronous Object Construction In C#"
     },
     {
       "__outstatic": {
@@ -360,6 +337,26 @@
       "status": "published",
       "tags": "csharp, dotnet",
       "title": "Two methods of IEnumerable you didn't know about"
+    },
+    {
+      "__outstatic": {
+        "commit": "ff973264a97ce22cbf992cd55055e98b447e4ca4",
+        "hash": "3991845292",
+        "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
+      "featured": "no",
+      "publishedAt": "2023-09-06T15:42:12.174Z",
+      "slug": "asnync-obj-conscruction-in-scharp",
+      "status": "published",
+      "tags": "csharp, dotnet",
+      "title": "Common Dilemma With Asynchronous Object Construction In C#"
     }
   ]
 }
