@@ -1,6 +1,6 @@
 {
   "commit": "7f3ef7258c82761639f3fbd5648a7e1cd9857b92",
-  "generated": "Fri, 29 Sep 2023 17:02:05 GMT",
+  "generated": "Fri, 29 Sep 2023 17:02:06 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -26,6 +26,29 @@
     },
     {
       "__outstatic": {
+        "commit": "f8eb744b0b16be876974362460d9a4d4dd721d4e",
+        "hash": "1847753634",
+        "path": "content/posts/how-i-kept-coding-under-missile-attacks.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/war-logo.webp",
+      "description": "My story about the first days of the war in Ukraine.",
+      "featured": true,
+      "publishedAt": "2022-08-22T15:42:12.174Z",
+      "slug": "how-i-kept-coding-under-missile-attacks",
+      "status": "published",
+      "tags": [
+        "war",
+        "ukraine"
+      ],
+      "title": "War In Ukraine: How I Kept Coding Under Missile Attacks"
+    },
+    {
+      "__outstatic": {
         "commit": "88fa9fda122796ac2b99354192b289e027579c0f",
         "hash": "4046372288",
         "path": "content/posts/cqrs-mediatr-common-mistake.md"
@@ -48,26 +71,26 @@
     },
     {
       "__outstatic": {
-        "commit": "f8eb744b0b16be876974362460d9a4d4dd721d4e",
-        "hash": "1847753634",
-        "path": "content/posts/how-i-kept-coding-under-missile-attacks.md"
+        "commit": "fc4b9695154fbe0e56446ebba55bab956d36dcca",
+        "hash": "353173025",
+        "path": "content/posts/badass-dotnet-dev.md"
       },
       "author": {
         "name": "Alex Pavlov ",
         "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "coverImage": "/assets/war-logo.webp",
-      "description": "My story about the first days of the war in Ukraine.",
-      "featured": true,
-      "publishedAt": "2022-08-22T15:42:12.174Z",
-      "slug": "how-i-kept-coding-under-missile-attacks",
+      "coverImage": "/assets/badass-dev-logo.webp",
+      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "featured": false,
+      "publishedAt": "2023-03-20T15:42:12.174Z",
+      "slug": "badass-dotnet-dev",
       "status": "published",
       "tags": [
-        "war",
-        "ukraine"
+        "dotnet",
+        "career"
       ],
-      "title": "War In Ukraine: How I Kept Coding Under Missile Attacks"
+      "title": "How to become a badass .NET developer"
     },
     {
       "__outstatic": {
@@ -117,26 +140,26 @@
     },
     {
       "__outstatic": {
-        "commit": "fc4b9695154fbe0e56446ebba55bab956d36dcca",
-        "hash": "353173025",
-        "path": "content/posts/badass-dotnet-dev.md"
+        "commit": "8c861d99ba19138092cd245f9617bb14f1e83d77",
+        "hash": "1866992902",
+        "path": "content/posts/top-8-tips-on-crypto-investment.md"
       },
       "author": {
         "name": "Alex Pavlov ",
         "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "coverImage": "/assets/badass-dev-logo.webp",
-      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "coverImage": "/assets/crypto.webp",
+      "description": "I just want to give you several simple tips that I learned during the last several years.",
       "featured": false,
-      "publishedAt": "2023-03-20T15:42:12.174Z",
-      "slug": "badass-dotnet-dev",
+      "publishedAt": "2020-06-15T15:42:12.174Z",
+      "slug": "top-8-tips-on-crypto-investment",
       "status": "published",
       "tags": [
-        "dotnet",
-        "career"
+        "crypto",
+        "investment"
       ],
-      "title": "How to become a badass .NET developer"
+      "title": "Top 8 Tips On Crypto Investment"
     },
     {
       "__outstatic": {
@@ -164,29 +187,6 @@
     },
     {
       "__outstatic": {
-        "commit": "8c861d99ba19138092cd245f9617bb14f1e83d77",
-        "hash": "1866992902",
-        "path": "content/posts/top-8-tips-on-crypto-investment.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/crypto.webp",
-      "description": "I just want to give you several simple tips that I learned during the last several years.",
-      "featured": false,
-      "publishedAt": "2020-06-15T15:42:12.174Z",
-      "slug": "top-8-tips-on-crypto-investment",
-      "status": "published",
-      "tags": [
-        "crypto",
-        "investment"
-      ],
-      "title": "Top 8 Tips On Crypto Investment"
-    },
-    {
-      "__outstatic": {
         "commit": "8dc97101aa44208dd08b7ac78f7dd0221c333be9",
         "hash": "413839381",
         "path": "content/posts/tag-based-hierarchy-for-note-taking.md"
@@ -210,29 +210,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1e1fca37f89f010205c8308a48dd3afe1f6ec205",
-        "hash": "3545612090",
-        "path": "content/posts/ngrx-store-in-angular.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "https://alexpavlov.dev/assets/ngrx2.png",
-      "description": "Is it worth using NGRX in an Angular app?",
-      "featured": false,
-      "publishedAt": "2022-07-30T15:42:12.174Z",
-      "slug": "ngrx-store-in-angular",
-      "status": "published",
-      "tags": [
-        "ngrx",
-        "angular"
-      ],
-      "title": "NGRX Store In Angular"
-    },
-    {
-      "__outstatic": {
         "commit": "c8cc5073f2d23854bc9ffb32e4ea71284d19403d",
         "hash": "82229360",
         "path": "content/posts/open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos.md"
@@ -253,6 +230,29 @@
         "macos"
       ],
       "title": "Open Folder In VSCode Using A Context Menu in MacOS"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e1fca37f89f010205c8308a48dd3afe1f6ec205",
+        "hash": "3545612090",
+        "path": "content/posts/ngrx-store-in-angular.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "https://alexpavlov.dev/assets/ngrx2.png",
+      "description": "Is it worth using NGRX in an Angular app?",
+      "featured": false,
+      "publishedAt": "2022-07-30T15:42:12.174Z",
+      "slug": "ngrx-store-in-angular",
+      "status": "published",
+      "tags": [
+        "ngrx",
+        "angular"
+      ],
+      "title": "NGRX Store In Angular"
     }
   ]
 }
