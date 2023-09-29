@@ -9,7 +9,7 @@ const TagPage = ({ params }: { params: { slug: string } }) => {
     const tag = params.slug;
 
     const posts = allPosts.filter(post => post.tags?.includes(tag)).sort((a, b) =>
-        compareDesc(new Date(a.date), new Date(b.date))
+        compareDesc(new Date(a.publishedAt), new Date(b.publishedAt))
     );
 
     if (!posts) notFound();

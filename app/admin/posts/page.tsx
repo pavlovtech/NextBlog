@@ -28,21 +28,7 @@ const Admin = async () => {
       status: generatedPost ? 'published' : 'publising',
     }
   })
-  .sort((a: any, b: any) => compareDesc(new Date(a.date), new Date(b.date)));
-
-  // const generatedPosts = allPosts
-  //   .filter(p => p.draft !== true)
-  //   .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-  //   .map(p => {
-
-  //     let githubPost = postsFromGitHub.filter((gp: any) => gp.name == p._id)[0];
-
-  //     return {
-  //       ...p,
-  //       status: githubPost ? 'published' : 'publising',
-  //       sha: githubPost.sha
-  //     } as PostWithStatus;
-  //   });
+  .sort((a: any, b: any) => compareDesc(new Date(a.publishedAt), new Date(b.publishedAt)));
 
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/admin");
