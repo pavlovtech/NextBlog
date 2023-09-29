@@ -1,6 +1,6 @@
 {
-  "commit": "af6f0c823f246ba2b16948d13dcc3fe3e2e8dc63",
-  "generated": "2023-09-29T18:25:39.149Z",
+  "commit": "8591898bfcf0e2cbbb4aadfab615bacf1f4f4c44",
+  "generated": "2023-09-29T18:26:53.187Z",
   "metadata": [
     {
       "__outstatic": {
@@ -292,24 +292,6 @@
     },
     {
       "__outstatic": {
-        "commit": "aecbc5ce16e0ee83b4ed5fee3fe9a667d6f6414d",
-        "hash": "359649218",
-        "path": "content/projects/nextblog.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2023-09-29T18:38:58.465Z",
-      "slug": "nextblog",
-      "status": "published",
-      "title": "NextBlog"
-    },
-    {
-      "__outstatic": {
         "commit": "af6f0c823f246ba2b16948d13dcc3fe3e2e8dc63",
         "hash": "2693303766",
         "path": "content/pages/hi-i-am-alex.md"
@@ -325,6 +307,27 @@
       "slug": "hi-i-am-alex",
       "status": "published",
       "title": "Home"
+    },
+    {
+      "__outstatic": {
+        "commit": "8591898bfcf0e2cbbb4aadfab615bacf1f4f4c44",
+        "hash": "3891267493",
+        "path": "content/projects/nextblog.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "gitHub": "https://github.com/pavlovtech/WebReaper",
+      "link": "",
+      "publishedAt": "2023-09-29T18:38:58.465Z",
+      "slug": "nextblog",
+      "status": "published",
+      "technologies": "NextJS, Contentlayer, NextAuth, Giscus, GitHub API, Codemirror",
+      "title": "NextBlog"
     }
   ]
 }

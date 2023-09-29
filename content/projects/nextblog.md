@@ -7,6 +7,9 @@ author:
 slug: 'nextblog'
 description: ''
 coverImage: ''
+technologies: 'NextJS, Contentlayer, NextAuth, Giscus, GitHub API, Codemirror'
+gitHub: 'https://github.com/pavlovtech/WebReaper'
+link: ''
 publishedAt: '2023-09-29T18:38:58.465Z'
 ---
 
