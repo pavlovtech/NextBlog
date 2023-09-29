@@ -1,6 +1,6 @@
 {
-  "commit": "7f3ef7258c82761639f3fbd5648a7e1cd9857b92",
-  "generated": "Fri, 29 Sep 2023 17:02:06 GMT",
+  "commit": "f92ada14a80d8b881e759b4ae025fb4045ddce83",
+  "generated": "2023-09-29T18:14:18.820Z",
   "metadata": [
     {
       "__outstatic": {
@@ -117,29 +117,6 @@
     },
     {
       "__outstatic": {
-        "commit": "e544fb0b7ed0bb10a6abdefe2b5d5427820938aa",
-        "hash": "884911233",
-        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "A nice and functional way to add a single element to the IEnumerable collection",
-      "featured": false,
-      "publishedAt": "2023-09-06T15:42:12.174Z",
-      "slug": "append-and-prepend-methods-in-dotnet",
-      "status": "published",
-      "tags": [
-        "csharp",
-        "dotnet"
-      ],
-      "title": "Two useful methods of IEnumerable in .NET"
-    },
-    {
-      "__outstatic": {
         "commit": "8c861d99ba19138092cd245f9617bb14f1e83d77",
         "hash": "1866992902",
         "path": "content/posts/top-8-tips-on-crypto-investment.md"
@@ -253,6 +230,29 @@
         "angular"
       ],
       "title": "NGRX Store In Angular"
+    },
+    {
+      "__outstatic": {
+        "commit": "f92ada14a80d8b881e759b4ae025fb4045ddce83",
+        "hash": "431351652",
+        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "A nice and functional way to add a single element to the IEnumerable collection",
+      "featured": "",
+      "publishedAt": "2023-09-06T15:42:12.174Z",
+      "slug": "append-and-prepend-methods-in-dotnet",
+      "status": "published",
+      "tags": [
+        "csharp",
+        "dotnet"
+      ],
+      "title": "Two useful methods of IEnumerable in .NET"
     }
   ]
 }

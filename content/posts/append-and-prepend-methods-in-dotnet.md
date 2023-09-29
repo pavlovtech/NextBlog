@@ -5,10 +5,8 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'append-and-prepend-methods-in-dotnet'
 status: 'published'
-featured: false
-tags:
-  - csharp
-  - dotnet
+featured: ''
+tags: ["csharp","dotnet"]
 description: 'A nice and functional way to add a single element to the IEnumerable collection'
 coverImage: ''
 publishedAt: '2023-09-06T15:42:12.174Z'
@@ -27,7 +25,7 @@ Here I needed to create a new list containing another list and add one element t
 
 If it were JS, I would write something like this:
 
-```js
+```csharp
 const allTexts = [introText, ...texts, conclusionText];
 ```
 
@@ -36,7 +34,7 @@ It utilizes destructuring to embed texts in the middle of the new array. It is a
 C# doesn't support array destructuring. One way to rewrite the C# code above is this:
 
 ```csharp
- var allTexts = (new Text[] { introText }).Concat(texts).Concat((new Text[] { conclusionText }));
+var allTexts = (new Text[] { introText }).Concat(texts).Concat((new Text[] { conclusionText }));
 ```
 
 This is even uglier than before. Fortunately, now C# has Prepend and Append methods out of the box:
@@ -46,3 +44,4 @@ var allTexts = texts.Prepend(introText).Append(conclusionText);
 ```
 
 Note: Prepend and Append methods do not modify the elements of the collection. Instead, they create a copy of the collection with the new element.
+
