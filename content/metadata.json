@@ -1,6 +1,6 @@
 {
-  "commit": "f92ada14a80d8b881e759b4ae025fb4045ddce83",
-  "generated": "2023-09-29T18:14:18.820Z",
+  "commit": "776496b5533ebf0834d54fe8170bea9a478333e1",
+  "generated": "2023-09-29T18:17:49.829Z",
   "metadata": [
     {
       "__outstatic": {
@@ -253,6 +253,24 @@
         "dotnet"
       ],
       "title": "Two useful methods of IEnumerable in .NET"
+    },
+    {
+      "__outstatic": {
+        "commit": "776496b5533ebf0834d54fe8170bea9a478333e1",
+        "hash": "690813705",
+        "path": "content/pages/hi-i-am-alex.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-09-29T18:34:23.775Z",
+      "slug": "hi-i-am-alex",
+      "status": "published",
+      "title": "Hi, I am Alex"
     }
   ]
 }
