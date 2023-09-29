@@ -1,6 +1,6 @@
 {
-  "commit": "9e65e6d68044efae1d8058bc37eac74f7888d598",
-  "generated": "2023-09-29T18:41:17.744Z",
+  "commit": "2f19400c9e6a5a322be42b2ecdde44ed08ab62b3",
+  "generated": "2023-09-29T18:41:21.149Z",
   "metadata": [
     {
       "__outstatic": {
@@ -337,8 +337,8 @@
     },
     {
       "__outstatic": {
-        "commit": "9e65e6d68044efae1d8058bc37eac74f7888d598",
-        "hash": "3093192352",
+        "commit": "2f19400c9e6a5a322be42b2ecdde44ed08ab62b3",
+        "hash": "3236887984",
         "path": "content/posts/test.md"
       },
       "author": {
@@ -351,7 +351,7 @@
       "featured": "",
       "publishedAt": "2023-09-29T18:58:58.795Z",
       "slug": "test",
-      "status": "draft",
+      "status": "published",
       "tags": [
         {
           "label": "bb",
