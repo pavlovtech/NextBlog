@@ -8,6 +8,14 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Featured"
+    },
+    "tags": {
+      "required": false,
+      "description": "",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags",
+      "values": []
     }
   }
 }
