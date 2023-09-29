@@ -1,6 +1,6 @@
 {
-  "commit": "07b850a11693d2a3abf568b4b426f926bc2f3e2f",
-  "generated": "2023-09-29T21:01:17.347Z",
+  "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
+  "generated": "2023-09-29T21:08:27.900Z",
   "metadata": [
     {
       "__outstatic": {
@@ -116,29 +116,6 @@
         "optimization"
       ],
       "title": "Top 10 Insights About Web Application Optimization"
-    },
-    {
-      "__outstatic": {
-        "commit": "8dc97101aa44208dd08b7ac78f7dd0221c333be9",
-        "hash": "413839381",
-        "path": "content/posts/tag-based-hierarchy-for-note-taking.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/note-taking.jpg",
-      "description": "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes.",
-      "featured": false,
-      "publishedAt": "2023-01-22T15:42:12.174Z",
-      "slug": "tag-based-hierarchy-for-note-taking",
-      "status": "published",
-      "tags": [
-        "note-taking",
-        "obsidian"
-      ],
-      "title": "Using Tags Instead Of Folders For In Obsidian"
     },
     {
       "__outstatic": {
@@ -355,6 +332,26 @@
       "status": "published",
       "tags": "anki, zettelkasten",
       "title": "How to integrate Anki with Zettelkasten?"
+    },
+    {
+      "__outstatic": {
+        "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
+        "hash": "2382440927",
+        "path": "content/posts/tag-based-hierarchy-for-note-taking.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-YzOT.png",
+      "description": "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes.",
+      "featured": "no",
+      "publishedAt": "2023-01-22T15:42:12.174Z",
+      "slug": "tag-based-hierarchy-for-note-taking",
+      "status": "published",
+      "tags": "obsidian, note-taking",
+      "title": "Using Tags Instead Of Folders For In Obsidian"
     }
   ]
 }

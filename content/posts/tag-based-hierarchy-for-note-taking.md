@@ -1,15 +1,15 @@
 ---
-publishedAt: '2023-01-22T15:42:12.174Z'
-title: "Using Tags Instead Of Folders For In Obsidian"
-featured: no
+title: 'Using Tags Instead Of Folders For In Obsidian'
+featured: 'no'
 tags: 'obsidian, note-taking'
-description: "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes."
-coverImage: '/assets/note-taking.jpg'
+description: 'Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes.'
+coverImage: '/images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-YzOT.png'
 status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'tag-based-hierarchy-for-note-taking'
+publishedAt: '2023-01-22T15:42:12.174Z'
 ---
 
 ## Table of contents
@@ -49,6 +49,8 @@ In this case any full-text file search will find all related notes, but nested t
 Instead of tags you can name your files with this notation and use "." as a separator:
 
 - programming.langs.python.operators.if-statement.txt
+
+<!-- -->
 
 The disadvantage is that your file names becomes cluttered and harder to read. I prefer naming my notes as full phrases that reflects the idea in them for future reference from other notes. However, there is even whole company around this idea of file naming.
 
@@ -96,3 +98,4 @@ This way you can the ability easy to refactor your notes with Tag Wrangler, but 
 ## Combining with other note taking methods
 
 You can combine it with any other note-taking method. I successfully use it with Zettelkasten.
+
