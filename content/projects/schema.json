@@ -15,6 +15,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "GitHub"
+    },
+    "link": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Link"
     }
   }
 }
