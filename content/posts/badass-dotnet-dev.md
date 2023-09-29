@@ -5,10 +5,10 @@ author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'badass-dotnet-dev'
-featured: no
+featured: 'yes'
 tags: 'csharp, career'
 description: 'This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.'
-coverImage:  '/assets/badass-dev-logo.webp'
+coverImage: '/assets/badass-dev-logo.webp'
 publishedAt: '2023-03-20T15:42:12.174Z'
 ---
 
@@ -37,6 +37,8 @@ Reading doesn’t mean learning and learning doesn’t mean memorizing. The best
 3. Microsoft’s [C# Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/)
 4. [Popular learning materials from Microsoft](https://dotnet.microsoft.com/en-us/learn/csharp)
 
+<!-- -->
+
 ## Step 2. Learn ASP.NET framework
 
 ### ASP.NET Core
@@ -48,11 +50,13 @@ There are two parts to it:
 1. ASP.NET Core Web API is used for creating the back-end for the applications.
 2. ASP.NET Core Blazor is a framework for building client-side web applications.
 
+<!-- -->
+
 Consider concentrating only on the first item — **ASP.NET Core Web API.** It is popular in the industry and you will see it used in production. As for **ASP.NET Core Blazor**, I do not recommend spending too much time on it as it’s not widely adopted and other front-end frameworks such as React or Angular are used in real-world applications.
 
 There are more technologies in **ASP.NET**, but I will omit them because they are older or not widely adopted.
 
-I recommend starting with the book **_Pro ASP.NET Core 6: Develop Cloud-Ready Web Applications Using MVC, Blazor, and Razor Pages_** by Adam Freeman to get a good overview of the platform.
+I recommend starting with the book ***Pro ASP.NET Core 6: Develop Cloud-Ready Web Applications Using MVC, Blazor, and Razor Pages*** by Adam Freeman to get a good overview of the platform.
 
 ![Pro ASP.NET Core 6](/assets/book2.webp)
 
@@ -62,6 +66,8 @@ Additionally, it’s worth learning [Swagger UI](https://swagger.io/tools/swagg
 
 1. [ULTIMATE ASP.NET CORE WEB API](https://code-maze.com/ultimate-aspnetcore-webapi-second-edition/)
 2. Microsoft’s [Tutorial: Create a web API with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio)
+
+<!-- -->
 
 ## Step 3. Learn SQL
 
@@ -76,6 +82,8 @@ As a software engineer, you don’t need to know all the ins and outs of SQL and
 3. [Clustered and nonclustered indexes](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver16)
 4. [SQL Optimization](https://blog.devart.com/how-to-optimize-sql-query.html)
 
+<!-- -->
+
 **I recommend picking a book and sticking to it. You can find the best books in the list below:**
 
 1. SQL Cookbook by Anthony Molinaro
@@ -88,6 +96,8 @@ As a software engineer, you don’t need to know all the ins and outs of SQL and
 8. SQL Performance Explained Everything Developers Need to Know About
 9. SQL Performance by Markus Winand
 
+<!-- -->
+
 ## Step 4. Learn ADO.NET framework and Entity Framework
 
 ADO.NET allows you to use SQL in .NET to access a database. I recommend learning to use [Dapper](https://github.com/DapperLib/Dapper) as an object mapper instead of raw ADO.NET.
@@ -98,13 +108,17 @@ ADO.NET allows you to use SQL in .NET to access a database. I recommend learning
 
 1. [Microsoft’s docs](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
 
+<!-- -->
+
 **Recommended resources on Entity Framework:**
 
 1. [Microsoft’s docs](https://learn.microsoft.com/en-us/ef/core/)
 2. [Entity Framework Core in Action](https://www.manning.com/books/entity-framework-core-in-action-second-edition)
-3. [Julie Lerman — Entity Framework Author | Pluralsight](https://www.pluralsight.com/authors/julie-lerman?utm_source=google&utm_medium=paid-search&utm_campaign=upskilling-and-reskilling&utm_term=ssi-emea-xyz-dynamic&utm_content=free-trial&gclid=CjwKCAjw_MqgBhAGEiwAnYOAenDmbQyPl95Hhtmtk6olxpxlx695pTxBSigkX3IcYmvplRFfwEG29BoCQ5EQAvD_BwE)
+3. [Julie Lerman — Entity Framework Author \| Pluralsight](https://www.pluralsight.com/authors/julie-lerman?utm_source=google&utm_medium=paid-search&utm_campaign=upskilling-and-reskilling&utm_term=ssi-emea-xyz-dynamic&utm_content=free-trial&gclid=CjwKCAjw_MqgBhAGEiwAnYOAenDmbQyPl95Hhtmtk6olxpxlx695pTxBSigkX3IcYmvplRFfwEG29BoCQ5EQAvD_BwE)
 
-## Step 5. Deepen your knowledge of .NET and C#
+<!-- -->
+
+## Step 5. Deepen your knowledge of .NET and C
 
 To become an absolute beast in .NET you should extend your knowledge even further than I described before. I recommend two books that I always have on my bookshelf and review before every interview.
 
@@ -158,12 +172,16 @@ Learn the following concepts:
 6. API Gateways
 7. CI/CD
 
+<!-- -->
+
 Resources:
 
 1. [.NET Microservices: Architecture for Containerized .NET Applications](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/)
 2. [Architect Modern Web Applications with ASP.NET Core and Azure](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/)
 3. [Dapr for .NET Developers](https://learn.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/)
-4. [Microservices Architecture and Implementation on .NET 5](https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet) - good course on Udemy.
+4. [Microservices Architecture and Implementation on .NET 5](https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet) \- good course on Udemy.
+
+<!-- -->
 
 ## Step 9. Learn Microsoft Azure Cloud
 
@@ -181,9 +199,13 @@ Make sure you are familiar with the following technologies:
 8. Virtual machines
 9. [Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts)
 
+<!-- -->
+
 Resources:
 
 1. [Architecting Cloud Native .NET Applications for Azure](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/)
+
+<!-- -->
 
 ## Step 10. Learn NoSQL Databases
 
@@ -192,9 +214,11 @@ I recommend learning some main concepts of NoSQL databases such as the [CAP theo
 Get acquainted with the following DBs:
 
 1. [MongoDB](https://www.mongodb.com/docs/manual/tutorial/getting-started/) — the most popular NoSQL document-oriented database.
-1. [MongoDB - The Complete Developer's Guide](https://ciklum.udemy.com/course/mongodb-the-complete-developers-guide/) - good video guide.
-1. [CosmosDB](https://learn.microsoft.com/en-US/azure/cosmos-db/introduction) — highly scalable NoSQL database from Microsoft.
-1. Redis — key-value in memory storage used as cache. To be frank, now it is not only in memory and not only key-value :)
+2. [MongoDB - The Complete Developer's Guide](https://ciklum.udemy.com/course/mongodb-the-complete-developers-guide/) \- good video guide.
+3. [CosmosDB](https://learn.microsoft.com/en-US/azure/cosmos-db/introduction) — highly scalable NoSQL database from Microsoft.
+4. Redis — key-value in memory storage used as cache. To be frank, now it is not only in memory and not only key-value :)
+
+<!-- -->
 
 As for books, I highly recommend [NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence](https://www.amazon.com/NoSQL-Distilled-Emerging-Polyglot-Persistence/dp/0321826620). So far, it is the best book on NoSQL I read.
 
@@ -218,6 +242,8 @@ I came up with a list of hand-picked ones.NET libraries that I used extensively 
 10. Moq — the most popular and friendly mocking library for .NET
 11. [Hangfire](https://docs.hangfire.io/) — library for background job processing with embedded monitoring dashboard and persistent storage.
 
+<!-- -->
+
 I hope you will find these libraries useful and use them in your projects.
 
 ## Step 12. Prepare for the interview
@@ -226,8 +252,11 @@ I hope you will find these libraries useful and use them in your projects.
 2. Write down all questions after every interview and process them to fill the gaps in your knowledge
 3. Be comfortable with writing code on the whiteboard and explaining your thought process
 
+<!-- -->
+
 One of the best books on interview preparation is [Cracking the Coding Interview by Gayle Laakmann McDowell.](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
 ![Cracking the Coding Interview](/assets/book9.webp)
 
 Thanks for reading!
+
