@@ -24,7 +24,7 @@ const Admin = async () => {
 
     return {
       ...p,
-      date: generatedPost.date,
+      date: generatedPost.publishedAt,
       status: generatedPost ? 'published' : 'publising',
     }
   })
