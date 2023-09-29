@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@agentofuser/remark-oembed": "^1.0.4",
+    "@akebifiky/remark-simple-plantuml": "^1.0.2",
     "@codemirror/lang-markdown": "^6.1.1",
     "@codemirror/language-data": "^6.3.1",
     "@codemirror/view": "^6.11.3",
@@ -47,6 +49,8 @@
     "rehype-prism-plus": "^1.5.1",
     "rehype-slug": "^5.1.0",
     "rehype-stringify": "^9.0.3",
+    "remark-capitalize": "^1.1.0",
+    "remark-code-screenshot": "^1.0.0",
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1",
     "rough-notation": "^0.5.1",
