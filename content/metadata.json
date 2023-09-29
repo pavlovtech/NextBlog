@@ -1,6 +1,6 @@
 {
-  "commit": "776496b5533ebf0834d54fe8170bea9a478333e1",
-  "generated": "2023-09-29T18:17:49.829Z",
+  "commit": "64561c5013f3d35cbe0431b6aa07d5f6f680ee5e",
+  "generated": "2023-09-29T18:19:45.628Z",
   "metadata": [
     {
       "__outstatic": {
@@ -271,6 +271,24 @@
       "slug": "hi-i-am-alex",
       "status": "published",
       "title": "Hi, I am Alex"
+    },
+    {
+      "__outstatic": {
+        "commit": "64561c5013f3d35cbe0431b6aa07d5f6f680ee5e",
+        "hash": "4032031338",
+        "path": "content/projects/webreaper.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-09-29T18:37:19.314Z",
+      "slug": "webreaper",
+      "status": "published",
+      "title": "WebReaper"
     }
   ]
 }
