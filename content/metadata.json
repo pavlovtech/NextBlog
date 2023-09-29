@@ -1,6 +1,6 @@
 {
-  "commit": "8591898bfcf0e2cbbb4aadfab615bacf1f4f4c44",
-  "generated": "2023-09-29T18:26:53.187Z",
+  "commit": "d1a353c17fcc08735f71a031557b4dc299d27bcf",
+  "generated": "2023-09-29T18:27:33.833Z",
   "metadata": [
     {
       "__outstatic": {
@@ -274,24 +274,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3958810846ff5d83c9943b3db5e30cd58d6361a0",
-        "hash": "1854165348",
-        "path": "content/projects/pipelined-io.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2023-09-29T18:38:08.174Z",
-      "slug": "pipelined-io",
-      "status": "published",
-      "title": "pipelined.io"
-    },
-    {
-      "__outstatic": {
         "commit": "af6f0c823f246ba2b16948d13dcc3fe3e2e8dc63",
         "hash": "2693303766",
         "path": "content/pages/hi-i-am-alex.md"
@@ -328,6 +310,27 @@
       "status": "published",
       "technologies": "NextJS, Contentlayer, NextAuth, Giscus, GitHub API, Codemirror",
       "title": "NextBlog"
+    },
+    {
+      "__outstatic": {
+        "commit": "d1a353c17fcc08735f71a031557b4dc299d27bcf",
+        "hash": "2396213659",
+        "path": "content/projects/pipelined-io.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "gitHub": "",
+      "link": "https://pipelined.io/",
+      "publishedAt": "2023-09-29T18:38:08.174Z",
+      "slug": "pipelined-io",
+      "status": "published",
+      "technologies": "NextJS PlanetScale",
+      "title": "pipelined.io"
     }
   ]
 }
