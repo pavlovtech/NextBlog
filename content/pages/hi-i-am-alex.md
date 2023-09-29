@@ -1,5 +1,5 @@
 ---
-title: 'Hi, I am Alex'
+title: 'Home'
 status: 'published'
 author:
   name: 'Alex Pavlov '
