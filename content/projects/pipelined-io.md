@@ -1,6 +1,6 @@
 ---
 title: 'pipelined.io'
-status: 'draft'
+status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'

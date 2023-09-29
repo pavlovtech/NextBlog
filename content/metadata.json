@@ -1,6 +1,6 @@
 {
-  "commit": "7ba97fa3c0466be76acaf0ee0cc6441ee4adddd6",
-  "generated": "2023-09-29T18:20:19.780Z",
+  "commit": "3958810846ff5d83c9943b3db5e30cd58d6361a0",
+  "generated": "2023-09-29T18:20:36.281Z",
   "metadata": [
     {
       "__outstatic": {
@@ -292,8 +292,8 @@
     },
     {
       "__outstatic": {
-        "commit": "7ba97fa3c0466be76acaf0ee0cc6441ee4adddd6",
-        "hash": "3181879318",
+        "commit": "3958810846ff5d83c9943b3db5e30cd58d6361a0",
+        "hash": "1734895813",
         "path": "content/projects/pipelined-io.md"
       },
       "author": {
@@ -305,7 +305,7 @@
       "description": "",
       "publishedAt": "2023-09-29T18:38:08.174Z",
       "slug": "pipelined-io",
-      "status": "draft",
+      "status": "published",
       "title": "pipelined.io"
     }
   ]
