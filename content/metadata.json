@@ -1,6 +1,6 @@
 {
-  "commit": "843ecefce148e1cb8ecd37fc4efdaf58b909d264",
-  "generated": "2023-09-29T23:17:59.184Z",
+  "commit": "0fd559717b6ca7c44f4e0530b0d8eebd3a611eed",
+  "generated": "2023-09-29T23:19:37.061Z",
   "metadata": [
     {
       "__outstatic": {
@@ -290,26 +290,6 @@
     },
     {
       "__outstatic": {
-        "commit": "5526e1f97fe866a0355f216d40d5ffb62e818daa",
-        "hash": "1122240494",
-        "path": "content/posts/ngrx-store-in-angular.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/ngrx2.png",
-      "description": "Is it worth using NGRX in an Angular app?",
-      "featured": "yes",
-      "publishedAt": "2022-07-30T15:42:12.174Z",
-      "slug": "ngrx-store-in-angular",
-      "status": "published",
-      "tags": "ngrx, angular",
-      "title": "NGRX Store In Angular"
-    },
-    {
-      "__outstatic": {
         "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
         "hash": "432092368",
         "path": "content/posts/cqrs-mediatr-common-mistake.md"
@@ -346,6 +326,26 @@
       "status": "published",
       "tags": "csharp, dotnet",
       "title": "Asynchronous Initialization In C#"
+    },
+    {
+      "__outstatic": {
+        "commit": "0fd559717b6ca7c44f4e0530b0d8eebd3a611eed",
+        "hash": "2747769044",
+        "path": "content/posts/ngrx-store-in-angular.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/ngrx2.png",
+      "description": "Is it worth using NGRX in an Angular app?",
+      "featured": "yes",
+      "publishedAt": "2022-07-30T15:42:12.174Z",
+      "slug": "ngrx-store-in-angular",
+      "status": "published",
+      "tags": "ngrx, angular",
+      "title": "NGRX Store In Angular"
     }
   ]
 }
