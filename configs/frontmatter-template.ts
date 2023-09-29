@@ -4,7 +4,7 @@ export const defaultTemplate =
 `---
 date: ${format(Date.now(), 'LLLL d, yyyy')}
 title: "Title"
-featured: true
+featured: yes
 draft: false
 tags:
   - tag1

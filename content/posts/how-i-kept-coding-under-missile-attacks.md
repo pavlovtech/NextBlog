@@ -1,10 +1,8 @@
 ---
 publishedAt: '2022-08-22T15:42:12.174Z'
 title: "War In Ukraine: How I Kept Coding Under Missile Attacks"
-featured: true
-tags:
-  - war
-  - ukraine
+featured: yes
+tags: [{"label":"war","value":"war"},{"label":"ukraine","value":"ukraine"}]
 description: 'My story about the first days of the war in Ukraine.'
 status: 'published'
 author:

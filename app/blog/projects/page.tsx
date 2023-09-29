@@ -29,6 +29,8 @@ const projectsData = [
 ];
 
 export default function Projects() {
+    //const post = allProjects.find((post) => post.slug === params.slug)!;
+
     return (
         <>
             <div className="mx-auto max-w-6xl divide-y divide-gray-400">

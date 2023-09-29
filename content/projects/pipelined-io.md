@@ -8,7 +8,7 @@ slug: 'pipelined-io'
 description: ''
 coverImage: ''
 technologies: 'NextJS PlanetScale'
-gitHub: ''
+github: ''
 link: 'https://pipelined.io/'
 publishedAt: '2023-09-29T18:38:08.174Z'
 ---

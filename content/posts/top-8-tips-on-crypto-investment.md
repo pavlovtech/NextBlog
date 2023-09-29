@@ -1,10 +1,8 @@
 ---
 publishedAt: '2020-06-15T15:42:12.174Z'
 title: "Top 8 Tips On Crypto Investment"
-featured: false
-tags:
-  - crypto
-  - investment
+featured: no
+tags: [{"label":"crypto","value":"crypto"},{"label":"investment","value":"investment"}]
 coverImage: "/assets/crypto.webp"
 description: I just want to give you several simple tips that I learned during the last several years.
 status: 'published'

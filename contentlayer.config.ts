@@ -47,13 +47,12 @@ const Post = defineDocumentType(() => ({
       required: false,
     },
     featured: {
-      type: 'boolean',
+      type: 'string',
       description: 'featured',
       required: false,
     },
     tags: {
-      type: 'list',
-      of: { type: 'string' },
+      type: 'string',
       required: false
     },
     coverImage: {
@@ -68,11 +67,68 @@ const Post = defineDocumentType(() => ({
       resolve: (doc) => `blog/${doc._raw.flattenedPath}`,
     },
   },
+}));
+
+const Project = defineDocumentType(() => ({
+  name: 'Project',
+  filePathPattern: `projects/**/*.md`,
+  contentType: 'markdown',
+  fields: {
+    title: {
+      type: 'string',
+      description: 'The title of the post',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+    publishedAt: {
+      type: 'date',
+      description: 'The date of the post',
+      required: true,
+    },
+    status: {
+      type: 'string',
+      required: true,
+    },
+    slug: {
+      type: 'string',
+      required: true,
+    },
+    author: {
+      type: 'nested',
+      of: Author,
+      required: false,
+    },
+    coverImage: {
+      type: 'string',
+      required: false,
+    },
+    technologies: {
+      type: 'string',
+      required: false,
+    },
+    github: {
+      type: 'string',
+      required: false,
+    },
+    link: {
+      type: 'string',
+      required: false,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => `blog/${doc._raw.flattenedPath}`,
+    },
+  },
 }))
 
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Post],
+  documentTypes: [Post, Project],
   markdown: {
     remarkPlugins: [remarkGfm, remarkToc ],
     rehypePlugins: [

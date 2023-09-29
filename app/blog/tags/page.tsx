@@ -3,9 +3,9 @@ import Tag from "app/components/tag";
 import { allPosts } from "contentlayer/generated";
 
 export default function TagsPage() {
-  const allTags = allPosts.map(post => post.tags!).flat()!;
+  const allTags: any = allPosts.map(post => JSON.parse(post.tags!)).flat()!;
 
-  const tags = [...new Set(allTags)];
+  const tags = [...new Set(allTags.map((t: any) => t.label))];
 
   return (
     <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">

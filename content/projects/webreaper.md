@@ -8,7 +8,7 @@ status: 'published'
 slug: 'webreaper'
 description: ''
 technologies: '.NET, Puppeteer, MongoDB, Redis'
-gitHub: ''
+github: ''
 link: ''
 publishedAt: '2023-09-29T18:37:19.314Z'
 ---

@@ -1,10 +1,8 @@
 ---
 publishedAt: '2022-07-30T15:42:12.174Z'
 title: "NGRX Store In Angular"
-featured: false
-tags:
-  - ngrx
-  - angular
+featured: no
+tags: [{"label":"ngrx","value":"ngrx"},{"label":"angular","value":"angular"}]
 coverImage: "/assets/ngrx2.png"
 description: Is it worth using NGRX in an Angular app?
 status: 'published'

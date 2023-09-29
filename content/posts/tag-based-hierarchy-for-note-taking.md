@@ -1,10 +1,8 @@
 ---
 publishedAt: '2023-01-22T15:42:12.174Z'
 title: "Using Tags Instead Of Folders For In Obsidian"
-featured: false
-tags:
-  - note-taking
-  - obsidian
+featured: no
+tags: [{"label":"note-taking","value":"note-taking"},{"label":"obsidian","value":"obsidian"}]
 description: "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes."
 coverImage: '/assets/note-taking.jpg'
 status: 'published'
