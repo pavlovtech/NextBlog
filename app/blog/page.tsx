@@ -12,17 +12,33 @@ export const metadata = {
 }
 
 export default function Home() {
+
+  const featuredPosts = allPosts
+    .filter(p => p.draft !== true && p.featured)
+    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+
   const posts = allPosts
-    .filter(p => p.draft !== true)
+    .filter(p => p.draft !== true && !p.featured)
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
 
   return (
     <>
-      <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
+      <section className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
         <AboutMe />
         <IntroLinks />
-      </div>
-      <div>
+      </section>
+      <section>
+        <h2 className="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
+          Latest
+        </h2>
+        <hr className="border-gray-200 dark:border-gray-700" />
+        {!featuredPosts.length && 'No posts found.'}
+
+        {featuredPosts.map((post, idx) => (
+          <PostCard key={idx} {...post} />
+        ))}
+      </section>
+      <section>
         <h2 className="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
           Latest
         </h2>
@@ -32,7 +48,7 @@ export default function Home() {
         {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
         ))}
-      </div>
+      </section>
     </>
   );
 }

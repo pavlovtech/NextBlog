@@ -34,7 +34,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
         </div>
       </div>
       <div className="flex items-center text-base leading-5 mt-5 md:mt-0">
-        <div className="sm:block">
+        <nav className="sm:block">
           {navLinks.map((link) => (
             <Link
               key={link.title}
@@ -44,7 +44,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
               {link.title}
             </Link>
           ))}
-        </div>
+        </nav>
       </div>
     </header>
   )

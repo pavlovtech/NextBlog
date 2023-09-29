@@ -30,7 +30,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
   const Content = getMDXComponent(post.body.code);
   
   return (
-    <div className='flex flex-col justify-center'>
+    <article className='flex flex-col justify-center'>
       <div className="mb-8 text-center">
         <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
@@ -41,7 +41,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         <Content />
       </div>
       <Giscus />
-    </div>
+    </article>
   )
 }
 
