@@ -8,7 +8,7 @@ slug: 'anki-and-zettelkasten'
 description: ' Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.'
 tags: 'anki, zettelkasten'
 featured: ''
-coverImage: 'https://media.discordapp.net/attachments/1111967706879643819/1157419689648083044/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d.png?ex=65188a95&is=65173915&hm=eed335b0de21f27e48e4f2291354d597e7ea6ada8ebed57132796ad5e65f2915&=&width=1056&height=1056'
+coverImage: '/images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-Y4Nz.png'
 publishedAt: '2023-01-23T15:42:12.174Z'
 ---
 
