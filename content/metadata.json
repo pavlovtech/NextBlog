@@ -1,6 +1,6 @@
 {
-  "commit": "2f19400c9e6a5a322be42b2ecdde44ed08ab62b3",
-  "generated": "2023-09-29T18:41:21.149Z",
+  "commit": "2b29c01b345372e30bbf61eb333dc4798688464a",
+  "generated": "2023-09-29T19:19:09.056Z",
   "metadata": [
     {
       "__outstatic": {
@@ -274,27 +274,6 @@
     },
     {
       "__outstatic": {
-        "commit": "8591898bfcf0e2cbbb4aadfab615bacf1f4f4c44",
-        "hash": "3891267493",
-        "path": "content/projects/nextblog.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "",
-      "description": "",
-      "github": "https://github.com/pavlovtech/WebReaper",
-      "link": "",
-      "publishedAt": "2023-09-29T18:38:58.465Z",
-      "slug": "nextblog",
-      "status": "published",
-      "technologies": "NextJS, Contentlayer, NextAuth, Giscus, GitHub API, Codemirror",
-      "title": "NextBlog"
-    },
-    {
-      "__outstatic": {
         "commit": "d1a353c17fcc08735f71a031557b4dc299d27bcf",
         "hash": "2064992212",
         "path": "content/projects/pipelined-io.md"
@@ -363,6 +342,27 @@
         }
       ],
       "title": "test"
+    },
+    {
+      "__outstatic": {
+        "commit": "2b29c01b345372e30bbf61eb333dc4798688464a",
+        "hash": "3802852674",
+        "path": "content/projects/nextblog.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "github": "https://github.com/pavlovtech/WebReaper",
+      "link": "",
+      "publishedAt": "2023-09-29T18:38:58.465Z",
+      "slug": "nextblog",
+      "status": "published",
+      "technologies": "NextJS, Contentlayer, NextAuth, Giscus, GitHub API, Codemirror",
+      "title": "NextBlog"
     }
   ]
 }
