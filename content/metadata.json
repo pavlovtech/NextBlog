@@ -1,6 +1,6 @@
 {
-  "commit": "0e9fe16f0cbe8c1d0e33c42dcc110927d9c11fc8",
-  "generated": "Fri, 29 Sep 2023 16:23:22 GMT",
+  "commit": "e1590aecd391cd65c2494d9f44c86c50dca92fdc",
+  "generated": "Fri, 29 Sep 2023 16:53:28 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -164,27 +164,28 @@
     },
     {
       "__outstatic": {
-        "commit": "79d59bb9cd7e223f73b1d89acc400f9326d8ab41",
-        "hash": "2923305994",
-        "path": "content/posts/open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos.md"
+        "commit": "bacdeba958fef90dc6b75521c8a627da4b7485ef",
+        "hash": "3478940079",
+        "path": "content/posts/top-10-insights-about-web-app-optimizations.md"
       },
       "author": {
         "name": "Alex Pavlov ",
         "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "coverImage": "assets/code-in-vs.jpg",
-      "description": "I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.",
+      "coverImage": "/assets/gear.jpg",
+      "description": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
       "draft": false,
       "featured": false,
-      "publishedAt": "2020-06-10T15:42:12.174Z",
-      "slug": "open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos",
+      "publishedAt": "2022-03-21T15:42:12.174Z",
+      "slug": "top-10-insights-about-web-app-optimizations",
       "status": "published",
       "tags": [
-        "vscode",
-        "macos"
+        "javascript",
+        "web",
+        "optimization"
       ],
-      "title": "Open Folder In VSCode Using A Context Menu in MacOS"
+      "title": "Top 10 Insights About Web Application Optimization"
     },
     {
       "__outstatic": {
@@ -212,31 +213,6 @@
     },
     {
       "__outstatic": {
-        "commit": "bacdeba958fef90dc6b75521c8a627da4b7485ef",
-        "hash": "3478940079",
-        "path": "content/posts/top-10-insights-about-web-app-optimizations.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/gear.jpg",
-      "description": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
-      "draft": false,
-      "featured": false,
-      "publishedAt": "2022-03-21T15:42:12.174Z",
-      "slug": "top-10-insights-about-web-app-optimizations",
-      "status": "published",
-      "tags": [
-        "javascript",
-        "web",
-        "optimization"
-      ],
-      "title": "Top 10 Insights About Web Application Optimization"
-    },
-    {
-      "__outstatic": {
         "commit": "751d29036348451cf20067f03b16ab6fd0aed295",
         "hash": "3206771821",
         "path": "content/posts/ngrx-store-in-angular.md"
@@ -258,6 +234,30 @@
         "angular"
       ],
       "title": "NGRX Store In Angular"
+    },
+    {
+      "__outstatic": {
+        "commit": "79d59bb9cd7e223f73b1d89acc400f9326d8ab41",
+        "hash": "2923305994",
+        "path": "content/posts/open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "assets/code-in-vs.jpg",
+      "description": "I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.",
+      "draft": false,
+      "featured": false,
+      "publishedAt": "2020-06-10T15:42:12.174Z",
+      "slug": "open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos",
+      "status": "published",
+      "tags": [
+        "vscode",
+        "macos"
+      ],
+      "title": "Open Folder In VSCode Using A Context Menu in MacOS"
     }
   ]
 }
