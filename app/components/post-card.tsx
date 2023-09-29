@@ -21,7 +21,7 @@ export function PostCard(post: Post) {
               </h2>
             </div>
             <div className="flex flex-wrap">
-              {post.tags!.map((tag) => (
+              {post.tags!.split(",").map((tag) => (
                 <Tag key={tag} text={tag} />
               ))}
             </div>

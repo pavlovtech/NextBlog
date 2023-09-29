@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'asnync-obj-conscruction-in-scharp'
 featured: no
-tags: [{"label":"csharp","value":"csharp"},{"label":"dotnet","value":"dotnet"}]
+tags: 'csharp, dotnet'
 description: 'You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.'
 coverImage: '/assets/spikes.jpeg'
 publishedAt: '2023-09-06T15:42:12.174Z'

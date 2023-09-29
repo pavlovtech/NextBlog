@@ -2,7 +2,7 @@
 publishedAt: '2022-03-21T15:42:12.174Z'
 title: 'Top 10 Insights About Web Application Optimization'
 featured: no
-tags: [{"label":"javascript","value":"javascript"},{"label":"optimization","value":"optimization"}]
+tags: 'javascrpt, optimization'
 coverImage: '/assets/gear.jpg'
 description: 'Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.'
 status: 'published'

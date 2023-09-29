@@ -2,7 +2,7 @@
 publishedAt: '2023-08-07T15:42:12.174Z'
 title: "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
 featured: yes
-tags: [{"label":"cqrs","value":"cqrs"},{"label":"dotnet","value":"dotnet"}]
+tags: 'cqrs, dotnet'
 description: 'This post will explore a common mistake in projects MetiatR and CQRS.'
 status: 'published'
 author:
