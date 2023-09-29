@@ -43,5 +43,5 @@ This is even uglier than before. Fortunately, now C# has Prepend and Append meth
 var allTexts = texts.Prepend(introText).Append(conclusionText);
 ```
 
-Note: Prepend and Append methods do not modify the elements of the collection. Instead, they create a copy of the collection with the new element.
+*Note: Prepend and Append methods do not modify the elements of the collection. Instead, they create a copy of the collection with the new element.*
 
