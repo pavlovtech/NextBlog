@@ -1,6 +1,6 @@
 {
-  "commit": "64561c5013f3d35cbe0431b6aa07d5f6f680ee5e",
-  "generated": "2023-09-29T18:19:45.628Z",
+  "commit": "7ba97fa3c0466be76acaf0ee0cc6441ee4adddd6",
+  "generated": "2023-09-29T18:20:19.780Z",
   "metadata": [
     {
       "__outstatic": {
@@ -289,6 +289,24 @@
       "slug": "webreaper",
       "status": "published",
       "title": "WebReaper"
+    },
+    {
+      "__outstatic": {
+        "commit": "7ba97fa3c0466be76acaf0ee0cc6441ee4adddd6",
+        "hash": "3181879318",
+        "path": "content/projects/pipelined-io.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-09-29T18:38:08.174Z",
+      "slug": "pipelined-io",
+      "status": "draft",
+      "title": "pipelined.io"
     }
   ]
 }
