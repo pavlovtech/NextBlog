@@ -1,7 +1,6 @@
 ---
-publishedAt: '2023-08-07T15:42:12.174Z'
-title: "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
-featured: yes
+title: 'A Guide to Cleaner Code with CQRS and MediatR'
+featured: 'yes'
 tags: 'cqrs, dotnet'
 description: 'This post will explore a common mistake in projects MetiatR and CQRS.'
 status: 'published'
@@ -9,6 +8,7 @@ author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'cqrs-mediatr-common-mistake'
+publishedAt: '2023-08-07T15:42:12.174Z'
 ---
 
 ## Introduction
@@ -55,6 +55,8 @@ So where should your logic go? You have multiple options:
 3. Extension Method: Create extension methods that can be reused across different handlers.
 4. Other Custom Solutions: Tailored to your specific requirements and architecture.
 
+<!-- -->
+
 ## Testing Considerations
 
 When handlers are nested or interdependent, it creates a chain of dependencies that can make testing more complex:
@@ -63,8 +65,11 @@ When handlers are nested or interdependent, it creates a chain of dependencies t
 2. Brittle Tests: Changes to one handler may break tests for other handlers that depend on it, leading to increased maintenance efforts.
 3. Hidden Behavior: Testing a handler that relies on other handlers may conceal what exactly is being tested, leading to potential gaps in coverage or misunderstood test results.
 
+<!-- -->
+
 By avoiding nested handlers, testing becomes more straightforward, allowing you to isolate and test individual components more easily.
 
 ## Conclusion
 
 Avoiding nested handlers in CQRS with MediatR leads to cleaner, more maintainable code, free from unnecessary complexity and coupling. By applying regular refactoring techniques and moving common logic to dedicated places, you can enhance your code quality and avoid confusion down the road.
+

@@ -1,6 +1,6 @@
 {
-  "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
-  "generated": "2023-09-29T21:45:22.107Z",
+  "commit": "0fd559717b6ca7c44f4e0530b0d8eebd3a611eed",
+  "generated": "2023-09-29T23:19:37.061Z",
   "metadata": [
     {
       "__outstatic": {
@@ -24,28 +24,6 @@
         "ukraine"
       ],
       "title": "War In Ukraine: How I Kept Coding Under Missile Attacks"
-    },
-    {
-      "__outstatic": {
-        "commit": "88fa9fda122796ac2b99354192b289e027579c0f",
-        "hash": "4046372288",
-        "path": "content/posts/cqrs-mediatr-common-mistake.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "description": "This post will explore a common mistake in projects MetiatR and CQRS.",
-      "featured": true,
-      "publishedAt": "2023-08-07T15:42:12.174Z",
-      "slug": "cqrs-mediatr-common-mistake",
-      "status": "published",
-      "tags": [
-        "cqrs",
-        "dotnet"
-      ],
-      "title": "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
     },
     {
       "__outstatic": {
@@ -139,29 +117,6 @@
         "macos"
       ],
       "title": "Open Folder In VSCode Using A Context Menu in MacOS"
-    },
-    {
-      "__outstatic": {
-        "commit": "1e1fca37f89f010205c8308a48dd3afe1f6ec205",
-        "hash": "3545612090",
-        "path": "content/posts/ngrx-store-in-angular.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "https://alexpavlov.dev/assets/ngrx2.png",
-      "description": "Is it worth using NGRX in an Angular app?",
-      "featured": false,
-      "publishedAt": "2022-07-30T15:42:12.174Z",
-      "slug": "ngrx-store-in-angular",
-      "status": "published",
-      "tags": [
-        "ngrx",
-        "angular"
-      ],
-      "title": "NGRX Store In Angular"
     },
     {
       "__outstatic": {
@@ -295,26 +250,6 @@
     },
     {
       "__outstatic": {
-        "commit": "ff973264a97ce22cbf992cd55055e98b447e4ca4",
-        "hash": "3991845292",
-        "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
-      "featured": "no",
-      "publishedAt": "2023-09-06T15:42:12.174Z",
-      "slug": "asnync-obj-conscruction-in-scharp",
-      "status": "published",
-      "tags": "csharp, dotnet",
-      "title": "Common Dilemma With Asynchronous Object Construction In C#"
-    },
-    {
-      "__outstatic": {
         "commit": "07b850a11693d2a3abf568b4b426f926bc2f3e2f",
         "hash": "1480544783",
         "path": "content/posts/anki-and-zettelkasten.md"
@@ -352,6 +287,65 @@
       "status": "published",
       "tags": "csharp, career",
       "title": "How to become a badass .NET developer"
+    },
+    {
+      "__outstatic": {
+        "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
+        "hash": "432092368",
+        "path": "content/posts/cqrs-mediatr-common-mistake.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "description": "This post will explore a common mistake in projects MetiatR and CQRS.",
+      "featured": "yes",
+      "publishedAt": "2023-08-07T15:42:12.174Z",
+      "slug": "cqrs-mediatr-common-mistake",
+      "status": "published",
+      "tags": "cqrs, dotnet",
+      "title": "A Guide to Cleaner Code with CQRS and MediatR"
+    },
+    {
+      "__outstatic": {
+        "commit": "843ecefce148e1cb8ecd37fc4efdaf58b909d264",
+        "hash": "2218613977",
+        "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
+      "featured": "no",
+      "publishedAt": "2023-09-06T15:42:12.174Z",
+      "slug": "asnync-obj-conscruction-in-scharp",
+      "status": "published",
+      "tags": "csharp, dotnet",
+      "title": "Asynchronous Initialization In C#"
+    },
+    {
+      "__outstatic": {
+        "commit": "0fd559717b6ca7c44f4e0530b0d8eebd3a611eed",
+        "hash": "2747769044",
+        "path": "content/posts/ngrx-store-in-angular.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/ngrx2.png",
+      "description": "Is it worth using NGRX in an Angular app?",
+      "featured": "yes",
+      "publishedAt": "2022-07-30T15:42:12.174Z",
+      "slug": "ngrx-store-in-angular",
+      "status": "published",
+      "tags": "ngrx, angular",
+      "title": "NGRX Store In Angular"
     }
   ]
 }
