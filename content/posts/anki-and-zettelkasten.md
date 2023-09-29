@@ -6,7 +6,6 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'anki-and-zettelkasten'
 description: ' Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.'
-coverImage: ''
 publishedAt: '2023-01-23T15:42:12.174Z'
 tags:
   - anki

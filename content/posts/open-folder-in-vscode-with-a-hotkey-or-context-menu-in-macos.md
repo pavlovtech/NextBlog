@@ -5,7 +5,7 @@ featured: false
 tags:
   - vscode
   - macos
-coverImage: "assets/code-in-vs.jpg"
+coverImage: "/assets/code-in-vs.jpg"
 description: I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.
 status: 'published'
 author:

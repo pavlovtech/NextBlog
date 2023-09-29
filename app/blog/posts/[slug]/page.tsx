@@ -3,6 +3,7 @@ import { Post, allPosts } from 'contentlayer/generated'
 import '../../../../styles/prism-atom-dark.css';
 import { notFound } from 'next/navigation';
 import { Giscus } from 'app/components/comments/giscus';
+import Image from 'next/image'
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post.slug }))
 
@@ -34,8 +35,21 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         </time>
         <h1 className='text-3xl font-bold'>{post.title}</h1>
       </div>
-      <img className='mb-4' src={post.coverImage} />
-      <div dangerouslySetInnerHTML={{ __html: post.body.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5'>
+      {post.coverImage && (<Image
+        src={post.coverImage}
+        sizes="100vw"
+        style={{
+          width: '100%',
+          height: 'auto',
+        }}
+        width={300}
+        height={300}
+        alt="Cover"
+      />)}
+
+      
+
+      <div dangerouslySetInnerHTML={{ __html: post.body.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5 mt-5'>
       </div>
       <Giscus />
     </article>

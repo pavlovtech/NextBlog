@@ -5,7 +5,7 @@ featured: false
 tags:
   - ngrx
   - angular
-coverImage: "https://alexpavlov.dev/assets/ngrx2.png"
+coverImage: "/assets/ngrx2.png"
 description: Is it worth using NGRX in an Angular app?
 status: 'published'
 author:
