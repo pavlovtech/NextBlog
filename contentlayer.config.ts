@@ -35,7 +35,9 @@ const Post = defineDocumentType(() => ({
       required: true,
     },
     status: {
-      type: 'string',
+      type: 'enum',
+      options: ['published', 'draft'],
+      default: 'draft',
       required: true,
     },
     slug: {
@@ -48,8 +50,9 @@ const Post = defineDocumentType(() => ({
       required: false,
     },
     featured: {
-      type: 'string',
-      description: 'featured',
+      type: 'enum',
+      options: ['yes', 'no'],
+      default: 'no',
       required: false,
     },
     tags: {
@@ -173,5 +176,6 @@ export default makeSource({
       // @ts-ignore
       lazyLoadPlugin
     ]
-  }
+  },
+  contentDirExclude: ['metadata.json', 'projects/schema.json', 'posts/schema.json'],
 })
