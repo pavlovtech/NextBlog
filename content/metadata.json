@@ -1,6 +1,6 @@
 {
-  "commit": "fcb9cb6435ce8c75600a2309498376562f7bf792",
-  "generated": "Fri, 29 Sep 2023 15:38:10 GMT",
+  "commit": "e1590aecd391cd65c2494d9f44c86c50dca92fdc",
+  "generated": "Fri, 29 Sep 2023 16:53:28 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -22,54 +22,21 @@
     },
     {
       "__outstatic": {
-        "commit": "37500bc6a63a2285d6e79c992b8da2a71dba322c",
-        "hash": "2713612430",
-        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
-      },
-      "collection": "posts",
-      "date": "August 6, 2023",
-      "draft": false,
-      "featured": false,
-      "slug": "append-and-prepend-methods-in-dotnet",
-      "summary": "A nice and functional way to add a single element to the IEnumerable collection",
-      "tags": [
-        "csharp",
-        "dotnet"
-      ],
-      "title": "Two useful methods of IEnumerable in .NET"
-    },
-    {
-      "__outstatic": {
-        "commit": "9322553b6c1b89dd531f68ac26e6b4fe63626f77",
-        "hash": "2424291941",
-        "path": "content/posts/ngrx-store-in-angular.md"
-      },
-      "collection": "posts",
-      "date": "2022-07-30T00:00:00.000Z",
-      "draft": false,
-      "featured": false,
-      "ogImage": "https://alexpavlov.dev/assets/ngrx2.png",
-      "slug": "ngrx-store-in-angular",
-      "summary": "Is it worth using NGRX in an Angular app?",
-      "tags": [
-        "ngrx",
-        "angular"
-      ],
-      "title": "NGRX Store In Angular"
-    },
-    {
-      "__outstatic": {
-        "commit": "8f48337db1305e11d13a147dc1f55b2c60d5b863",
-        "hash": "2492454510",
+        "commit": "f1cc4b6e0401380360054407ccdf82f3fff6fba6",
+        "hash": "343600060",
         "path": "content/posts/how-i-kept-coding-under-missile-attacks.md"
       },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
       "collection": "posts",
-      "date": "2022-06-22T00:00:00.000Z",
+      "description": "My story about the first days of the war in Ukraine.",
       "draft": false,
       "featured": true,
-      "ogImage": "https://alexpavlov.dev/assets/war-logo.webp",
+      "publishedAt": "2022-08-22T15:42:12.174Z",
       "slug": "how-i-kept-coding-under-missile-attacks",
-      "summary": "My story about the first days of the war in Ukraine.",
+      "status": "published",
       "tags": [
         "war",
         "ukraine"
@@ -78,37 +45,69 @@
     },
     {
       "__outstatic": {
-        "commit": "7b38b29fff42543a3814454e29bbf6ce760cf05d",
-        "hash": "1662700421",
-        "path": "content/posts/badass-dotnet-dev.md"
+        "commit": "44318667ad5917cd870fe028d5a96fa3d661ac10",
+        "hash": "2740776003",
+        "path": "content/posts/cqrs-mediatr-common-mistake.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "date": "2023-03-20T00:00:00.000Z",
+      "description": "This post will explore a common mistake in projects MetiatR and CQRS.",
       "draft": false,
       "featured": true,
-      "ogImage": "/assets/badass-dev-logo.webp",
+      "publishedAt": "2023-08-07T15:42:12.174Z",
+      "slug": "cqrs-mediatr-common-mistake",
+      "status": "published",
+      "tags": [
+        "cqrs",
+        "dotnet"
+      ],
+      "title": "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
+    },
+    {
+      "__outstatic": {
+        "commit": "f3e9c27545892cbd6282b24c7c1ba02cb89cfe61",
+        "hash": "84512178",
+        "path": "content/posts/badass-dotnet-dev.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/badass-dev-logo.webp",
+      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "draft": false,
+      "featured": false,
+      "publishedAt": "2023-03-20T15:42:12.174Z",
       "slug": "badass-dotnet-dev",
-      "summary": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "status": "published",
       "tags": [
         "dotnet",
-        "csharp",
         "career"
       ],
       "title": "How to become a badass .NET developer"
     },
     {
       "__outstatic": {
-        "commit": "148e047e0c26174ecd9fb6850cc3c483e8aa0d69",
-        "hash": "1866217052",
+        "commit": "c2243998cbc3ee66fe2563dc47ce75057ff0d199",
+        "hash": "4046221882",
         "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
       },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
       "collection": "posts",
-      "date": "2023-01-30T00:00:00.000Z",
+      "coverImage": "https://alexpavlov.dev/assets/spikes.jpeg",
+      "description": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
       "draft": false,
       "featured": false,
-      "ogImage": "https://alexpavlov.dev/assets/spikes.jpeg",
+      "publishedAt": "2023-09-06T15:42:12.174Z",
       "slug": "asnync-obj-conscruction-in-scharp",
-      "summary": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
+      "status": "published",
       "tags": [
         "csharp",
         "dotnet"
@@ -117,37 +116,46 @@
     },
     {
       "__outstatic": {
-        "commit": "c5efd800499161ad22812d54d1b2c328c94ccd15",
-        "hash": "914787151",
-        "path": "content/posts/cqrs-mediatr-common-mistake.md"
+        "commit": "a114e7916fbe7a869df6c3c9c2e21b2ebb702d52",
+        "hash": "1983609336",
+        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "date": "August 7, 2023",
+      "coverImage": "",
+      "description": "A nice and functional way to add a single element to the IEnumerable collection",
       "draft": false,
-      "featured": true,
-      "slug": "cqrs-mediatr-common-mistake",
-      "summary": "This post will explore a common mistake in projects MetiatR and CQRS.",
+      "featured": false,
+      "publishedAt": "2023-09-06T15:42:12.174Z",
+      "slug": "append-and-prepend-methods-in-dotnet",
+      "status": "published",
       "tags": [
-        "dotnet",
         "csharp",
-        "cqrs",
-        "mediatr"
+        "dotnet"
       ],
-      "title": "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
+      "title": "Two useful methods of IEnumerable in .NET"
     },
     {
       "__outstatic": {
-        "commit": "d17c13db8dd48b0f20b0e2111d4b88529923a2d0",
-        "hash": "2086019589",
+        "commit": "86333bc9e5dedcc14fe80680ae7dceeb8b8346e3",
+        "hash": "869151769",
         "path": "content/posts/top-8-tips-on-crypto-investment.md"
       },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
       "collection": "posts",
-      "date": "2020-06-15T00:00:00.000Z",
+      "coverImage": "/assets/crypto.webp",
+      "description": "I just want to give you several simple tips that I learned during the last several years.",
       "draft": false,
       "featured": false,
-      "ogImage": "/assets/crypto.webp",
+      "publishedAt": "2020-06-15T15:42:12.174Z",
       "slug": "top-8-tips-on-crypto-investment",
-      "summary": "I just want to give you several simple tips that I learned during the last several years.",
+      "status": "published",
       "tags": [
         "crypto",
         "investment"
@@ -156,17 +164,22 @@
     },
     {
       "__outstatic": {
-        "commit": "dbf9e07ef98c2c1b6edec8171aea62c1a056272f",
-        "hash": "430142317",
+        "commit": "bacdeba958fef90dc6b75521c8a627da4b7485ef",
+        "hash": "3478940079",
         "path": "content/posts/top-10-insights-about-web-app-optimizations.md"
       },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
       "collection": "posts",
-      "date": "2022-03-21T00:00:00.000Z",
+      "coverImage": "/assets/gear.jpg",
+      "description": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
       "draft": false,
       "featured": false,
-      "ogImage": "/assets/gear.jpg",
+      "publishedAt": "2022-03-21T15:42:12.174Z",
       "slug": "top-10-insights-about-web-app-optimizations",
-      "summary": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
+      "status": "published",
       "tags": [
         "javascript",
         "web",
@@ -176,17 +189,22 @@
     },
     {
       "__outstatic": {
-        "commit": "06a449c009b2d17bba83970fda06351a6855c8de",
-        "hash": "1369716944",
+        "commit": "533e655cc5627ec99d8553fdaf32093e3b866c8c",
+        "hash": "1317708356",
         "path": "content/posts/tag-based-hierarchy-for-note-taking.md"
       },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
       "collection": "posts",
-      "date": "2023-01-22T00:00:00.000Z",
+      "coverImage": "/assets/note-taking.jpg",
+      "description": "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes.",
       "draft": false,
       "featured": false,
-      "ogImage": "/assets/note-taking.jpg",
+      "publishedAt": "2023-01-22T15:42:12.174Z",
       "slug": "tag-based-hierarchy-for-note-taking",
-      "summary": "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes.",
+      "status": "published",
       "tags": [
         "note-taking",
         "obsidian"
@@ -195,35 +213,46 @@
     },
     {
       "__outstatic": {
-        "commit": "5da27fc7280b0f3fc3983717bb0e4b0716d07f65",
-        "hash": "3686928168",
-        "path": "content/posts/test.md"
+        "commit": "751d29036348451cf20067f03b16ab6fd0aed295",
+        "hash": "3206771821",
+        "path": "content/posts/ngrx-store-in-angular.md"
       },
       "author": {
         "name": "Alex Pavlov ",
         "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "coverImage": "",
-      "description": "Test",
-      "publishedAt": "2023-09-29T15:42:12.174Z",
-      "slug": "test",
+      "coverImage": "https://alexpavlov.dev/assets/ngrx2.png",
+      "description": "Is it worth using NGRX in an Angular app?",
+      "draft": false,
+      "featured": false,
+      "publishedAt": "2022-07-30T15:42:12.174Z",
+      "slug": "ngrx-store-in-angular",
       "status": "published",
-      "title": "Test"
+      "tags": [
+        "ngrx",
+        "angular"
+      ],
+      "title": "NGRX Store In Angular"
     },
     {
       "__outstatic": {
-        "commit": "56e094839b3a796938a62386fc846c0278e25aa1",
-        "hash": "2857014533",
+        "commit": "79d59bb9cd7e223f73b1d89acc400f9326d8ab41",
+        "hash": "2923305994",
         "path": "content/posts/open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos.md"
       },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
       "collection": "posts",
-      "date": "2020-06-10T00:00:00.000Z",
+      "coverImage": "assets/code-in-vs.jpg",
+      "description": "I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.",
       "draft": false,
       "featured": false,
-      "ogImage": "assets/code-in-vs.jpg",
+      "publishedAt": "2020-06-10T15:42:12.174Z",
       "slug": "open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos",
-      "summary": "I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.",
+      "status": "published",
       "tags": [
         "vscode",
         "macos"
