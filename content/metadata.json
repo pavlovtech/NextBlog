@@ -1,6 +1,6 @@
 {
-  "commit": "3958810846ff5d83c9943b3db5e30cd58d6361a0",
-  "generated": "2023-09-29T18:20:44.889Z",
+  "commit": "aecbc5ce16e0ee83b4ed5fee3fe9a667d6f6414d",
+  "generated": "2023-09-29T18:21:11.737Z",
   "metadata": [
     {
       "__outstatic": {
@@ -307,6 +307,24 @@
       "slug": "pipelined-io",
       "status": "published",
       "title": "pipelined.io"
+    },
+    {
+      "__outstatic": {
+        "commit": "aecbc5ce16e0ee83b4ed5fee3fe9a667d6f6414d",
+        "hash": "359649218",
+        "path": "content/projects/nextblog.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-09-29T18:38:58.465Z",
+      "slug": "nextblog",
+      "status": "published",
+      "title": "NextBlog"
     }
   ]
 }
