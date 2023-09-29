@@ -1,13 +1,18 @@
 ---
-date: 2020-06-10
+publishedAt: '2020-06-10T15:42:12.174Z'
 title: "Open Folder In VSCode Using A Context Menu in MacOS"
 featured: false
 draft: false
 tags:
   - vscode
   - macos
-ogImage: "assets/code-in-vs.jpg"
-summary: I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.
+coverImage: "assets/code-in-vs.jpg"
+description: I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos'
 ---
 
 ![Logo](/assets/code-in-vs.jpg)

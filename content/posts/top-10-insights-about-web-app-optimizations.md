@@ -1,14 +1,19 @@
 ---
-date: 2022-03-21
-title: "Top 10 Insights About Web Application Optimization"
+publishedAt: '2022-03-21T15:42:12.174Z'
+title: 'Top 10 Insights About Web Application Optimization'
 featured: false
 draft: false
 tags:
   - javascript
   - web
   - optimization
-ogImage: "/assets/gear.jpg"
-summary: Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.
+coverImage: '/assets/gear.jpg'
+description: 'Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.'
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'top-10-insights-about-web-app-optimizations'
 ---
 
 ![Logo](/assets/gear.jpg)

@@ -3,10 +3,6 @@ const { withAxiom } = require('next-axiom');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-    serverActions: false,
-  },
   reactStrictMode: true,
   redirects: async () => {
     return [

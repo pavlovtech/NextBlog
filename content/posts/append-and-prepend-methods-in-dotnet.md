@@ -1,12 +1,18 @@
 ---
-date: August 6, 2023
-title: Two useful methods of IEnumerable in .NET
+title: 'Two useful methods of IEnumerable in .NET'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'append-and-prepend-methods-in-dotnet'
+status: 'published'
 featured: false
 draft: false
 tags:
   - csharp
   - dotnet
-summary: A nice and functional way to add a single element to the IEnumerable collection
+description: 'A nice and functional way to add a single element to the IEnumerable collection'
+coverImage: ''
+publishedAt: '2023-09-06T15:42:12.174Z'
 ---
 
 I found myself writing this piece of code:

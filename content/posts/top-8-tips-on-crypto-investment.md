@@ -1,13 +1,18 @@
 ---
-date: 2020-06-15
+publishedAt: '2020-06-15T15:42:12.174Z'
 title: "Top 8 Tips On Crypto Investment"
 featured: false
 draft: false
 tags:
   - crypto
   - investment
-ogImage: "/assets/crypto.webp"
-summary: I just want to give you several simple tips that I learned during the last several years.
+coverImage: "/assets/crypto.webp"
+description: I just want to give you several simple tips that I learned during the last several years.
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'top-8-tips-on-crypto-investment'
 ---
 
 ![Logo](/assets/crypto.webp)

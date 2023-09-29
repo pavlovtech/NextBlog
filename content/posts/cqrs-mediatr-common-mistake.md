@@ -1,14 +1,17 @@
 ---
-date: August 7, 2023
+publishedAt: '2023-08-07T15:42:12.174Z'
 title: "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
 featured: true
 draft: false
 tags:
-  - dotnet
-  - csharp
   - cqrs
-  - mediatr
-summary: This post will explore a common mistake in projects MetiatR and CQRS.
+  - dotnet
+description: 'This post will explore a common mistake in projects MetiatR and CQRS.'
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'cqrs-mediatr-common-mistake'
 ---
 
 ## Introduction

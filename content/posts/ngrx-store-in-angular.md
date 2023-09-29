@@ -1,13 +1,18 @@
 ---
-date: 2022-07-30
+publishedAt: '2022-07-30T15:42:12.174Z'
 title: "NGRX Store In Angular"
 featured: false
 draft: false
 tags:
   - ngrx
   - angular
-ogImage: "https://alexpavlov.dev/assets/ngrx2.png"
-summary: Is it worth using NGRX in an Angular app?
+coverImage: "https://alexpavlov.dev/assets/ngrx2.png"
+description: Is it worth using NGRX in an Angular app?
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'ngrx-store-in-angular'
 ---
 
 ![Logo](/assets/ngrx2.png)

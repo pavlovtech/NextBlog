@@ -1,13 +1,18 @@
 ---
-date: 2023-01-30
-title: Asynchronous Object Construction In C#
+title: 'Asynchronous Object Construction In C#'
+status: 'published'
+author:
+  name: 'Alex Pavlov '
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
+slug: 'asnync-obj-conscruction-in-scharp'
 featured: false
 draft: false
 tags:
   - csharp
   - dotnet
-ogImage: "https://alexpavlov.dev/assets/spikes.jpeg"
-summary: You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.
+description: 'You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.'
+coverImage: 'https://alexpavlov.dev/assets/spikes.jpeg'
+publishedAt: '2023-09-06T15:42:12.174Z'
 ---
 
 You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.
