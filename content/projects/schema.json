@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Technologies"
+    },
+    "gitHub": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "GitHub"
     }
   }
 }
