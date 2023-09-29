@@ -2,11 +2,6 @@
 import { RoughNotation } from 'react-rough-notation';
 import { allPages, Page } from "contentlayer/generated";
 
-export const metadata = {
-    title: 'Alex Pavlov - blog',
-    description: 'my personal blog where I share my notes, ideas and inspirations'
-}
-
 export function AboutMe() {
     "use client";
 

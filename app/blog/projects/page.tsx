@@ -4,7 +4,12 @@ import Link from "next/link";
 
 export const metadata = {
     title: 'Alex Pavlov - blog',
-    description: 'my personal blog where I share my notes, ideas and inspirations'
+    description: 'Alex Pavlov - projects',
+    languages: {
+      'en-US': '/en-US',
+    },
+    keywords: ['Alex Pavlov', 'Projects', '.NET', 'C#', 'JavaScript'],
+    creator: 'Alex Pavlov',
 }
 
 export default function Projects() {

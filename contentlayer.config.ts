@@ -5,6 +5,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkToc from 'remark-toc';
 import rehypeCodeTitles from 'rehype-code-titles';
+import lazyLoadPlugin from 'rehype-plugin-image-native-lazy-loading'
 
 const Author = defineNestedType(() => ({
   name: 'Author',
@@ -168,7 +169,9 @@ export default makeSource({
       rehypeAutolinkHeadings,
       rehypeSlug,
       rehypeCodeTitles,
-      rehypePrism
+      rehypePrism,
+      // @ts-ignore
+      lazyLoadPlugin
     ]
   }
 })

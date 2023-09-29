@@ -8,7 +8,13 @@ import { IntroLinks } from "app/components/intro-links";
 
 export const metadata = {
   title: 'Alex Pavlov - blog',
-  description: 'Alex Pavlov - blog about programming'
+  description: 'Alex Pavlov - blog about programming',
+  languages: {
+    'en-US': '/en-US',
+  },
+  keywords: ['Alex Pavlov', 'Blog', '.NET', 'C#', 'JavaScript'],
+  creator: 'Alex Pavlov',
+  category: 'technology'
 }
 
 export default function Home() {
