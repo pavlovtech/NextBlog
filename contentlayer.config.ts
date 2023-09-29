@@ -73,13 +73,13 @@ const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'content',
   documentTypes: [Post],
-  mdx: {
+  markdown: {
     remarkPlugins: [remarkGfm, remarkToc ],
     rehypePlugins: [
       rehypeAutolinkHeadings,
       rehypeSlug,
-      rehypePrism,
-      rehypeCodeTitles
+      rehypeCodeTitles,
+      rehypePrism
     ]
   }
 })
