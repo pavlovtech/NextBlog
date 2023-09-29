@@ -1,0 +1,13 @@
+{
+  "title": "projects",
+  "type": "object",
+  "properties": {
+    "technologies": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Technologies"
+    }
+  }
+}
