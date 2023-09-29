@@ -1,7 +1,198 @@
 {
-  "commit": "98a8518e3b749d61d05e67cc08a4c53796d9be19",
-  "generated": "Fri, 29 Sep 2023 15:35:51 GMT",
+  "commit": "fcb9cb6435ce8c75600a2309498376562f7bf792",
+  "generated": "Fri, 29 Sep 2023 15:38:10 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "e62b4fcfc12338b26a67cc7751f07eb6ca609d3e",
+        "hash": "1048898611",
+        "path": "content/posts/anki-and-zettelkasten.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": " Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.",
+      "publishedAt": "2023-01-23T15:42:12.174Z",
+      "slug": "anki-and-zettelkasten",
+      "status": "published",
+      "title": "How to integrate Anki with Zettelkasten?"
+    },
+    {
+      "__outstatic": {
+        "commit": "37500bc6a63a2285d6e79c992b8da2a71dba322c",
+        "hash": "2713612430",
+        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
+      },
+      "collection": "posts",
+      "date": "August 6, 2023",
+      "draft": false,
+      "featured": false,
+      "slug": "append-and-prepend-methods-in-dotnet",
+      "summary": "A nice and functional way to add a single element to the IEnumerable collection",
+      "tags": [
+        "csharp",
+        "dotnet"
+      ],
+      "title": "Two useful methods of IEnumerable in .NET"
+    },
+    {
+      "__outstatic": {
+        "commit": "9322553b6c1b89dd531f68ac26e6b4fe63626f77",
+        "hash": "2424291941",
+        "path": "content/posts/ngrx-store-in-angular.md"
+      },
+      "collection": "posts",
+      "date": "2022-07-30T00:00:00.000Z",
+      "draft": false,
+      "featured": false,
+      "ogImage": "https://alexpavlov.dev/assets/ngrx2.png",
+      "slug": "ngrx-store-in-angular",
+      "summary": "Is it worth using NGRX in an Angular app?",
+      "tags": [
+        "ngrx",
+        "angular"
+      ],
+      "title": "NGRX Store In Angular"
+    },
+    {
+      "__outstatic": {
+        "commit": "8f48337db1305e11d13a147dc1f55b2c60d5b863",
+        "hash": "2492454510",
+        "path": "content/posts/how-i-kept-coding-under-missile-attacks.md"
+      },
+      "collection": "posts",
+      "date": "2022-06-22T00:00:00.000Z",
+      "draft": false,
+      "featured": true,
+      "ogImage": "https://alexpavlov.dev/assets/war-logo.webp",
+      "slug": "how-i-kept-coding-under-missile-attacks",
+      "summary": "My story about the first days of the war in Ukraine.",
+      "tags": [
+        "war",
+        "ukraine"
+      ],
+      "title": "War In Ukraine: How I Kept Coding Under Missile Attacks"
+    },
+    {
+      "__outstatic": {
+        "commit": "7b38b29fff42543a3814454e29bbf6ce760cf05d",
+        "hash": "1662700421",
+        "path": "content/posts/badass-dotnet-dev.md"
+      },
+      "collection": "posts",
+      "date": "2023-03-20T00:00:00.000Z",
+      "draft": false,
+      "featured": true,
+      "ogImage": "/assets/badass-dev-logo.webp",
+      "slug": "badass-dotnet-dev",
+      "summary": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "career"
+      ],
+      "title": "How to become a badass .NET developer"
+    },
+    {
+      "__outstatic": {
+        "commit": "148e047e0c26174ecd9fb6850cc3c483e8aa0d69",
+        "hash": "1866217052",
+        "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
+      },
+      "collection": "posts",
+      "date": "2023-01-30T00:00:00.000Z",
+      "draft": false,
+      "featured": false,
+      "ogImage": "https://alexpavlov.dev/assets/spikes.jpeg",
+      "slug": "asnync-obj-conscruction-in-scharp",
+      "summary": "You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.",
+      "tags": [
+        "csharp",
+        "dotnet"
+      ],
+      "title": "Asynchronous Object Construction In C#"
+    },
+    {
+      "__outstatic": {
+        "commit": "c5efd800499161ad22812d54d1b2c328c94ccd15",
+        "hash": "914787151",
+        "path": "content/posts/cqrs-mediatr-common-mistake.md"
+      },
+      "collection": "posts",
+      "date": "August 7, 2023",
+      "draft": false,
+      "featured": true,
+      "slug": "cqrs-mediatr-common-mistake",
+      "summary": "This post will explore a common mistake in projects MetiatR and CQRS.",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "cqrs",
+        "mediatr"
+      ],
+      "title": "Avoiding Nested Handlers in CQRS with MediatR: A Guide to Cleaner Code"
+    },
+    {
+      "__outstatic": {
+        "commit": "d17c13db8dd48b0f20b0e2111d4b88529923a2d0",
+        "hash": "2086019589",
+        "path": "content/posts/top-8-tips-on-crypto-investment.md"
+      },
+      "collection": "posts",
+      "date": "2020-06-15T00:00:00.000Z",
+      "draft": false,
+      "featured": false,
+      "ogImage": "/assets/crypto.webp",
+      "slug": "top-8-tips-on-crypto-investment",
+      "summary": "I just want to give you several simple tips that I learned during the last several years.",
+      "tags": [
+        "crypto",
+        "investment"
+      ],
+      "title": "Top 8 Tips On Crypto Investment"
+    },
+    {
+      "__outstatic": {
+        "commit": "dbf9e07ef98c2c1b6edec8171aea62c1a056272f",
+        "hash": "430142317",
+        "path": "content/posts/top-10-insights-about-web-app-optimizations.md"
+      },
+      "collection": "posts",
+      "date": "2022-03-21T00:00:00.000Z",
+      "draft": false,
+      "featured": false,
+      "ogImage": "/assets/gear.jpg",
+      "slug": "top-10-insights-about-web-app-optimizations",
+      "summary": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
+      "tags": [
+        "javascript",
+        "web",
+        "optimization"
+      ],
+      "title": "Top 10 Insights About Web Application Optimization"
+    },
+    {
+      "__outstatic": {
+        "commit": "06a449c009b2d17bba83970fda06351a6855c8de",
+        "hash": "1369716944",
+        "path": "content/posts/tag-based-hierarchy-for-note-taking.md"
+      },
+      "collection": "posts",
+      "date": "2023-01-22T00:00:00.000Z",
+      "draft": false,
+      "featured": false,
+      "ogImage": "/assets/note-taking.jpg",
+      "slug": "tag-based-hierarchy-for-note-taking",
+      "summary": "Having folder hierarchy for organizing your notes is discouraged in Zettelkasten and in some modern note taking applications like Obsidian or Roam Research, but having a hierarchy has an advantage in quick search and retrieval of notes.",
+      "tags": [
+        "note-taking",
+        "obsidian"
+      ],
+      "title": "Using Tags Instead Of Folders For In Obsidian"
+    },
     {
       "__outstatic": {
         "commit": "5da27fc7280b0f3fc3983717bb0e4b0716d07f65",
@@ -19,6 +210,25 @@
       "slug": "test",
       "status": "published",
       "title": "Test"
+    },
+    {
+      "__outstatic": {
+        "commit": "56e094839b3a796938a62386fc846c0278e25aa1",
+        "hash": "2857014533",
+        "path": "content/posts/open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos.md"
+      },
+      "collection": "posts",
+      "date": "2020-06-10T00:00:00.000Z",
+      "draft": false,
+      "featured": false,
+      "ogImage": "assets/code-in-vs.jpg",
+      "slug": "open-folder-in-vscode-with-a-hotkey-or-context-menu-in-macos",
+      "summary": "I’m used to the Open in VSCode context menu action in Windows, but it was missing in MacOS. So I found how to add it and want to share it.",
+      "tags": [
+        "vscode",
+        "macos"
+      ],
+      "title": "Open Folder In VSCode Using A Context Menu in MacOS"
     }
   ]
 }
