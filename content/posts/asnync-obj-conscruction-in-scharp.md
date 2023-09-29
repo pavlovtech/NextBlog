@@ -1,5 +1,5 @@
 ---
-title: 'Common Dilemma With Asynchronous Object Construction In C#'
+title: 'Common Dilemma With Asynchronous Initialization In C#'
 status: 'published'
 author:
   name: 'Alex Pavlov '
