@@ -4,7 +4,7 @@ import { allPosts } from "contentlayer/generated";
 
 export default function TagsPage() {
   const allTags = allPosts
-    .map(post => post.tags?.split(",").map(p => p?.trim()))
+    .map(post => post.tags?.split(",").map(p => p.trim()) && [])
     .flat();
 
   const tags = [...new Set(allTags)];
@@ -21,7 +21,7 @@ export default function TagsPage() {
         {tags.map((t) => {
           return (
             <div key={t} className="mt-2 mb-2">
-              <Tag text={t} />
+              <Tag text={t!} />
             </div>
           )
         })}
