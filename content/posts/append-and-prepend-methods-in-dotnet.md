@@ -9,7 +9,7 @@ featured: 'no'
 tags: 'csharp, dotnet'
 description: 'A nice and functional way to add a single element to the IEnumerable collection'
 coverImage: ''
-publishedAt: '2023-09-06T15:42:12.174Z'
+publishedAt: '2023-09-06T16:42:28.000Z'
 ---
 
 I found myself writing this piece of code:

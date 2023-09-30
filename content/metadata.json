@@ -1,6 +1,6 @@
 {
-  "commit": "0fd559717b6ca7c44f4e0530b0d8eebd3a611eed",
-  "generated": "2023-09-29T23:19:37.061Z",
+  "commit": "5af2f74d2bd057c648673575d26c178794745129",
+  "generated": "2023-09-30T15:43:33.712Z",
   "metadata": [
     {
       "__outstatic": {
@@ -230,26 +230,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fcf616d7591d69a56cc7f084be9df908e308a130",
-        "hash": "723761419",
-        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "A nice and functional way to add a single element to the IEnumerable collection",
-      "featured": "",
-      "publishedAt": "2023-09-06T15:42:12.174Z",
-      "slug": "append-and-prepend-methods-in-dotnet",
-      "status": "published",
-      "tags": "csharp, dotnet",
-      "title": "Two methods of IEnumerable you didn't know about"
-    },
-    {
-      "__outstatic": {
         "commit": "07b850a11693d2a3abf568b4b426f926bc2f3e2f",
         "hash": "1480544783",
         "path": "content/posts/anki-and-zettelkasten.md"
@@ -346,6 +326,26 @@
       "status": "published",
       "tags": "ngrx, angular",
       "title": "NGRX Store In Angular"
+    },
+    {
+      "__outstatic": {
+        "commit": "5af2f74d2bd057c648673575d26c178794745129",
+        "hash": "2412184746",
+        "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "A nice and functional way to add a single element to the IEnumerable collection",
+      "featured": "no",
+      "publishedAt": "2023-09-06T16:42:28.000Z",
+      "slug": "append-and-prepend-methods-in-dotnet",
+      "status": "published",
+      "tags": "csharp, dotnet",
+      "title": "Two methods of IEnumerable you didn't know about"
     }
   ]
 }
