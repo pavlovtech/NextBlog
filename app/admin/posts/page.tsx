@@ -18,12 +18,16 @@ const Admin = async () => {
 
   const postsFromGitHub = await getAllPosts();
 
-  let posts = postsFromGitHub.map((p: any) => {
+  const generatedPosts = allPosts;
 
-    let generatedPost = allPosts.filter((gp: any) => gp._id == p.name)[0];
+  let posts = postsFromGitHub.map((githubPost: any) => {
+
+    let generatedPost = generatedPosts.filter((generatedPost: any) => {
+      return generatedPost._raw.sourceFileName== githubPost.name;
+    })[0];
 
     return {
-      ...p,
+      ...githubPost,
       date: generatedPost.publishedAt,
       status: generatedPost ? 'published' : 'publising',
     }

@@ -9,7 +9,7 @@ export async function upsertPost(slug: string, post: string, sha?: string) {
     let buff = Buffer.from(post);
     let base64data = buff.toString('base64')
 
-    var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/posts/${slug}`, {
+    var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/content/posts/${slug}`, {
         owner: 'pavlovtech',
         repo: 'NextBlog',
         path: './posts',
@@ -35,7 +35,7 @@ export async function uploadFile(file: File) {
 
   const octokit = new Octokit({ auth: githubToken });
 
-  var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/public/assets/${file.name}`, {
+  var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/public/images/${file.name}`, {
       owner: 'pavlovtech',
       repo: 'NextBlog',
       path: './public/assets',
@@ -55,7 +55,7 @@ export async function uploadFile(file: File) {
 
 export async function getAllPosts() {
     const octokit = new Octokit({ auth: githubToken });
-    var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/`, {
+    var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/content/posts`, {
         owner: 'pavlovtech',
         repo: 'NextBlog',
         path: 'posts',
@@ -64,12 +64,12 @@ export async function getAllPosts() {
         }
     });
 
-    return resp.data;
+    return resp.data.filter((post: any) => post.name.endsWith('.md') || post.name.endsWith('.mdx'));
 }
 
 export async function getPost(fileName: string) {
   const octokit = new Octokit({ auth: githubToken });
-  var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
+  var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/content/posts/${fileName}`, {
       owner: 'pavlovtech',
       repo: 'NextBlog',
       path: 'posts',
@@ -91,7 +91,7 @@ export async function getPost(fileName: string) {
 
 export async function deletePost(fileName: string, sha: string) {
   const octokit = new Octokit({ auth: githubToken });
-  var resp = await octokit.request(`DELETE /repos/pavlovtech/nextblog/contents/posts/${fileName}`, {
+  var resp = await octokit.request(`DELETE /repos/pavlovtech/nextblog/contents/content/posts/${fileName}`, {
     owner: 'pavlovtech',
     repo: 'NextBlog',
     path: './posts',
