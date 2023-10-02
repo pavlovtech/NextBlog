@@ -1,15 +1,15 @@
 ---
-publishedAt: '2020-06-15T15:42:12.174Z'
-title: "Top 8 Tips On Crypto Investment"
-featured: no
+title: 'Top 8 Tips On Crypto Investment'
+featured: 'no'
 tags: 'crypto'
-coverImage: "/assets/crypto.webp"
-description: I just want to give you several simple tips that I learned during the last several years.
+coverImage: '/assets/crypto.webp'
+description: 'I just want to give you several simple tips that I learned during the last several years.'
 status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'top-8-tips-on-crypto-investment'
+publishedAt: '2020-06-15T15:42:12.174Z'
 ---
 
 ## Table of contents
@@ -26,17 +26,17 @@ This sounds obvious, and it actually is. Not many people follow this rule though
 
 Accumulate as much as you can during the bear market.
 
-If it’s not bear market right now and you still want to buy, you should analyze at what stage of the cycle we are right now and when the prices are going to drop. Find the experts you can trust and follow them.
+If it’s not a bear market right now and you still want to buy, you should analyze at what stage of the cycle we are right now and when the prices are going to drop. Find the experts you can trust and follow them.
 
 ## **Don’t put all your money in Bitcoin**
 
-This sounds counterintuitive as Bitcoin is the main crypto out there. It’s the most stable and with the highest volume. But it won’t give you 10x or 100x profits. At least not short or mid-term. And the thing is when bitcoin goes up, all altcoins go up, but much higher. The opposite is correct as well, when Bitcoin crashes, altcoins crash even harder.
+This sounds counterintuitive as Bitcoin is the main crypto out there. It’s the most stable and with the highest volume. But it won’t give you 10x or 100x profits. At least not short or mid-term. And the thing is when Bitcoin goes up, all altcoins go up, but much higher. The opposite is correct as well, when Bitcoin crashes, altcoins crash even harder.
 
 Consider top 30 coins on [coinmarketcap.com](https://coinmarketcap.com/). Take a look at Ethereum, Cardano, Polkadot, Uniswap, Solana, Avalanche, Algorand.
 
 ## **Take profits**
 
-When the bull market goes on you should start taking profits. No one knows when it is going to crash, and most people will not predict it and overplay the market. Don’t risk it, if you’ve made some decent gains, just take profits, don’t be greedy.
+When the bull market goes on you should start taking profits. No one knows when it is going to crash, and most people will not predict it and overplay the market. Don’t risk it, if you’ve made some decent gains, just take profits, and don’t be greedy.
 
 Otherwise, you risk losing everything you’ve earned or most of it.
 
@@ -73,3 +73,4 @@ Probably you would like to know when your crypto goes up or down and see how muc
 ## **Conclusion**
 
 I have shared the top 8 tips regarding crypto and I hope it can help you make rational decisions and gain some profits in this volatile and highly speculative market. Good luck!
+

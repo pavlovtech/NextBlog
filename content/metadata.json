@@ -1,6 +1,6 @@
 {
-  "commit": "5227946480ce04bb95d8ba7e5574f35f3bc6163d",
-  "generated": "2023-10-02T09:10:09.245Z",
+  "commit": "bcdca2d941a403a9a8ec1e76b7ddaf8ed87370c4",
+  "generated": "2023-10-02T09:14:17.310Z",
   "metadata": [
     {
       "__outstatic": {
@@ -24,29 +24,6 @@
         "ukraine"
       ],
       "title": "War In Ukraine: How I Kept Coding Under Missile Attacks"
-    },
-    {
-      "__outstatic": {
-        "commit": "8c861d99ba19138092cd245f9617bb14f1e83d77",
-        "hash": "1866992902",
-        "path": "content/posts/top-8-tips-on-crypto-investment.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/crypto.webp",
-      "description": "I just want to give you several simple tips that I learned during the last several years.",
-      "featured": false,
-      "publishedAt": "2020-06-15T15:42:12.174Z",
-      "slug": "top-8-tips-on-crypto-investment",
-      "status": "published",
-      "tags": [
-        "crypto",
-        "investment"
-      ],
-      "title": "Top 8 Tips On Crypto Investment"
     },
     {
       "__outstatic": {
@@ -346,6 +323,26 @@
       "status": "published",
       "tags": "ngrx, angular",
       "title": "NGRX Store In Angular"
+    },
+    {
+      "__outstatic": {
+        "commit": "bcdca2d941a403a9a8ec1e76b7ddaf8ed87370c4",
+        "hash": "2573032590",
+        "path": "content/posts/top-8-tips-on-crypto-investment.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/crypto.webp",
+      "description": "I just want to give you several simple tips that I learned during the last several years.",
+      "featured": "no",
+      "publishedAt": "2020-06-15T15:42:12.174Z",
+      "slug": "top-8-tips-on-crypto-investment",
+      "status": "published",
+      "tags": "crypto",
+      "title": "Top 8 Tips On Crypto Investment"
     }
   ]
 }
