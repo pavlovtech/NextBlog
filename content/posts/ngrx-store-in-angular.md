@@ -1,6 +1,6 @@
 ---
 title: 'NGRX Store In Angular'
-featured: 'yes'
+featured: 'no'
 tags: 'ngrx, angular'
 coverImage: '/assets/ngrx2.png'
 description: 'Is it worth using NGRX in an Angular app?'

@@ -1,6 +1,6 @@
 {
-  "commit": "5af2f74d2bd057c648673575d26c178794745129",
-  "generated": "2023-09-30T15:43:33.712Z",
+  "commit": "5227946480ce04bb95d8ba7e5574f35f3bc6163d",
+  "generated": "2023-10-02T09:10:09.245Z",
   "metadata": [
     {
       "__outstatic": {
@@ -309,26 +309,6 @@
     },
     {
       "__outstatic": {
-        "commit": "0fd559717b6ca7c44f4e0530b0d8eebd3a611eed",
-        "hash": "2747769044",
-        "path": "content/posts/ngrx-store-in-angular.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/ngrx2.png",
-      "description": "Is it worth using NGRX in an Angular app?",
-      "featured": "yes",
-      "publishedAt": "2022-07-30T15:42:12.174Z",
-      "slug": "ngrx-store-in-angular",
-      "status": "published",
-      "tags": "ngrx, angular",
-      "title": "NGRX Store In Angular"
-    },
-    {
-      "__outstatic": {
         "commit": "5af2f74d2bd057c648673575d26c178794745129",
         "hash": "2412184746",
         "path": "content/posts/append-and-prepend-methods-in-dotnet.md"
@@ -346,6 +326,26 @@
       "status": "published",
       "tags": "csharp, dotnet",
       "title": "Two methods of IEnumerable you didn't know about"
+    },
+    {
+      "__outstatic": {
+        "commit": "5227946480ce04bb95d8ba7e5574f35f3bc6163d",
+        "hash": "4241665745",
+        "path": "content/posts/ngrx-store-in-angular.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/ngrx2.png",
+      "description": "Is it worth using NGRX in an Angular app?",
+      "featured": "no",
+      "publishedAt": "2022-07-30T15:42:12.174Z",
+      "slug": "ngrx-store-in-angular",
+      "status": "published",
+      "tags": "ngrx, angular",
+      "title": "NGRX Store In Angular"
     }
   ]
 }
