@@ -1,6 +1,6 @@
 {
-  "commit": "56d3bbd4893b63010a9a75a846e627dc459aa03e",
-  "generated": "2023-10-03T10:52:17.284Z",
+  "commit": "b34bffcd3fa3087b474a1b02c54d13d7c85f8ced",
+  "generated": "2023-10-03T10:52:50.844Z",
   "metadata": [
     {
       "__outstatic": {
@@ -183,26 +183,6 @@
     },
     {
       "__outstatic": {
-        "commit": "07b850a11693d2a3abf568b4b426f926bc2f3e2f",
-        "hash": "1480544783",
-        "path": "content/posts/anki-and-zettelkasten.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-Y4Nz.png",
-      "description": " Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.",
-      "featured": "",
-      "publishedAt": "2023-01-23T15:42:12.174Z",
-      "slug": "anki-and-zettelkasten",
-      "status": "published",
-      "tags": "anki, zettelkasten",
-      "title": "How to integrate Anki with Zettelkasten?"
-    },
-    {
-      "__outstatic": {
         "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
         "hash": "432092368",
         "path": "content/posts/cqrs-mediatr-common-mistake.md"
@@ -339,6 +319,26 @@
       "status": "published",
       "tags": "csharp, career",
       "title": "How to Become a Badass .NET Developer"
+    },
+    {
+      "__outstatic": {
+        "commit": "b34bffcd3fa3087b474a1b02c54d13d7c85f8ced",
+        "hash": "526444982",
+        "path": "content/posts/anki-and-zettelkasten.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-Y4Nz.png",
+      "description": "Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.",
+      "featured": "",
+      "publishedAt": "2023-01-23T15:42:12.174Z",
+      "slug": "anki-and-zettelkasten",
+      "status": "published",
+      "tags": "anki, zettelkasten",
+      "title": "How to Integrate Anki With Zettelkasten?"
     }
   ]
 }
