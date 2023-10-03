@@ -1,5 +1,5 @@
 ---
-title: 'A Guide to Cleaner Code with CQRS and MediatR'
+title: 'The wrong way to use CQRS and MediatR'
 featured: 'yes'
 tags: 'cqrs, dotnet'
 description: 'This post will explore a common mistake in projects MetiatR and CQRS.'
@@ -57,6 +57,8 @@ So where should your logic go? You have multiple options:
 
 <!-- -->
 
+<!-- -->
+
 ## Testing Considerations
 
 When handlers are nested or interdependent, it creates a chain of dependencies that can make testing more complex:
@@ -64,6 +66,8 @@ When handlers are nested or interdependent, it creates a chain of dependencies t
 1. Isolation Difficulty: Testing a single piece of functionality may require setting up multiple handlers' dependencies, making unit tests cumbersome to write and maintain.
 2. Brittle Tests: Changes to one handler may break tests for other handlers that depend on it, leading to increased maintenance efforts.
 3. Hidden Behavior: Testing a handler that relies on other handlers may conceal what exactly is being tested, leading to potential gaps in coverage or misunderstood test results.
+
+<!-- -->
 
 <!-- -->
 

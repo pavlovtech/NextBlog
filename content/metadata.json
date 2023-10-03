@@ -1,6 +1,6 @@
 {
-  "commit": "4a01066866a6a9e1e180aa4c5387c5d79479dd6a",
-  "generated": "2023-10-03T10:53:39.234Z",
+  "commit": "82085caf46d396c827a53ce740843eb920cab4a8",
+  "generated": "2023-10-03T11:02:28.703Z",
   "metadata": [
     {
       "__outstatic": {
@@ -183,25 +183,6 @@
     },
     {
       "__outstatic": {
-        "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
-        "hash": "432092368",
-        "path": "content/posts/cqrs-mediatr-common-mistake.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "description": "This post will explore a common mistake in projects MetiatR and CQRS.",
-      "featured": "yes",
-      "publishedAt": "2023-08-07T15:42:12.174Z",
-      "slug": "cqrs-mediatr-common-mistake",
-      "status": "published",
-      "tags": "cqrs, dotnet",
-      "title": "A Guide to Cleaner Code with CQRS and MediatR"
-    },
-    {
-      "__outstatic": {
         "commit": "843ecefce148e1cb8ecd37fc4efdaf58b909d264",
         "hash": "2218613977",
         "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
@@ -339,6 +320,25 @@
       "status": "published",
       "tags": "csharp, dotnet",
       "title": "Two Useful Methods of IEnumerable"
+    },
+    {
+      "__outstatic": {
+        "commit": "82085caf46d396c827a53ce740843eb920cab4a8",
+        "hash": "556961192",
+        "path": "content/posts/cqrs-mediatr-common-mistake.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "description": "This post will explore a common mistake in projects MetiatR and CQRS.",
+      "featured": "yes",
+      "publishedAt": "2023-08-07T15:42:12.174Z",
+      "slug": "cqrs-mediatr-common-mistake",
+      "status": "published",
+      "tags": "cqrs, dotnet",
+      "title": "The wrong way to use CQRS and MediatR"
     }
   ]
 }
