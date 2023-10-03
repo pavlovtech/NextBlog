@@ -1,5 +1,5 @@
 ---
-title: 'How to become a badass .NET developer'
+title: 'How to Become a Badass .NET Developer'
 status: 'published'
 author:
   name: 'Alex Pavlov '
@@ -39,6 +39,8 @@ Reading doesn’t mean learning and learning doesn’t mean memorizing. The best
 
 <!-- -->
 
+<!-- -->
+
 ## Step 2. Learn ASP.NET framework
 
 ### ASP.NET Core
@@ -49,6 +51,8 @@ There are two parts to it:
 
 1. ASP.NET Core Web API is used for creating the back-end for the applications.
 2. ASP.NET Core Blazor is a framework for building client-side web applications.
+
+<!-- -->
 
 <!-- -->
 
@@ -69,6 +73,8 @@ Additionally, it’s worth learning [Swagger UI](https://swagger.io/tools/swagg
 
 <!-- -->
 
+<!-- -->
+
 ## Step 3. Learn SQL
 
 Every software program works with data. The most popular and powerful language to manipulate data is SQL. It’s used in almost every project and you will get questions about it in every job interview.
@@ -81,6 +87,8 @@ As a software engineer, you don’t need to know all the ins and outs of SQL and
 2. [SQL Data Types](https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16) (e.g. nvarchar vs varchar)
 3. [Clustered and nonclustered indexes](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver16)
 4. [SQL Optimization](https://blog.devart.com/how-to-optimize-sql-query.html)
+
+<!-- -->
 
 <!-- -->
 
@@ -98,6 +106,8 @@ As a software engineer, you don’t need to know all the ins and outs of SQL and
 
 <!-- -->
 
+<!-- -->
+
 ## Step 4. Learn ADO.NET framework and Entity Framework
 
 ADO.NET allows you to use SQL in .NET to access a database. I recommend learning to use [Dapper](https://github.com/DapperLib/Dapper) as an object mapper instead of raw ADO.NET.
@@ -110,11 +120,15 @@ ADO.NET allows you to use SQL in .NET to access a database. I recommend learning
 
 <!-- -->
 
+<!-- -->
+
 **Recommended resources on Entity Framework:**
 
 1. [Microsoft’s docs](https://learn.microsoft.com/en-us/ef/core/)
 2. [Entity Framework Core in Action](https://www.manning.com/books/entity-framework-core-in-action-second-edition)
 3. [Julie Lerman — Entity Framework Author \| Pluralsight](https://www.pluralsight.com/authors/julie-lerman?utm_source=google&utm_medium=paid-search&utm_campaign=upskilling-and-reskilling&utm_term=ssi-emea-xyz-dynamic&utm_content=free-trial&gclid=CjwKCAjw_MqgBhAGEiwAnYOAenDmbQyPl95Hhtmtk6olxpxlx695pTxBSigkX3IcYmvplRFfwEG29BoCQ5EQAvD_BwE)
+
+<!-- -->
 
 <!-- -->
 
@@ -174,12 +188,16 @@ Learn the following concepts:
 
 <!-- -->
 
+<!-- -->
+
 Resources:
 
 1. [.NET Microservices: Architecture for Containerized .NET Applications](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/)
 2. [Architect Modern Web Applications with ASP.NET Core and Azure](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/)
 3. [Dapr for .NET Developers](https://learn.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/)
 4. [Microservices Architecture and Implementation on .NET 5](https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet) \- good course on Udemy.
+
+<!-- -->
 
 <!-- -->
 
@@ -201,9 +219,13 @@ Make sure you are familiar with the following technologies:
 
 <!-- -->
 
+<!-- -->
+
 Resources:
 
 1. [Architecting Cloud Native .NET Applications for Azure](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/)
+
+<!-- -->
 
 <!-- -->
 
@@ -217,6 +239,8 @@ Get acquainted with the following DBs:
 2. [MongoDB - The Complete Developer's Guide](https://ciklum.udemy.com/course/mongodb-the-complete-developers-guide/) \- good video guide.
 3. [CosmosDB](https://learn.microsoft.com/en-US/azure/cosmos-db/introduction) — highly scalable NoSQL database from Microsoft.
 4. Redis — key-value in memory storage used as cache. To be frank, now it is not only in memory and not only key-value :)
+
+<!-- -->
 
 <!-- -->
 
@@ -244,6 +268,8 @@ I came up with a list of hand-picked ones.NET libraries that I used extensively 
 
 <!-- -->
 
+<!-- -->
+
 I hope you will find these libraries useful and use them in your projects.
 
 ## Step 12. Prepare for the interview
@@ -251,6 +277,8 @@ I hope you will find these libraries useful and use them in your projects.
 1. Be ready to describe your last project or prior experience
 2. Write down all questions after every interview and process them to fill the gaps in your knowledge
 3. Be comfortable with writing code on the whiteboard and explaining your thought process
+
+<!-- -->
 
 <!-- -->
 

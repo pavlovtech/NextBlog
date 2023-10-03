@@ -1,6 +1,6 @@
 {
-  "commit": "160a78135f0f3c963b8dd604007a811b67fac57e",
-  "generated": "2023-10-03T10:49:28.582Z",
+  "commit": "56d3bbd4893b63010a9a75a846e627dc459aa03e",
+  "generated": "2023-10-03T10:52:17.284Z",
   "metadata": [
     {
       "__outstatic": {
@@ -203,26 +203,6 @@
     },
     {
       "__outstatic": {
-        "commit": "195897ff9acb804e5a1a1e63dca856b39297638e",
-        "hash": "1837970338",
-        "path": "content/posts/badass-dotnet-dev.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/badass-dev-logo.webp",
-      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
-      "featured": "yes",
-      "publishedAt": "2023-03-20T15:42:12.174Z",
-      "slug": "badass-dotnet-dev",
-      "status": "published",
-      "tags": "csharp, career",
-      "title": "How to become a badass .NET developer"
-    },
-    {
-      "__outstatic": {
         "commit": "76f453825eadb073193e8a96ea2bf89bc9468f07",
         "hash": "432092368",
         "path": "content/posts/cqrs-mediatr-common-mistake.md"
@@ -339,6 +319,26 @@
       "status": "published",
       "tags": "javascrpt, optimization",
       "title": "Top 10 Insights About Web Application Optimization"
+    },
+    {
+      "__outstatic": {
+        "commit": "56d3bbd4893b63010a9a75a846e627dc459aa03e",
+        "hash": "2486911374",
+        "path": "content/posts/badass-dotnet-dev.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/badass-dev-logo.webp",
+      "description": "This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.",
+      "featured": "yes",
+      "publishedAt": "2023-03-20T15:42:12.174Z",
+      "slug": "badass-dotnet-dev",
+      "status": "published",
+      "tags": "csharp, career",
+      "title": "How to Become a Badass .NET Developer"
     }
   ]
 }
