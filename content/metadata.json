@@ -1,6 +1,6 @@
 {
-  "commit": "bcdca2d941a403a9a8ec1e76b7ddaf8ed87370c4",
-  "generated": "2023-10-02T09:14:17.310Z",
+  "commit": "160a78135f0f3c963b8dd604007a811b67fac57e",
+  "generated": "2023-10-03T10:49:28.582Z",
   "metadata": [
     {
       "__outstatic": {
@@ -24,30 +24,6 @@
         "ukraine"
       ],
       "title": "War In Ukraine: How I Kept Coding Under Missile Attacks"
-    },
-    {
-      "__outstatic": {
-        "commit": "3cfddf7db016ab07a1fdc69b42b35c288edfa50f",
-        "hash": "1891273621",
-        "path": "content/posts/top-10-insights-about-web-app-optimizations.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/assets/gear.jpg",
-      "description": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
-      "featured": false,
-      "publishedAt": "2022-03-21T15:42:12.174Z",
-      "slug": "top-10-insights-about-web-app-optimizations",
-      "status": "published",
-      "tags": [
-        "javascript",
-        "web",
-        "optimization"
-      ],
-      "title": "Top 10 Insights About Web Application Optimization"
     },
     {
       "__outstatic": {
@@ -343,6 +319,26 @@
       "status": "published",
       "tags": "crypto",
       "title": "Top 8 Tips On Crypto Investment"
+    },
+    {
+      "__outstatic": {
+        "commit": "160a78135f0f3c963b8dd604007a811b67fac57e",
+        "hash": "3010461278",
+        "path": "content/posts/top-10-insights-about-web-app-optimizations.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/assets/gear.jpg",
+      "description": "Web application optimization is crucial for any web app. You can improve web application performance with Static Site Generation, modern image formats, lazy image loading, Next.JS and Preact.",
+      "featured": "no",
+      "publishedAt": "2022-03-21T15:42:12.174Z",
+      "slug": "top-10-insights-about-web-app-optimizations",
+      "status": "published",
+      "tags": "javascrpt, optimization",
+      "title": "Top 10 Insights About Web Application Optimization"
     }
   ]
 }
