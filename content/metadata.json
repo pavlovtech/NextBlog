@@ -1,6 +1,6 @@
 {
-  "commit": "82085caf46d396c827a53ce740843eb920cab4a8",
-  "generated": "2023-10-03T11:02:28.703Z",
+  "commit": "a2412f20ea4ba61d5f8518df159a5b3b04d9b2da",
+  "generated": "2023-10-14T11:53:55.777Z",
   "metadata": [
     {
       "__outstatic": {
@@ -165,24 +165,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d18abf1729c5aacf2f5de55d6c350d49ba9e4e56",
-        "hash": "4228439704",
-        "path": "content/pages/about-me.md"
-      },
-      "author": {
-        "name": "Alex Pavlov ",
-        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2023-09-29T18:34:23.775Z",
-      "slug": "about-me",
-      "status": "published",
-      "title": "About Me"
-    },
-    {
-      "__outstatic": {
         "commit": "843ecefce148e1cb8ecd37fc4efdaf58b909d264",
         "hash": "2218613977",
         "path": "content/posts/asnync-obj-conscruction-in-scharp.md"
@@ -339,6 +321,24 @@
       "status": "published",
       "tags": "cqrs, dotnet",
       "title": "The wrong way to use CQRS and MediatR"
+    },
+    {
+      "__outstatic": {
+        "commit": "a2412f20ea4ba61d5f8518df159a5b3b04d9b2da",
+        "hash": "661949766",
+        "path": "content/pages/about-me.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-09-29T18:34:23.775Z",
+      "slug": "about-me",
+      "status": "published",
+      "title": "About Me"
     }
   ]
 }
