@@ -1,6 +1,6 @@
 ---
 title: 'My Journey to Crafting the Awesome WordPress Site from Scratch'
-status: 'draft'
+status: 'published'
 author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
