@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'my-journey-to-crafting-the-awesome-wordpress-site-from-scratch'
 description: 'A story about creating a WordPress site from scratch'
-coverImage: '/images/1-I3MD.webp'
+coverImage: '/images/aww-logo-IxNj.png'
 featured: 'yes'
 tags: 'wordpress'
 publishedAt: '2023-10-23T07:29:51.202Z'

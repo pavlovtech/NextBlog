@@ -1,6 +1,6 @@
 {
   "commit": "266ad44502ebf5b27f46d4244313aa0e204befcd",
-  "generated": "2023-10-23T07:29:16.476Z",
+  "generated": "2023-10-23T07:31:53.514Z",
   "metadata": [
     {
       "__outstatic": {
@@ -343,7 +343,7 @@
     {
       "__outstatic": {
         "commit": "266ad44502ebf5b27f46d4244313aa0e204befcd",
-        "hash": "4036856867",
+        "hash": "3417758471",
         "path": "content/posts/my-journey-to-crafting-the-awesome-wordpress-site-from-scratch.md"
       },
       "author": {
@@ -351,7 +351,7 @@
         "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
       },
       "collection": "posts",
-      "coverImage": "/images/1-I3MD.webp",
+      "coverImage": "/images/aww-logo-IxNj.png",
       "description": "A story about creating a WordPress site from scratch",
       "featured": "yes",
       "publishedAt": "2023-10-23T07:29:51.202Z",
