@@ -1,6 +1,6 @@
 {
-  "commit": "a2412f20ea4ba61d5f8518df159a5b3b04d9b2da",
-  "generated": "2023-10-14T12:15:12.749Z",
+  "commit": "1241319c883769f967894b044ef60c79ee6e6dca",
+  "generated": "2023-10-23T07:21:59.473Z",
   "metadata": [
     {
       "__outstatic": {
@@ -339,6 +339,26 @@
       "slug": "about-me",
       "status": "published",
       "title": "About Me"
+    },
+    {
+      "__outstatic": {
+        "commit": "1241319c883769f967894b044ef60c79ee6e6dca",
+        "hash": "4183810571",
+        "path": "content/posts/my-journey-to-crafting-the-awesome-wordpress-site-from-scratch.md"
+      },
+      "author": {
+        "name": "Alex Pavlov ",
+        "picture": "https://avatars.githubusercontent.com/u/6662454?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/1-I3MD.webp",
+      "description": "",
+      "featured": "yes",
+      "publishedAt": "2023-10-23T07:29:51.202Z",
+      "slug": "my-journey-to-crafting-the-awesome-wordpress-site-from-scratch",
+      "status": "draft",
+      "tags": "wordpress",
+      "title": "My Journey to Crafting the Awesome WordPress Site from Scratch"
     }
   ]
 }
