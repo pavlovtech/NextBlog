@@ -1,6 +1,6 @@
 {
-  "commit": "266ad44502ebf5b27f46d4244313aa0e204befcd",
-  "generated": "2023-10-23T07:35:21.884Z",
+  "commit": "a72195545ab944323b35dbc44189c89ecb5a6bac",
+  "generated": "2023-10-23T11:53:33.682Z",
   "metadata": [
     {
       "__outstatic": {
@@ -342,8 +342,8 @@
     },
     {
       "__outstatic": {
-        "commit": "266ad44502ebf5b27f46d4244313aa0e204befcd",
-        "hash": "3452861632",
+        "commit": "a72195545ab944323b35dbc44189c89ecb5a6bac",
+        "hash": "2124108658",
         "path": "content/posts/crafting-awesome-wordpress-site.md"
       },
       "author": {
@@ -358,7 +358,7 @@
       "slug": "crafting-awesome-wordpress-site",
       "status": "published",
       "tags": "wordpress",
-      "title": "My Journey to Crafting the Awesome WordPress Site from Scratch"
+      "title": "Crafting the Awesome WordPress Site with Zero Experience"
     }
   ]
 }
