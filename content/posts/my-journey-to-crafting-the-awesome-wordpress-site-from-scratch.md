@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'my-journey-to-crafting-the-awesome-wordpress-site-from-scratch'
 description: 'A story about creating a WordPress site from scratch'
-coverImage: '/images/aww-logo-IxNj.png'
+coverImage: '/images/aww-logo-U1MD.png'
 featured: 'yes'
 tags: 'wordpress'
 publishedAt: '2023-10-23T07:29:51.202Z'
@@ -223,7 +223,7 @@ After reading WP hosting-related posts on Reddit, it came down to the following 
 
 3. [Cloudways](https://www.cloudways.com/en/)
 
-4. [DigitalOcean\]\()
+4. [DigitalOcean](digitalocean.com)
 
 5. [A2 Hosting](https://www.a2hosting.com/)
 
