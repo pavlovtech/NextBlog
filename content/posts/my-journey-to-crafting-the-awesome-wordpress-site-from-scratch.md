@@ -42,17 +42,17 @@ There is even an option to generate Tailwind and React code with it.
 
 But I had two main issues with it:
 
-1) It does not generate HTML and CSS separately. All styles are embedded in HTML<br>
+1) It does not generate HTML and CSS separately. All styles are embedded in HTML
 
 2) It often generates styles using absolute positioning, which is not the best approach for all cases and is not optimal for responsive design.
 
-To address these issues, I turned to ChatGPT. I asked it to split the code into separate HTML and CSS files and use Flexbox instead of absolute positioning. It worked pretty good for me, though I had to tweak the result, but it eliminated a lot of manual labor.
+To address these issues, I turned to ChatGPT. I asked it to split the code into separate HTML and CSS files and use Flexbox instead of absolute positioning. It worked pretty well for me, though I had to tweak the result, but it eliminated a lot of manual labor.
 
 ### Basic styling approach
 
-Initially, I wanted to use Tailwind but decided not to because I didn't want to introduce any build steps.
+Initially, I wanted to use Tailwind but decided not to because I wanted to avoid introducing any build steps.
 
-I started out by creating a file called variables.css with all colors from my design:
+I started by creating a file called variables.css with all colors from my design:
 
 ```CSS
 :root {
@@ -79,7 +79,7 @@ Additionally, I was creating a separate CSS file for every section or part of th
 
 ### Flex Box
 
-For layout, I mostly used Flex Box and liked it a lot. Actually, you need to know only a few properties to get up and running:
+For layout, I mostly used Flex Box and liked it a lot. You need to know only a few properties to get up and running:
 
 1. display: flex for a parent element
 
@@ -131,7 +131,7 @@ After researching the topic of creating a custom WordPress theme for a while, I 
 
 2. Block theme. This approach is drastically different. First of all, it enables the so-called "Full site editing." The end user can edit any site part, such as the header, footer, or page. It does not require writing PHP. Instead, you create a bunch of HTML files and annotate EVERY html tag with WordPress special comments that specify what type of block it is. Afterward, a user can change every block in the block editor.
 
-3. Headless WordPress. With this approach, you can decouple your front end and use WordPress only as a back end. You can use any tech stack for your front end and any hosting. For example, you can develop your website in NextJS and host it on Vercel. It also required a server with WordPress that would serve as a back-end.
+3. Headless WordPress. With this approach, you can decouple your front end and use WordPress only as a back end. You can use any tech stack for your front end and any hosting. For example, you can develop your website in Next.js and host it on Vercel. It also required a server with WordPress that would serve as a back-end.
 
 I needed to decide what approach to take, so I checked out a few courses on Udemy.
 
@@ -223,7 +223,7 @@ After reading WP hosting-related posts on Reddit, it came down to the following 
 
 3. [Cloudways](https://www.cloudways.com/en/)
 
-4. [DigitalOcean]()
+4. [DigitalOcean\]\()
 
 5. [A2 Hosting](https://www.a2hosting.com/)
 

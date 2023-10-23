@@ -1,6 +1,6 @@
 {
-  "commit": "1241319c883769f967894b044ef60c79ee6e6dca",
-  "generated": "2023-10-23T07:21:59.473Z",
+  "commit": "b108d92166a3436e8db2f2099bd37feb0db124f5",
+  "generated": "2023-10-23T07:23:31.915Z",
   "metadata": [
     {
       "__outstatic": {
@@ -342,8 +342,8 @@
     },
     {
       "__outstatic": {
-        "commit": "1241319c883769f967894b044ef60c79ee6e6dca",
-        "hash": "4183810571",
+        "commit": "b108d92166a3436e8db2f2099bd37feb0db124f5",
+        "hash": "913135490",
         "path": "content/posts/my-journey-to-crafting-the-awesome-wordpress-site-from-scratch.md"
       },
       "author": {
