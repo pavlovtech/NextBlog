@@ -5,7 +5,7 @@ author:
   name: 'Alex Pavlov '
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'my-journey-to-crafting-the-awesome-wordpress-site-from-scratch'
-description: ''
+description: 'A story about creating a WordPress site from scratch'
 coverImage: '/images/1-I3MD.webp'
 featured: 'yes'
 tags: 'wordpress'

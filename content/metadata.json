@@ -1,6 +1,6 @@
 {
-  "commit": "b108d92166a3436e8db2f2099bd37feb0db124f5",
-  "generated": "2023-10-23T07:26:49.435Z",
+  "commit": "266ad44502ebf5b27f46d4244313aa0e204befcd",
+  "generated": "2023-10-23T07:29:16.476Z",
   "metadata": [
     {
       "__outstatic": {
@@ -342,8 +342,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b108d92166a3436e8db2f2099bd37feb0db124f5",
-        "hash": "1271088607",
+        "commit": "266ad44502ebf5b27f46d4244313aa0e204befcd",
+        "hash": "4036856867",
         "path": "content/posts/my-journey-to-crafting-the-awesome-wordpress-site-from-scratch.md"
       },
       "author": {
@@ -352,7 +352,7 @@
       },
       "collection": "posts",
       "coverImage": "/images/1-I3MD.webp",
-      "description": "",
+      "description": "A story about creating a WordPress site from scratch",
       "featured": "yes",
       "publishedAt": "2023-10-23T07:29:51.202Z",
       "slug": "my-journey-to-crafting-the-awesome-wordpress-site-from-scratch",
