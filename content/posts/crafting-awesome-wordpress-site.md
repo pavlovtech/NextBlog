@@ -1,5 +1,5 @@
 ---
-title: 'Crafting the Awesome WordPress Site with Zero Experience'
+title: 'Crafting the Awesome WordPress Site from Scratch'
 status: 'published'
 author:
   name: 'Alex Pavlov '
