@@ -93,6 +93,8 @@ It was enough to recreate a responsive design in HTML and CSS.
 
 ### CSS Grid
 
+![](/images/gall-Q4Nj.webp)
+
 I also used CSS Grid for a photo gallery. One interesting trick was using the nth-child selector to enforce every N'th element to take specified columns and rows. I had 7 styles for the first 7 elements, and then the pattern had to repeat for the next elements. Here is an excerpt that used this approach:
 
 ```CSS
