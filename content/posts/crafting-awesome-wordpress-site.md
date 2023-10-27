@@ -93,7 +93,7 @@ It was enough to recreate a responsive design in HTML and CSS.
 
 ### CSS Grid
 
-![](/images/gall-Q4Nj.webp)
+![](/images/gall-Y4NT.webp)
 
 I also used CSS Grid for a photo gallery. One interesting trick was using the nth-child selector to enforce every N'th element to take specified columns and rows. I had 7 styles for the first 7 elements, and then the pattern had to repeat for the next elements. Here is an excerpt that used this approach:
 
@@ -150,6 +150,8 @@ I searched Udemy courses and found the best ones, in my opinion:
 These three courses cover creating a WordPress site from three angles: classic themes, block themes, and headless WordPress with NextJS. I would watch all three if becoming a WordPress expert was my goal. In my case, I tried out each one and watched some parts to understand the different approaches.
 
 ## Setting up the local environment
+
+
 
 I started by searching Reddit for the best way to set up a WordPress environment on my machine.
 
@@ -239,7 +241,7 @@ Finally, A2 hosting. The cheapest plan (11.99$ and 2.99$ with a monthly discount
 
 There is one more hosting I want to mention. One of the best and cheapest options is a WordPress droplet on [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-wordpress-one-click-install-on-digitalocean-2) with 25 GB of storage. It is 5$ per month but requires some manual setup and using SSH. Actually, for my own web site I used DigitalOcean and honestly, it is easy and took me around 5 minutes to get up and running.
 
-## WordPress deployment
+## WordPress Deployment
 
 The process of migrating the local copy of WordPress to your hosting is pretty straightforward.
 
