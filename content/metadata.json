@@ -1,6 +1,6 @@
 {
-  "commit": "ad0147096668b9eec4e39c1b47b62f9ec5f36bb5",
-  "generated": "2023-10-27T11:20:45.388Z",
+  "commit": "64a21e99cf76e8d0beff9bc219273097e9a46d9a",
+  "generated": "2023-12-16T16:37:57.237Z",
   "metadata": [
     {
       "__outstatic": {
@@ -342,8 +342,8 @@
     },
     {
       "__outstatic": {
-        "commit": "ad0147096668b9eec4e39c1b47b62f9ec5f36bb5",
-        "hash": "72590457",
+        "commit": "64a21e99cf76e8d0beff9bc219273097e9a46d9a",
+        "hash": "1831295900",
         "path": "content/posts/crafting-awesome-wordpress-site.md"
       },
       "author": {

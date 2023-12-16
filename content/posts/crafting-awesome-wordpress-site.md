@@ -34,7 +34,7 @@ I liked that Figma supports a dev mode where you can generate HTML and CSS for y
 
 ![](/images/pasted-image-20231001174425-M0Nj.png)
 
-In the dev section, you can choose Figma to Code -> HTML. It will give you HTML markup with styles:
+In the dev section, you can choose Figma to Code -&gt; HTML. It will give you HTML markup with styles:
 
 ![](/images/pasted-image-20231001175822-A4MD.png)
 
@@ -42,9 +42,9 @@ There is even an option to generate Tailwind and React code with it.
 
 But I had two main issues with it:
 
-1) It does not generate HTML and CSS separately. All styles are embedded in HTML
+1. It does not generate HTML and CSS separately. All styles are embedded in HTML
 
-2) It often generates styles using absolute positioning, which is not the best approach for all cases and is not optimal for responsive design.
+2. It often generates styles using absolute positioning, which is not the best approach for all cases and is not optimal for responsive design.
 
 To address these issues, I turned to ChatGPT. I asked it to split the code into separate HTML and CSS files and use Flexbox instead of absolute positioning. It worked pretty well for me, though I had to tweak the result, but it eliminated a lot of manual labor.
 
@@ -151,8 +151,6 @@ These three courses cover creating a WordPress site from three angles: classic t
 
 ## Setting up the local environment
 
-
-
 I started by searching Reddit for the best way to set up a WordPress environment on my machine.
 
 The easiest one was using Local by Flywheel. It's a very nice software that gets you started in minutes and does not require any configuration.
@@ -255,5 +253,4 @@ There is only one caveat: if the result file's size is significant, you might ha
 
 ## Conclusion
 
-WordPress is 20 years old but still the most popular CMS. Like it or not, half of the internet runs on it, and no other CMS has any good features to make people switch. WordPress development might be frustrating because there are different approaches to building custom themes. But you can be pretty productive once you get the hang of it.
-
+WordPress is 20 years old but still the most popular CMS. Like it or not, half of the internet runs on it, and no other CMS has any good features to make people switch. WordPress development might be frustrating because different approaches to building custom themes exist. But you can be pretty productive once you get the hang of it.
