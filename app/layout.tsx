@@ -3,6 +3,8 @@ import '../styles/globals.css';
 import { Inter } from 'next/font/google'
 import { NextAuthProvider } from './admin/components/provider';
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -14,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} bg-white text-black antialiased dark:bg-background-color dark:text-white`}>
         <NextAuthProvider>
           {children}
+          <SpeedInsights/>
         </NextAuthProvider>
       </body>
     </html>
