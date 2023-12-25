@@ -7,7 +7,7 @@ Design is based on https://github.com/pycoder2000/blog
 
 ## Demo
 
-Demo: [alexpavlov.dev](https://www.alexpavlov.dev)
+Demo: [alexpavlov.dev](https://alexpavlov.dev)
 
 # Motivation
 
