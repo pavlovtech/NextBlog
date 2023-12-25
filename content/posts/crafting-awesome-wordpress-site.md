@@ -12,6 +12,8 @@ tags: 'wordpress'
 publishedAt: '2023-10-23T07:29:51.202Z'
 ---
 
+## Table of contents
+
 ## Intro
 
 My girlfriend is a Kyiv tour guide. She had a pretty old WordPress site and wanted to update it to a better design for a while. By happy coincidence, her brother mastered UX/UX design. Long story short, he created an excellent prototype in Figma. It was time to convert it to HTML and CSS, create a custom WordPress theme, and migrate her site.
