@@ -1,12 +1,11 @@
 import { compareDesc, format, parseISO } from 'date-fns'
-import { Post, allPosts } from 'contentlayer/generated'
-import { getMDXComponent } from 'next-contentlayer/hooks'
+import { allPosts } from 'content-collections'
 import { PostCard } from 'app/components/post-card';
 import { notFound } from 'next/navigation';
 
-const TagPage = ({ params }: { params: { slug: string } }) => {
+const TagPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
-    const tag = params.slug;
+    const { slug: tag } = await params;
 
     const posts = allPosts.filter(post => post.tags?.includes(tag)).sort((a, b) =>
         compareDesc(new Date(a.publishedAt), new Date(b.publishedAt))

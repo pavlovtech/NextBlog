@@ -1,12 +1,12 @@
 'use client';
 import { RoughNotation } from 'react-rough-notation';
-import { allPages, Page } from "contentlayer/generated";
+import { allPages } from "content-collections";
 
 export function AboutMe() {
     "use client";
 
     const aboutMe = allPages
-      .find(p => p.slug == 'about-me')?.body.raw;
+      .find(p => p.slug == 'about-me')?.content;
 
     return (
       <div className="pt-6">

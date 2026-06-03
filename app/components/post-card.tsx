@@ -1,4 +1,4 @@
-import { Post } from "contentlayer/generated";
+import { Post } from "content-collections";
 import { compareDesc, format, parseISO } from "date-fns";
 import Link from "next/link";
 import Tag from "./tag";

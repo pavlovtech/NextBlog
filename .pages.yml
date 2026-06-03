@@ -1,0 +1,111 @@
+media:
+  input: public
+  output: /
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
+    filename: '{fields.slug}.md'
+    view:
+      fields: [title, status, featured, publishedAt]
+      primary: title
+      default:
+        sort: publishedAt
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: status
+        label: Status
+        type: select
+        required: true
+        default: draft
+        options:
+          values: [published, draft]
+      - name: author
+        label: Author
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: picture, label: Picture URL, type: string }
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+      - { name: description, label: Description, type: text }
+      - { name: tags, label: 'Tags (comma-separated)', type: string }
+      - { name: coverImage, label: Cover image, type: image }
+      - name: featured
+        label: Featured
+        type: select
+        default: 'no'
+        options:
+          values: ['yes', 'no']
+      - { name: publishedAt, label: Published at, type: datetime, required: true }
+      - { name: body, label: Body, type: rich-text }
+
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    filename: '{fields.slug}.md'
+    view:
+      fields: [title, status, publishedAt]
+      primary: title
+      default:
+        sort: publishedAt
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: status
+        label: Status
+        type: select
+        required: true
+        default: published
+        options:
+          values: [published, draft]
+      - name: author
+        label: Author
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: picture, label: Picture URL, type: string }
+      - { name: slug, label: Slug, type: string, required: true }
+      - { name: description, label: Description, type: text }
+      - { name: coverImage, label: Cover image, type: image }
+      - { name: technologies, label: 'Technologies (comma-separated)', type: string }
+      - { name: github, label: GitHub URL, type: string }
+      - { name: link, label: Live link, type: string }
+      - { name: publishedAt, label: Published at, type: datetime, required: true }
+      - { name: body, label: Body, type: rich-text }
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: content/pages
+    filename: '{fields.slug}.md'
+    view:
+      fields: [title, status, publishedAt]
+      primary: title
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: status
+        label: Status
+        type: select
+        required: true
+        default: published
+        options:
+          values: [published, draft]
+      - name: author
+        label: Author
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: picture, label: Picture URL, type: string }
+      - { name: slug, label: Slug, type: string, required: true }
+      - { name: description, label: Description, type: text }
+      - { name: coverImage, label: Cover image, type: image }
+      - { name: publishedAt, label: Published at, type: datetime, required: true }
+      - { name: body, label: Body, type: rich-text }
