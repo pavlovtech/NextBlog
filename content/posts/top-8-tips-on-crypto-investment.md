@@ -1,17 +1,17 @@
 ---
-title: 'Top 8 Tips On Crypto Investment'
-featured: 'no'
-tags: 'crypto'
-coverImage: '/assets/crypto.webp'
-description: 'I just want to give you several simple tips that I learned during the last several years.'
-status: 'published'
+title: Top 8 Tips On Crypto Investment
+status: draft
 author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'top-8-tips-on-crypto-investment'
-publishedAt: '2020-06-15T15:42:12.174Z'
+  name: "Alex Pavlov "
+  picture: https://avatars.githubusercontent.com/u/6662454?v=4
+slug: top-8-tips-on-crypto-investment
+description: I just want to give you several simple tips that I learned during
+  the last several years.
+tags: crypto
+coverImage: /assets/crypto.webp
+featured: no
+publishedAt: 2020-06-15T15:42:12.174Z
 ---
-
 ## Table of contents
 
 Crypto is hyped now. Everyone talks about it, celebrities own it, buy it, talk about it.
