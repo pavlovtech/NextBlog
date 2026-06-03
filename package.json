@@ -7,6 +7,9 @@
     "email": "alexppavlov93@gmail.com",
     "url": "https://alexpavlov.dev"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
