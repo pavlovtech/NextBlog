@@ -1,23 +1,27 @@
 import { format, parseISO } from 'date-fns'
-import { Post, allPosts } from 'content-collections'
+import { allPosts } from 'content-collections'
 import '../../../../styles/prism-atom-dark.css';
 import { notFound } from 'next/navigation';
 import { Giscus } from 'app/components/comments/giscus';
 import Image from 'next/image'
 
-export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post.slug }))
+export const dynamicParams = false
+
+export const generateStaticParams = async () =>
+  allPosts.filter((post) => post.status === 'published').map((post) => ({ slug: post.slug }))
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params
-  const post: Post = allPosts.find((post) => post.slug === slug)!
+  const post = allPosts.find((post) => post.slug === slug)
+  if (!post) return {}
   return {
     title: post.title,
     description: post.description,
     openGraph: {
-      images: post?.coverImage ? [post.coverImage!] : [],
-    }
+      images: post.coverImage ? [post.coverImage] : [],
+    },
   }
 }
 
@@ -25,7 +29,7 @@ const PostPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
   const { slug } = await params;
 
-  const post = allPosts.find((post) => post.slug === slug)!;
+  const post = allPosts.find((post) => post.slug === slug);
 
   if (!post) notFound();
   
@@ -37,17 +41,17 @@ const PostPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
         </time>
         <h1 className='text-3xl font-bold'>{post.title}</h1>
       </div>
-      {post.coverImage && (<Image
-        src={post.coverImage}
-        sizes="100vw"
-        style={{
-          width: '100%',
-          height: 'auto',
-        }}
-        width={300}
-        height={300}
-        alt="Cover"
-      />)}
+      {post.coverImage && (
+        <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg">
+          <Image
+            src={post.coverImage}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
+        </div>
+      )}
 
       
 

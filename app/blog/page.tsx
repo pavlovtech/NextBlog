@@ -1,7 +1,5 @@
-import Link from "next/link";
-import { compareDesc, format, parseISO } from "date-fns";
+import { compareDesc } from "date-fns";
 import { allPosts } from "content-collections";
-import { Suspense } from "react";
 import { PostCard } from "app/components/post-card";
 import { AboutMe } from "app/components/about-me";
 import { IntroLinks } from "app/components/intro-links";
@@ -41,7 +39,7 @@ export default function Home() {
         {!featuredPosts.length && 'No posts found.'}
 
         {featuredPosts.map((post, idx) => (
-          <PostCard key={idx} {...post} />
+          <PostCard key={post.slug} {...post} />
         ))}
       </section>
       <section>
@@ -52,7 +50,7 @@ export default function Home() {
         {!posts.length && 'No posts found.'}
 
         {posts.map((post, idx) => (
-          <PostCard key={idx} {...post} />
+          <PostCard key={post.slug} {...post} />
         ))}
       </section>
     </>
