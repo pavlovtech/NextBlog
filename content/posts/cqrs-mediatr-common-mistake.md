@@ -1,16 +1,15 @@
 ---
-title: 'The wrong way to use CQRS and MediatR'
-featured: 'yes'
-tags: 'cqrs, dotnet'
-description: 'This post will explore a common mistake in projects MetiatR and CQRS.'
-status: 'published'
+title: The wrong way to use CQRS and MediatR
+status: draft
 author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'cqrs-mediatr-common-mistake'
-publishedAt: '2023-08-07T15:42:12.174Z'
+  name: "Alex Pavlov "
+  picture: https://avatars.githubusercontent.com/u/6662454?v=4
+slug: cqrs-mediatr-common-mistake
+description: This post will explore a common mistake in projects MetiatR and CQRS.
+tags: cqrs, dotnet
+featured: yes
+publishedAt: 2023-08-07T15:42:12.174Z
 ---
-
 ## Introduction
 
 Command Query Responsibility Segregation (CQRS) is a software architectural pattern that separates reading from writing operations, allowing for more scalable and maintainable code. MediatR is a popular library that enforces Domain-Driven Design (DDD), facilitating this separation. This post will explore a common mistake in projects using these tools: sending requests inside handlers or using nested handlers.
@@ -55,9 +54,9 @@ So where should your logic go? You have multiple options:
 3. Extension Method: Create extension methods that can be reused across different handlers.
 4. Other Custom Solutions: Tailored to your specific requirements and architecture.
 
-<!-- -->
 
-<!-- -->
+
+&nbsp;
 
 ## Testing Considerations
 
@@ -67,9 +66,9 @@ When handlers are nested or interdependent, it creates a chain of dependencies t
 2. Brittle Tests: Changes to one handler may break tests for other handlers that depend on it, leading to increased maintenance efforts.
 3. Hidden Behavior: Testing a handler that relies on other handlers may conceal what exactly is being tested, leading to potential gaps in coverage or misunderstood test results.
 
-<!-- -->
 
-<!-- -->
+
+&nbsp;
 
 By avoiding nested handlers, testing becomes more straightforward, allowing you to isolate and test individual components more easily.
 
