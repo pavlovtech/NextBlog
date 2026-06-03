@@ -1,20 +1,24 @@
-import { compareDesc, format, parseISO } from 'date-fns'
+import { compareDesc } from 'date-fns'
 import { allPosts } from 'content-collections'
 import { PostCard } from 'app/components/post-card';
 import { notFound } from 'next/navigation';
 
+export const dynamicParams = false
+
 export const generateStaticParams = async () =>
-  [...new Set(allPosts.flatMap(post => post.tags))].map((slug) => ({ slug }))
+  [...new Set(
+    allPosts.filter((post) => post.status === 'published').flatMap((post) => post.tags)
+  )].map((slug) => ({ slug }))
 
 const TagPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
     const { slug: tag } = await params;
 
-    const posts = allPosts.filter(post => post.tags?.includes(tag)).sort((a, b) =>
-        compareDesc(new Date(a.publishedAt), new Date(b.publishedAt))
-    );
+    const posts = allPosts
+        .filter((post) => post.status === 'published' && post.tags.includes(tag))
+        .sort((a, b) => compareDesc(new Date(a.publishedAt), new Date(b.publishedAt)));
 
-    if (!posts) notFound();
+    if (!posts.length) notFound();
 
     return (
         <div>
@@ -25,7 +29,7 @@ const TagPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
             {!posts.length && 'No posts found.'}
 
             {posts.map((post, idx) => (
-                <PostCard key={idx} {...post} />
+                <PostCard key={post.slug} {...post} />
             ))}
         </div>
     )

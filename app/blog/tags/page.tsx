@@ -3,7 +3,9 @@ import Tag from "app/components/tag";
 import { allPosts } from "content-collections";
 
 export default function TagsPage() {
-  const allTags = allPosts.flatMap(post => post.tags);
+  const allTags = allPosts
+    .filter(post => post.status === 'published')
+    .flatMap(post => post.tags);
 
   const tags = [...new Set(allTags)];
 
