@@ -34,7 +34,7 @@ export default function Projects() {
                                 imgSrc={d.coverImage}
                                 href={d.link}
                                 github={d.github}
-                                tech={d.technologies?.split(',')}
+                                tech={d.technologies}
                             />
                         ))}
                     </div>

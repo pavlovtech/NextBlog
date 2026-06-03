@@ -3,9 +3,7 @@ import Tag from "app/components/tag";
 import { allPosts } from "content-collections";
 
 export default function TagsPage() {
-  const allTags = allPosts
-    .map(post => post.tags?.split(",").map(p => p.trim()))
-    .flat();
+  const allTags = allPosts.flatMap(post => post.tags);
 
   const tags = [...new Set(allTags)];
 

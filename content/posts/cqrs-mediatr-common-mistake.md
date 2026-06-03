@@ -1,13 +1,10 @@
 ---
 title: The wrong way to use CQRS and MediatR
 status: draft
-author:
-  name: "Alex Pavlov "
-  picture: https://avatars.githubusercontent.com/u/6662454?v=4
 slug: cqrs-mediatr-common-mistake
 description: This post will explore a common mistake in projects MetiatR and CQRS.
-tags: cqrs, dotnet
-featured: yes
+tags: [cqrs, dotnet]
+featured: true
 publishedAt: 2023-08-07T15:42:12.174Z
 ---
 ## Introduction

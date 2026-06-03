@@ -1,14 +1,11 @@
 ---
 title: Crafting the Awesome WordPress Site from Scratch
 status: draft
-author:
-  name: "Alex Pavlov "
-  picture: https://avatars.githubusercontent.com/u/6662454?v=4
 slug: crafting-awesome-wordpress-site
 description: A story about creating a WordPress site from scratch
-tags: wordpress
+tags: [wordpress]
 coverImage: /images/aww-logo-UxMD.png
-featured: yes
+featured: true
 publishedAt: 2023-10-23T07:29:51.202Z
 ---
 ## Table of contents

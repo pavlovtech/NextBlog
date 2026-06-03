@@ -15,13 +15,11 @@ export function PostCard(post: Post) {
               <h2 className="text-2xl font-bold leading-8 tracking-tight">
                 <Link
                   href={`/${post.url}`}
-                  legacyBehavior>
-                  <a className="text-gray-900 transition duration-500 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500">{post.title}</a>
-                </Link>
+                  className="text-gray-900 transition duration-500 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500">{post.title}</Link>
               </h2>
             </div>
             <div className="flex flex-wrap">
-              {post.tags!.split(",").map((tag) => (
+              {post.tags.map((tag) => (
                 <Tag key={tag} text={tag} />
               ))}
             </div>
