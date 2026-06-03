@@ -10,6 +10,15 @@ export const generateStaticParams = async () =>
     allPosts.filter((post) => post.status === 'published').flatMap((post) => post.tags)
   )].map((slug) => ({ slug }))
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug: tag } = await params
+  return {
+    title: `Posts tagged "${tag}" - Alex Pavlov`,
+    description: `Blog posts tagged ${tag}.`,
+    alternates: { canonical: `/blog/tags/${tag}` },
+  }
+}
+
 const TagPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
     const { slug: tag } = await params;
