@@ -3,6 +3,9 @@ import { allPosts } from 'content-collections'
 import { PostCard } from 'app/components/post-card';
 import { notFound } from 'next/navigation';
 
+export const generateStaticParams = async () =>
+  [...new Set(allPosts.flatMap(post => post.tags))].map((slug) => ({ slug }))
+
 const TagPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
     const { slug: tag } = await params;

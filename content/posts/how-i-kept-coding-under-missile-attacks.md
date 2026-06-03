@@ -1,13 +1,10 @@
 ---
 publishedAt: '2022-08-22T15:42:12.174Z'
 title: "War In Ukraine: How I Kept Coding Under Missile Attacks"
-featured: yes
-tags: 'war, ukraine'
+featured: true
+tags: [war, ukraine]
 description: 'My story about the first days of the war in Ukraine.'
 status: 'published'
-author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'how-i-kept-coding-under-missile-attacks'
 coverImage: '/assets/war-logo.webp'
 ---

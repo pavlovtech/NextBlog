@@ -1,14 +1,11 @@
 ---
 title: NGRX Store In Angular
 status: draft
-author:
-  name: "Alex Pavlov "
-  picture: https://avatars.githubusercontent.com/u/6662454?v=4
 slug: ngrx-store-in-angular
 description: Is it worth using NGRX in an Angular app?
-tags: ngrx, angular
+tags: [ngrx, angular]
 coverImage: /assets/ngrx2.png
-featured: no
+featured: false
 publishedAt: 2022-07-30T15:42:12.174Z
 ---
 ## Table of contents

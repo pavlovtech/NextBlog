@@ -6,6 +6,10 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const metadata = {
+  metadataBase: new URL('https://alexpavlov.dev'),
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className='dark scroll-smooth'>

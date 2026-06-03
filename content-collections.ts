@@ -34,7 +34,11 @@ async function toHtml(markdown: string): Promise<string> {
   return String(file)
 }
 
-const author = z.object({ name: z.string(), picture: z.string() })
+// Single-author blog: one source of truth instead of repeating author in every file.
+const AUTHOR = {
+  name: 'Alex Pavlov',
+  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4',
+}
 
 const posts = defineCollection({
   name: 'posts',
@@ -44,12 +48,11 @@ const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     status: z.enum(['published', 'draft']).default('draft'),
-    author: author.optional(),
     slug: z.string(),
     description: z.string().optional().default(''),
-    tags: z.string().optional().default(''),
+    tags: z.array(z.string()).optional().default([]),
     coverImage: z.string().optional().default(''),
-    featured: z.string().optional().default(''),
+    featured: z.boolean().optional().default(false),
     publishedAt: z.string(),
     content: z.string(),
   }),
@@ -57,6 +60,7 @@ const posts = defineCollection({
     const flattenedPath = `posts/${doc.slug}`
     return {
       ...doc,
+      author: AUTHOR,
       html: await toHtml(doc.content),
       url: `blog/${flattenedPath}`,
       flattenedPath,
@@ -72,11 +76,10 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     status: z.string(),
-    author: author.optional(),
     slug: z.string(),
     description: z.string().optional().default(''),
     coverImage: z.string().optional().default(''),
-    technologies: z.string().optional().default(''),
+    technologies: z.array(z.string()).optional().default([]),
     github: z.string().optional().default(''),
     link: z.string().optional().default(''),
     publishedAt: z.string(),
@@ -86,6 +89,7 @@ const projects = defineCollection({
     const flattenedPath = `projects/${doc.slug}`
     return {
       ...doc,
+      author: AUTHOR,
       html: await toHtml(doc.content),
       url: `blog/${flattenedPath}`,
       flattenedPath,
@@ -101,7 +105,6 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     status: z.string(),
-    author: author.optional(),
     slug: z.string(),
     description: z.string().optional().default(''),
     coverImage: z.string().optional().default(''),
@@ -112,6 +115,8 @@ const pages = defineCollection({
     const flattenedPath = `pages/${doc.slug}`
     return {
       ...doc,
+      author: AUTHOR,
+      html: await toHtml(doc.content),
       url: `blog/${flattenedPath}`,
       flattenedPath,
     }

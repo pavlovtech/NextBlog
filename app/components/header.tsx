@@ -11,8 +11,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
     <header className="md:flex items-center justify-between py-10">
       <div>
         <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
-          <Link href='/'  passHref legacyBehavior>
-            <a>
+          <Link href='/'>
             <Typewriter
               options={{
                 strings: [`~${pathname} `],
@@ -22,7 +21,6 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
                 delay: 0
               }}
             />
-            </a>
           </Link>
         </div>
       </div>

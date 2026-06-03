@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { allPosts, allPages } from "content-collections";
+import { allPosts } from "content-collections";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
@@ -11,15 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         } as any
     }).concat(
-        allPages.map(p => {
-            return {
-                url: `https://alexpavlov.dev/${p.flattenedPath}`,
-                lastModified: new Date(),
-                changeFrequency: 'monthly',
-                priority: 1,
-            } as any
-        }
-    )).concat(
         [
             {
                 url: `https://alexpavlov.dev/blog`,

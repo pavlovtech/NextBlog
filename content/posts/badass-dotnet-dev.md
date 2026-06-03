@@ -1,12 +1,9 @@
 ---
 title: 'How to Become a Badass .NET Developer'
 status: 'published'
-author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'badass-dotnet-dev'
-featured: 'yes'
-tags: 'csharp, career'
+featured: true
+tags: [csharp, career]
 description: 'This article will describe a roadmap to becoming a badass .NET Software Engineer. I will start with the C# language itself and walk you through the frameworks and technologies you need to master on your journey.'
 coverImage: '/assets/badass-dev-logo.webp'
 publishedAt: '2023-03-20T15:42:12.174Z'

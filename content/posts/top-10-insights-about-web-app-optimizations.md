@@ -1,16 +1,13 @@
 ---
 title: Top 10 Insights About Web Application Optimization
 status: draft
-author:
-  name: "Alex Pavlov "
-  picture: https://avatars.githubusercontent.com/u/6662454?v=4
 slug: top-10-insights-about-web-app-optimizations
 description: Web application optimization is crucial for any web app. You can
   improve web application performance with Static Site Generation, modern image
   formats, lazy image loading, Next.JS and Preact.
-tags: javascrpt, optimization
+tags: [javascrpt, optimization]
 coverImage: /assets/gear.jpg
-featured: no
+featured: false
 publishedAt: 2022-03-21T15:42:12.174Z
 ---
 ## Table of contents
