@@ -1,17 +1,16 @@
 ---
-title: 'Crafting the Awesome WordPress Site from Scratch'
-status: 'published'
+title: Crafting the Awesome WordPress Site from Scratch
+status: draft
 author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'crafting-awesome-wordpress-site'
-description: 'A story about creating a WordPress site from scratch'
-coverImage: '/images/aww-logo-UxMD.png'
-featured: 'yes'
-tags: 'wordpress'
-publishedAt: '2023-10-23T07:29:51.202Z'
+  name: "Alex Pavlov "
+  picture: https://avatars.githubusercontent.com/u/6662454?v=4
+slug: crafting-awesome-wordpress-site
+description: A story about creating a WordPress site from scratch
+tags: wordpress
+coverImage: /images/aww-logo-UxMD.png
+featured: yes
+publishedAt: 2023-10-23T07:29:51.202Z
 ---
-
 ## Table of contents
 
 ## Intro
@@ -45,7 +44,6 @@ There is even an option to generate Tailwind and React code with it.
 But I had two main issues with it:
 
 1. It does not generate HTML and CSS separately. All styles are embedded in HTML
-
 2. It often generates styles using absolute positioning, which is not the best approach for all cases and is not optimal for responsive design.
 
 To address these issues, I turned to ChatGPT. I asked it to split the code into separate HTML and CSS files and use Flexbox instead of absolute positioning. It worked pretty well for me, though I had to tweak the result, but it eliminated a lot of manual labor.
@@ -84,11 +82,8 @@ Additionally, I was creating a separate CSS file for every section or part of th
 For layout, I mostly used Flex Box and liked it a lot. You need to know only a few properties to get up and running:
 
 1. display: flex for a parent element
-
 2. justify-content for horizontal alignment of items
-
 3. align-items for vertical alignment of items
-
 4. flex-direction for column and row layout
 
 It was enough to recreate a responsive design in HTML and CSS.
@@ -132,9 +127,7 @@ Styles for the grid itself looked like this:
 After researching the topic of creating a custom WordPress theme for a while, I found out that there are three ways to create a WordPress theme:
 
 1. Classic theme. It is the most common approach that requires writing PHP code.
-
 2. Block theme. This approach is drastically different. First of all, it enables the so-called "Full site editing." The end user can edit any site part, such as the header, footer, or page. It does not require writing PHP. Instead, you create a bunch of HTML files and annotate EVERY html tag with WordPress special comments that specify what type of block it is. Afterward, a user can change every block in the block editor.
-
 3. Headless WordPress. With this approach, you can decouple your front end and use WordPress only as a back end. You can use any tech stack for your front end and any hosting. For example, you can develop your website in Next.js and host it on Vercel. It also required a server with WordPress that would serve as a back-end.
 
 I needed to decide what approach to take, so I checked out a few courses on Udemy.
@@ -144,9 +137,7 @@ I needed to decide what approach to take, so I checked out a few courses on Udem
 I searched Udemy courses and found the best ones, in my opinion:
 
 1. [Become a WordPress Developer: Unlocking Power With Code](https://ciklum.udemy.com/course/become-a-wordpress-developer-php-javascript/). This course takes the most holistic approach and only requires a little prior knowledge about programming and WordPress. I enjoyed the author's remarkable ability to explain the material clearly, even though I prefer more high-paced courses. The course concentrates on classic themes but also covers block themes.
-
 2. [Complete WordPress Developer Course 2023 - Plugins & Themes](https://ciklum.udemy.com/course/wordpress-development-create-wordpress-themes-and-plugins/). This course shows how to create WordPress block themes with full site editing.
-
 3. [Next JS & WordPress: Build rapid NextJS sites with Next & WP](https://ciklum.udemy.com/course/next-js-wordpress/). High-paced course about headless WordPress and creating a NextJS front-end.
 
 These three courses cover creating a WordPress site from three angles: classic themes, block themes, and headless WordPress with NextJS. I would watch all three if becoming a WordPress expert was my goal. In my case, I tried out each one and watched some parts to understand the different approaches.
@@ -166,11 +157,8 @@ If I ever need to create some desktop software, I'd consider Local an example of
 The approach of using headless WP with NextJS was the most appealing as I'd use the tech stack I like the most (such as NextJS 13 with app router and Tailwind CSS). I started with it, and it turned out to be pretty good, but this approach had the following drawbacks:
 
 1. It required two hosting providers: the first for your WordPress and the second for your front end. So it is more expensive and requires more support in the future.
-
 2. Finding a developer who knows WP and front-end tech stack is much more challenging. It doesn't matter if you plan to support the website yourself and forever, but it would be hard to outsource it to someone else.
-
 3. You must implement block rendering by yourself, so for every block you want to support, such as a paragraph, image, or menu, you need to implement the rendering logic.
-
 4. Some WordPress plugins might not work with it.
 
 Come to think of it, I decided to reject this approach. Paying for two hosting providers is not justifiable in this case. Additionally, If there were any changes required, I wanted to be able to outsource it to someone without supporting this site myself.
@@ -184,11 +172,8 @@ I needed to extract parts of my site, such as the header, footer, etc., to separ
 Actually, it is more complicated. It seems that WordPress developers usually do the following:
 
 1. Recreate a component (meaning the part with HTML and CSS) in the block editor close to the original design.
-
 2. Copy the result HTML (with special WP comments describing each block) to a dedicated file (e.g., header.html)
-
 3. Create styles to make it look like the design
-
 4. Assign CSS classes to blocks in the block editor
 
 Basically, you have to recreate your HTML and CSS in a "WordPress" way, which doesn't make much sense to me when you already have working HTML and CSS.
@@ -222,13 +207,9 @@ Regarding JS libraries, the only one I used was [Swiper](https://swiperjs.com/) 
 After reading WP hosting-related posts on Reddit, it came down to the following ones:
 
 1. [Bluehost.com](https://www.bluehost.com/)
-
 2. [SiteGround](https://siteground.com/)
-
 3. [Cloudways](https://www.cloudways.com/en/)
-
 4. [DigitalOcean](digitalocean.com)
-
 5. [A2 Hosting](https://www.a2hosting.com/)
 
 After reading some not flattering [reviews](https://www.reddit.com/r/webdevelopment/comments/10ejvi8/is_bluehost_any_good_in_2023/) about Bluehost, I decided that it was a no-go because of slow website speed and poor customer service.
