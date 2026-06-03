@@ -1,17 +1,16 @@
 ---
-title: 'Asynchronous Initialization In C#'
-status: 'published'
+title: Asynchronous Initialization In C#
+status: draft
 author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'asnync-obj-conscruction-in-scharp'
-featured: 'no'
-tags: 'csharp, dotnet'
-description: 'You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.'
-coverImage: ''
-publishedAt: '2023-09-06T15:42:12.174Z'
+  name: "Alex Pavlov "
+  picture: https://avatars.githubusercontent.com/u/6662454?v=4
+slug: asnync-obj-conscruction-in-scharp
+description: You can’t have an async constructor in C#, but sometimes you need
+  to have async initialization logic.
+tags: csharp, dotnet
+featured: no
+publishedAt: 2023-09-06T15:42:12.174Z
 ---
-
 You can’t have an async constructor in C#, but sometimes you need to have async initialization logic.
 
 There are two main ways to construct an object asynchronously: using a Factory Method Pattern and an Asynchronous Initialization Pattern.
