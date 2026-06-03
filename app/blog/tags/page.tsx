@@ -2,6 +2,12 @@
 import Tag from "app/components/tag";
 import { allPosts } from "content-collections";
 
+export const metadata = {
+  title: 'Tags - Alex Pavlov',
+  description: 'Browse blog posts by topic.',
+  alternates: { canonical: '/blog/tags' },
+}
+
 export default function TagsPage() {
   const allTags = allPosts
     .filter(post => post.status === 'published')

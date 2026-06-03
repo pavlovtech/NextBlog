@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import { Giscus } from 'app/components/comments/giscus';
 import Image from 'next/image'
 
+const SITE = 'https://alexpavlov.dev'
+
 export const dynamicParams = false
 
 export const generateStaticParams = async () =>
@@ -19,7 +21,13 @@ export async function generateMetadata(
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: `/${post.url}` },
     openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.description,
+      url: `/${post.url}`,
+      publishedTime: post.publishedAt,
       images: post.coverImage ? [post.coverImage] : [],
     },
   }
@@ -32,9 +40,26 @@ const PostPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const post = allPosts.find((post) => post.slug === slug);
 
   if (!post) notFound();
-  
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    author: { '@type': 'Person', name: post.author.name, url: SITE },
+    image: post.coverImage ? `${SITE}${post.coverImage}` : undefined,
+    url: `${SITE}/${post.url}`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}/${post.url}` },
+  }
+
   return (
     <article className='flex flex-col justify-center'>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mb-8 text-center">
         <time dateTime={post.publishedAt} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.publishedAt), 'LLLL d, yyyy')}
