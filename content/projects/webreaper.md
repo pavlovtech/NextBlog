@@ -10,6 +10,4 @@ github: https://github.com/pavlovtech/WebReaper
 link: https://webreaper.ai/
 publishedAt: 2023-09-29T18:37:19.314Z
 ---
-## **About**
-
 AI-native web scraper. Single binary with a bundled Claude Code skill. MIT-licensed alternative to Firecrawl.
