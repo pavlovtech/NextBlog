@@ -31,4 +31,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-.contentlayer
+# content-collections (generated)
+.content-collections

@@ -1,4 +1,4 @@
-import { Project, allProjects } from ".contentlayer/generated";
+import { allProjects } from "content-collections";
 import Card from "app/components/project-card";
 import Link from "next/link";
 
@@ -30,7 +30,7 @@ export default function Projects() {
                             <Card
                                 key={d.title}
                                 title={d.title}
-                                description={d.body.raw}
+                                description={d.content}
                                 imgSrc={d.coverImage}
                                 href={d.link}
                                 github={d.github}

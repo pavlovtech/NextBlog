@@ -1,5 +1,5 @@
 import { format, parseISO } from 'date-fns'
-import { Post, allPosts } from 'contentlayer/generated'
+import { Post, allPosts } from 'content-collections'
 import '../../../../styles/prism-atom-dark.css';
 import { notFound } from 'next/navigation';
 import { Giscus } from 'app/components/comments/giscus';
@@ -8,10 +8,10 @@ import Image from 'next/image'
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post.slug }))
 
 export async function generateMetadata(
-  { params, searchParams }: any,
-  parent?: any
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const post: Post = allPosts.find((post) => post.slug === params.slug)!
+  const { slug } = await params
+  const post: Post = allPosts.find((post) => post.slug === slug)!
   return {
     title: post.title,
     description: post.description,
@@ -21,9 +21,11 @@ export async function generateMetadata(
   }
 }
 
-const PostPage = ({ params }: { params: { slug: string } }) => {
+const PostPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
-  const post = allPosts.find((post) => post.slug === params.slug)!;
+  const { slug } = await params;
+
+  const post = allPosts.find((post) => post.slug === slug)!;
 
   if (!post) notFound();
   
@@ -49,7 +51,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
 
       
 
-      <div dangerouslySetInnerHTML={{ __html: post.body.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5 mt-5'>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5 mt-5'>
       </div>
       <Giscus />
     </article>

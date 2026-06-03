@@ -1,6 +1,6 @@
 
 import Tag from "app/components/tag";
-import { allPosts } from "contentlayer/generated";
+import { allPosts } from "content-collections";
 
 export default function TagsPage() {
   const allTags = allPosts

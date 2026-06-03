@@ -1,19 +1,16 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useEffect, useCallback } from 'react'
 import { useTheme } from 'next-themes'
 import { giscusConfig } from 'configs/discus-config';
 
 export const Giscus = () => {
-  const [enableLoadComments, setEnabledLoadComments] = useState(true)
   const { theme, resolvedTheme } = useTheme()
   const commentsTheme = 'dark';
 
   const COMMENTS_ID = 'comments-container'
 
   useEffect(() => {
-    setEnabledLoadComments(false)
-
     const {
       repo,
       repositoryId,
