@@ -1,17 +1,15 @@
 ---
-title: 'Two Useful Methods of IEnumerable'
+title: Two Useful Methods of IEnumerable
+status: draft
 author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'append-and-prepend-methods-in-dotnet'
-status: 'published'
-featured: 'no'
-tags: 'csharp, dotnet'
-description: 'A nice and functional way to add a single element to the IEnumerable collection'
-coverImage: ''
-publishedAt: '2023-09-06T16:42:28.000Z'
+  name: "Alex Pavlov "
+  picture: https://avatars.githubusercontent.com/u/6662454?v=4
+slug: append-and-prepend-methods-in-dotnet
+description: A nice and functional way to add a single element to the IEnumerable collection
+tags: csharp, dotnet
+featured: no
+publishedAt: 2023-09-06T16:42:28.000Z
 ---
-
 I found myself writing this piece of code:
 
 ```csharp
