@@ -1,17 +1,18 @@
 ---
-title: 'How to Integrate Anki With Zettelkasten?'
-status: 'published'
+title: How to Integrate Anki With Zettelkasten?
+status: draft
 author:
-  name: 'Alex Pavlov '
-  picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
-slug: 'anki-and-zettelkasten'
-description: 'Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving.'
-tags: 'anki, zettelkasten'
-coverImage: '/images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-Y4Nz.png'
-featured: ''
-publishedAt: '2023-01-23T15:42:12.174Z'
+  name: "Alex Pavlov "
+  picture: https://avatars.githubusercontent.com/u/6662454?v=4
+slug: anki-and-zettelkasten
+description: Why bother to use Anki in the first place if you can quickly access
+  the information in your Zettelkasten? Because quick access to memory is at the
+  foundation of creative thought and problem-solving.
+tags: anki, zettelkasten
+coverImage: /images/pavlovtech_german_scientist_memorising_flash_cards_e6bd9f50-fe19-4316-b325-d1fdc2f2ba5d-Y4Nz.png
+featured: no
+publishedAt: 2023-01-23T15:42:12.174Z
 ---
-
 Why bother to use Anki in the first place if you can quickly access the information in your Zettelkasten? Because quick access to memory is at the foundation of creative thought and problem-solving. It enables speed in associative thinking to see patterns, in ways not possible if you need to keep routinely looking up information.
 
 Anki guarantees that you will remember something, with minimal effort, and remembering becomes a choice with Anki.
