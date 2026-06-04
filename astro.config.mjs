@@ -11,6 +11,11 @@ import rehypePrism from 'rehype-prism-plus'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alexpavlov.dev',
+  // Match the Next.js URL shape (no trailing slash): /blog/posts/x not /blog/posts/x/
+  trailingSlash: 'never',
+  build: { format: 'file' },
+  // Prefetch internal links on hover for near-instant navigation
+  prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
   redirects: {
     '/': '/blog',
   },

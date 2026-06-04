@@ -28,10 +28,12 @@ import { NAV_LINKS } from '../consts'
 
 <script>
   // typewriter-effect's vanilla core (same engine the React wrapper used) — no React.
-  // Options match the original Next.js header exactly.
+  // Re-runs on every navigation (astro:page-load) so it works with View Transitions.
   import Typewriter from 'typewriter-effect/dist/core'
-  const el = document.getElementById('tw-path')
-  if (el) {
+  function initTypewriter() {
+    const el = document.getElementById('tw-path')
+    if (!el) return
+    el.innerHTML = ''
     new Typewriter(el, {
       strings: [`~${location.pathname} `],
       autoStart: true,
@@ -40,4 +42,5 @@ import { NAV_LINKS } from '../consts'
       delay: 0,
     })
   }
+  document.addEventListener('astro:page-load', initTypewriter)
 </script>

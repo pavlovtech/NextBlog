@@ -21,10 +21,12 @@ const Content = about ? (await render(about)).Content : null
 </div>
 
 <script>
-  // vanilla rough-notation (replaces the React react-rough-notation island)
+  // vanilla rough-notation (replaces the React react-rough-notation island).
+  // Re-runs on every navigation (astro:page-load) for View Transitions.
   import { annotate } from 'rough-notation'
-  const el = document.getElementById('rn-highlight')
-  if (el) {
+  function initNotation() {
+    const el = document.getElementById('rn-highlight')
+    if (!el) return
     const annotation = annotate(el, {
       type: 'box',
       color: '#DE1D8D',
@@ -32,4 +34,5 @@ const Content = about ? (await render(about)).Content : null
     })
     setTimeout(() => annotation.show(), 1000)
   }
+  document.addEventListener('astro:page-load', initNotation)
 </script>
