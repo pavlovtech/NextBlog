@@ -80,7 +80,7 @@ const PostPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
       
 
-      <div dangerouslySetInnerHTML={{ __html: post.html }} className='max-w-max prose prose-invert prose-lg mb-5 mt-5'>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} className='max-w-max prose prose-dark prose-invert prose-lg mb-5 mt-5'>
       </div>
       <Giscus />
     </article>
