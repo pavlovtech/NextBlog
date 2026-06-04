@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from 'astro:content'
+import { format } from 'date-fns'
+import Layout from '../../../layouts/Layout.astro'
+import Giscus from '../../../components/Giscus.astro'
+import { SITE, AUTHOR } from '../../../consts'
+import '../../../../styles/prism-atom-dark.css'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts')
+  return posts
+    .filter((p) => p.data.status === 'published')
+    .map((post) => ({ params: { slug: post.data.slug }, props: { post } }))
+}
+
+const { post } = Astro.props
+const d = post.data
+const { Content } = await render(post)
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.publishedAt.toISOString(),
+  dateModified: d.publishedAt.toISOString(),
+  author: { '@type': 'Person', name: AUTHOR.name, url: SITE },
+  image: d.coverImage ? `${SITE}${d.coverImage}` : undefined,
+  url: `${SITE}/blog/posts/${d.slug}`,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}/blog/posts/${d.slug}` },
+}
+---
+
+<Layout
+  title={d.title}
+  description={d.description}
+  canonical={`/blog/posts/${d.slug}`}
+  ogType="article"
+  image={d.coverImage || undefined}
+  publishedTime={d.publishedAt.toISOString()}
+  jsonLd={jsonLd}
+>
+  <article class="flex flex-col justify-center">
+    <div class="mb-8 text-center">
+      <time datetime={d.publishedAt.toISOString()} class="mb-1 text-xs text-gray-600">
+        {format(d.publishedAt, 'LLLL d, yyyy')}
+      </time>
+      <h1 class="text-3xl font-bold">{d.title}</h1>
+    </div>
+    {
+      d.coverImage && (
+        <div class="relative mb-4 aspect-video w-full overflow-hidden rounded-lg">
+          <img
+            src={d.coverImage}
+            alt={d.title}
+            class="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      )
+    }
+    <div class="max-w-max prose prose-dark prose-invert prose-lg mb-5 mt-5">
+      <Content />
+    </div>
+    <Giscus />
+  </article>
+</Layout>

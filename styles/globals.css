@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -404,4 +402,33 @@ input:-webkit-autofill:focus {
 
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
+}
+
+/* ---------- Post body lists ---------- */
+/* prose-lg ships generous 0.75rem li margins and a 1.78 line-height; on a
+   mostly single-line list the tall leading reads as a big gap. Tighten both
+   so items group together. 1.5 keeps wrapped items readable. */
+.prose li {
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  line-height: 1.5;
+}
+
+/* Table of contents — remark-toc emits the list directly after the
+   "Table of contents" heading. Make it compact and evenly spaced: the
+   default nested sublists add big top/bottom margins, so items that have
+   children (Step 1, Step 2…) end up with much larger gaps than the rest. */
+.prose #table-of-contents {
+  margin-bottom: 0.5rem;
+}
+.prose #table-of-contents + ul {
+  line-height: 1.5;
+}
+.prose #table-of-contents + ul li {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.prose #table-of-contents + ul ul {
+  margin-top: 0.2em;
+  margin-bottom: 0;
 }

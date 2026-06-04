@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content'
+import { compareDesc } from 'date-fns'
+import Layout from '../../../layouts/Layout.astro'
+import PostCard from '../../../components/PostCard.astro'
+
+export async function getStaticPaths() {
+  const published = (await getCollection('posts')).filter((p) => p.data.status === 'published')
+  const tags = [...new Set(published.flatMap((p) => p.data.tags))]
+  return tags.map((tag) => ({ params: { tag }, props: { tag } }))
+}
+
+const { tag } = Astro.props
+const posts = (await getCollection('posts'))
+  .filter((p) => p.data.status === 'published' && p.data.tags.includes(tag))
+  .sort((a, b) => compareDesc(a.data.publishedAt, b.data.publishedAt))
+---
+
+<Layout
+  title={`Posts tagged "${tag}" - Alex Pavlov`}
+  description={`Blog posts tagged ${tag}.`}
+  canonical={`/blog/tags/${tag}`}
+>
+  <div>
+    <h2
+      class="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl"
+    >
+      {tag}
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700" />
+    {
+      posts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          tags={post.data.tags}
+          publishedAt={post.data.publishedAt}
+          slug={post.data.slug}
+        />
+      ))
+    }
+  </div>
+</Layout>

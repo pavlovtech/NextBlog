@@ -1,0 +1,50 @@
+---
+import SocialIcon from './SocialIcon.astro'
+
+interface Props {
+  title: string
+  description: string
+  href?: string
+  github?: string
+  tech: string[]
+}
+
+const { title, description, href, github, tech } = Astro.props
+---
+
+<div class="md p-4 md:w-1/2" style="max-width: 544px">
+  <div
+    class="h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 bg-transparent bg-opacity-20 transition duration-500 hover:scale-105 hover:rounded-md hover:border-primary-500 hover:bg-gray-300 dark:border-gray-700 dark:hover:border-primary-500 dark:hover:bg-gray-800"
+  >
+    <div class="p-6">
+      <div class="flex flex-row items-center justify-between">
+        <div class="my-2">
+          <div class="h-10 w-10 text-primary-color-500 dark:text-primary-color-dark-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-folder"
+            >
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between">
+          {href && (<div class="mx-1.5"><SocialIcon kind="external" href={href} /></div>)}
+          {github && (<div class="mx-1.5"><SocialIcon kind="github" href={github} /></div>)}
+        </div>
+      </div>
+      <h2 class="mb-3 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
+      <p class="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+      <div class="flex flex-row justify-between">
+        <div class="text-sm text-gray-400">{tech.join('  •  ')}</div>
+      </div>
+    </div>
+  </div>
+</div>
