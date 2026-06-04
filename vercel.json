@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/", "destination": "/blog", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
