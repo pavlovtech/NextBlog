@@ -1,0 +1,66 @@
+---
+import '../../styles/globals.css'
+import { SITE } from '../consts'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+interface Props {
+  title: string
+  description?: string
+  canonical?: string
+  ogType?: 'website' | 'article'
+  image?: string
+  publishedTime?: string
+  jsonLd?: Record<string, unknown>
+}
+
+const {
+  title,
+  description = '',
+  canonical,
+  ogType = 'website',
+  image,
+  publishedTime,
+  jsonLd,
+} = Astro.props
+
+const canonicalURL = new URL(canonical ?? Astro.url.pathname, SITE)
+const ogImage = image ? new URL(image, SITE) : undefined
+---
+
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonicalURL.href} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Alex Pavlov - blog"
+      href={new URL('/feed.xml', SITE).href}
+    />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalURL.href} />
+    {ogImage && <meta property="og:image" content={ogImage.href} />}
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body
+    class="font-sans bg-white text-black antialiased dark:bg-background-color dark:text-white"
+  >
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <div class="flex h-screen flex-col justify-between">
+        <Header pathname={Astro.url.pathname} />
+        <main class="mb-auto"><slot /></main>
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content'
+import { compareDesc } from 'date-fns'
+import Layout from '../../layouts/Layout.astro'
+import PostCard from '../../components/PostCard.astro'
+import AboutMe from '../../components/AboutMe.astro'
+import IntroLinks from '../../components/IntroLinks.astro'
+
+const published = (await getCollection('posts')).filter((p) => p.data.status === 'published')
+const featuredPosts = published
+  .filter((p) => p.data.featured)
+  .sort((a, b) => compareDesc(a.data.publishedAt, b.data.publishedAt))
+const posts = published
+  .filter((p) => !p.data.featured)
+  .sort((a, b) => compareDesc(a.data.publishedAt, b.data.publishedAt))
+---
+
+<Layout
+  title="Alex Pavlov - blog"
+  description="Alex Pavlov - blog about programming"
+  canonical="/blog"
+>
+  <section class="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
+    <AboutMe />
+    <IntroLinks />
+  </section>
+  <section>
+    <h2
+      class="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl"
+    >
+      Featured
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700" />
+    {featuredPosts.length === 0 && 'No posts found.'}
+    {
+      featuredPosts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          tags={post.data.tags}
+          publishedAt={post.data.publishedAt}
+          slug={post.data.slug}
+        />
+      ))
+    }
+  </section>
+  <section>
+    <h2
+      class="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl"
+    >
+      Latest
+    </h2>
+    <hr class="border-gray-200 dark:border-gray-700" />
+    {posts.length === 0 && 'No posts found.'}
+    {
+      posts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          tags={post.data.tags}
+          publishedAt={post.data.publishedAt}
+          slug={post.data.slug}
+        />
+      ))
+    }
+  </section>
+</Layout>
