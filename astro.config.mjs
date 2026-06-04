@@ -13,7 +13,9 @@ export default defineConfig({
   site: 'https://alexpavlov.dev',
   // Match the Next.js URL shape (no trailing slash): /blog/posts/x not /blog/posts/x/
   trailingSlash: 'never',
-  build: { format: 'file' },
+  // Keep the default build.format: 'directory' (/blog/index.html). Vercel serves
+  // these directory indexes at clean, extensionless paths natively; 'file' mode
+  // (/blog.html) is NOT resolved without the Vercel adapter and 404s every route.
   // Prefetch internal links on hover for near-instant navigation
   prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
   redirects: {
