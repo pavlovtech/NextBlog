@@ -1,8 +1,5 @@
 ---
 import { NAV_LINKS } from '../consts'
-import TypewriterText from './TypewriterText'
-
-const { pathname } = Astro.props
 ---
 
 <header class="md:flex items-center justify-between py-10">
@@ -10,9 +7,7 @@ const { pathname } = Astro.props
     <div
       class="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold"
     >
-      <a href="/">
-        <TypewriterText client:load path={pathname} />
-      </a>
+      <a href="/"><span id="tw-path" class="tw-cursor"></span></a>
     </div>
   </div>
   <div class="flex items-center text-base leading-5 mt-5 md:mt-0">
@@ -30,3 +25,30 @@ const { pathname } = Astro.props
     </nav>
   </div>
 </header>
+
+<style>
+  .tw-cursor::after {
+    content: '▋';
+    margin-left: 1px;
+    animation: tw-blink 1s steps(1) infinite;
+  }
+  @keyframes tw-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  // ~1 KB vanilla typewriter (replaces the React typewriter-effect island)
+  const el = document.getElementById('tw-path')
+  if (el) {
+    const text = `~${location.pathname} `
+    let i = 0
+    const tick = () => {
+      el.textContent = text.slice(0, i)
+      if (i++ < text.length) setTimeout(tick, 45)
+    }
+    tick()
+  }
+</script>

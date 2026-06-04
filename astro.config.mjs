@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config'
 import tailwind from '@astrojs/tailwind'
-import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 
 import remarkToc from 'remark-toc'
@@ -18,7 +17,6 @@ export default defineConfig({
   integrations: [
     // applyBaseStyles: false — our styles/globals.css already has @tailwind base
     tailwind({ applyBaseStyles: false }),
-    react(),
     sitemap(),
   ],
   markdown: {

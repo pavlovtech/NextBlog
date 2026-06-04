@@ -3,6 +3,8 @@ import '../../styles/globals.css'
 import { SITE } from '../consts'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import Analytics from '@vercel/analytics/astro'
+import SpeedInsights from '@vercel/speed-insights/astro'
 
 interface Props {
   title: string
@@ -57,10 +59,12 @@ const ogImage = image ? new URL(image, SITE) : undefined
   >
     <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <div class="flex h-screen flex-col justify-between">
-        <Header pathname={Astro.url.pathname} />
+        <Header />
         <main class="mb-auto"><slot /></main>
         <Footer />
       </div>
     </div>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>

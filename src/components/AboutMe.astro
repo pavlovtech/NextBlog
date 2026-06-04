@@ -1,6 +1,5 @@
 ---
 import { getEntry, render } from 'astro:content'
-import RoughNotationText from './RoughNotationText'
 
 const about = await getEntry('pages', 'about-me')
 const Content = about ? (await render(about)).Content : null
@@ -16,7 +15,21 @@ const Content = about ? (await render(about)).Content : null
     {Content && <Content />}
   </div>
   <p class="pt-10 text-lg leading-7 text-slate-600 dark:text-slate-300">
-    This is my place for <RoughNotationText client:load text="thoughts, reflections & everything " />
+    This is my place for <span id="rn-highlight">thoughts, reflections &amp; everything&nbsp;</span>
     in between. Have a good read!
   </p>
 </div>
+
+<script>
+  // vanilla rough-notation (replaces the React react-rough-notation island)
+  import { annotate } from 'rough-notation'
+  const el = document.getElementById('rn-highlight')
+  if (el) {
+    const annotation = annotate(el, {
+      type: 'box',
+      color: '#DE1D8D',
+      animationDuration: 2500,
+    })
+    setTimeout(() => annotation.show(), 1000)
+  }
+</script>
