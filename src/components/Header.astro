@@ -44,3 +44,21 @@ import { NAV_LINKS } from '../consts'
   }
   document.addEventListener('astro:page-load', initTypewriter)
 </script>
+
+<style is:global>
+  /* Reliable cursor blink — kept in the bundled stylesheet so it survives the
+     <head> swap on View Transitions navigation (the library injects its own
+     keyframes at runtime, which get dropped on navigation). */
+  .Typewriter__cursor {
+    animation: tw-cursor-blink 1.1s steps(1) infinite !important;
+  }
+  @keyframes tw-cursor-blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
