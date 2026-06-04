@@ -4,11 +4,10 @@ status: 'published'
 slug: 'nextblog'
 description: ''
 coverImage: ''
-technologies: [NextJS, Contentlayer, NextAuth, Giscus, GitHub API, Codemirror]
-github: 'https://github.com/pavlovtech/WebReaper'
-link: ''
+technologies: [Astro, Tailwind CSS, Pages CMS, Giscus]
+github: 'https://github.com/pavlovtech/NextBlog'
+link: 'https://alexpavlov.dev'
 publishedAt: '2023-09-29T18:38:58.465Z'
 ---
 
-Blog with SSG built with NextJs 13, Contentlayer, Giscus, NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
-
+This very blog — a statically generated, zero-JS Astro site. Content is Markdown in the repo, edited through Pages CMS (Git-as-CMS) and deployed on Vercel; comments via Giscus.
